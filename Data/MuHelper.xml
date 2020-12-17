@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### Muhelper ###
+//	Enable: Enable/Disable Integrated Helper system in Game, 0/1
+//	MinLevel: Minimum level required to use the Helper
+//	MinVIPLevel: Min level of VIP type to use Mu Helper
+//		0: Everybody
+//		1: Bronze VIP
+//		2: Silver VIP
+//		3: Gold VIP
+//		4: Platinum VIP
+//		Or other defined VIP Type according to VipSettings.xml
+//
+// ### MuHelper::Cost ###
+//	GeneralMultiplier: General multiplier of charge rate
+//	DiscountMultiplier: Additional discount multiplier of charge rate
+//	EventMultiplier: Additional event multiplier of charge rate
+//------------------------------------------------------------------------------------------------------------------------------
+//-- Money = ChargeRate(TimeRange) * GeneralMultiplier * (RegularLevel + MasterLevel) * DiscountMultiplier * EventMultiplier
+//------------------------------------------------------------------------------------------------------------------------------
+//	ChargeInterval: Charge interval for MuHelper use, minutes
+//
+// ### MuHelper::Timing ###
+//	MaxUseTime: Maximum time MuHelper can be used for at a time, minutes
+//
+// ### MuHelper::Timing::Range ###
+//	Min: Minimum time range value, minute
+//	Max: Maximum time range value, minute
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Maximum 5 range entries. The "Max" value is equal to MaxUseTime
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ChargeRate: Money (Zen) charge rate for the range
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MuHelper Enable="1" MinLevel="80" MinVipLevel="0">
+	<Cost GeneralMultiplier="7.0" DiscountMultiplier="1.0" EventMultiplier="1.0" ChargeInterval="5" />
+	
+	<Timing MaxUseTime="1000">
+		<Range Min="0"   Max="200" ChargeRate="1.0"/>
+		<Range Min="201" Max="400" ChargeRate="2.0"/>
+		<Range Min="401" Max="600" ChargeRate="3.0"/>
+		<Range Min="601" Max="800" ChargeRate="4.0"/>
+		<Range Min="801" Max="Max" ChargeRate="5.0"/>
+	</Timing>
+</MuHelper>

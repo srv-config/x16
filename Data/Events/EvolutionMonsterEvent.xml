@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// ### EvolutionMonster ###
+//	Enable: Enables or disables the event
+//	EventType:
+//		~ 0: Card selection reward type
+//		~ 1: 
+//		~ 2: 
+//
+// ### EvolutionMonster::EventTimeSettings::Run ###
+//	Type: Event type the timing settings apply to
+//	RewardWaitTime: Time to select reward, seconds
+//	NotifyTime: Time to notify about spawn or fail, seconds
+//	MonsterRegenTime: EvoMon regen time, counted from notification display, seconds
+//
+// ### EvolutionMonster::SummoningSettings::Run ###
+//	Type: Event type the summoning settings apply to
+//	FieldEvoMonMemorizeMode: 
+//		~ 0: Does not memorize
+//		~ 1: 
+//		~ 2: 
+//		~ 3: 
+//
+//	SummonEvoMonMemorizeMode: 
+//		~ 0: 
+//		~ 1: 
+//		~ 2: 
+//		~ 3: 
+//
+//	EvoMonLevelSectorValue: 
+//
+//
+// ### EvolutionMonster::MonsterSettings::Run ###
+//	Type: Event type the monster settings apply to
+//	RegEvoMonID: Regular EvoMon monster index, 681
+//	SpecialEvoMonID: Special EvoMon monster index, 690
+//	HPP: Value used to calculate EvoMon MaxLife
+//	HPV: Value used to calculate EvoMon MaxLife
+//	DmgV: Value used to calculate EvoMon damage
+//	DefP: Value used to calculate EvoMon defense
+//	DefV: Value used to calculate EvoMon defense
+//	AttackRV: Value used to calculate EvoMon attack rate
+//	SuccessBV: Value used to calculate EvoMon successful blocking
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Formula: MaxLife = (HPV^(EvoMonLevel - 1) - 1.0) / (HPP * HPV) / (HPV - 1.0) + (HPV^(EvoMonLevel - 1) * HP_From_MonsterList)
+//~~ Formula: AttackDamage = DamageMax_From_MonsterList + DmgV * (EvoMonLevel - 1)
+//~~ Formula: Defense = (DefV^(EvoMonLevel - 1) - 1.0) / (DefP * DefV) / (DefV - 1.0) + (DefV^(EvoMonLevel - 1) * Defense_From_MonsterList)
+//~~ Formula: AttackRating = EvoMonLevel^2 / AttackRV
+//~~ Formula: SuccessfulBlocking = EvoMonLevel * SuccessBV
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	AppearType1: Skill count use 1, maximum EvoMon spawn level to apply AppearType1, must be lower than AppearType2
+//	AppearType2: Skill count use 2, maximum EvoMon spawn level to apply AppearType2, must be higher than AppearType1 and lower than AppearType3
+//	AppearType3: Skill count use 3, maximum EvoMon spawn level to apply AppearType3, must be higher than ApeearType2, if AppearType3 is set to value lower than max possible of 255 and spawn level is higher or equal to AppearType3 value then skill count use is 4.
+//	ChangePro: Value used to calculate level probavility of level up of EvoMonSpawn
+//	ProV: Value used to calculate level probavility of level up of EvoMonSpawn
+//		~ EventType 0: LevelUpProb = ((25500 * ChangePro) / sqrt(EvoMonLevel - 1.0) * (ProV * 100.0)) / 10000
+//		~ EventType 1: LevelUpProb = 10 * (((100 * ChangePro) - EvoMonLevel * (ProV * 100.0)) / 10)
+//		~ EventType 2: LevelUpProb = 10 * (((100 * ChangePro) - EvoMonLevel * (TempProbability * 100.0)) / 10)
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ If LevelUpProb after calculation is lower than 50 then it is set to 50, spawn level up is LevelUpProb/10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	ChangeSpecPro: Probability chance to spawn special EvoMon, n/10000
+//	DisappearTime: Value used to calculate EvoMon disappear time after spawn
+//	DisappearTimeV: Value used to calculaye EvoMon disappear time after spawn
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ DisappearTime = 1000 * (DisappearTime + DisappearTimeV * (EvoMonLevel - 1))
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	StartTime: Spawn availability start hour, 0-23
+//	EndTime:  spawn availability end hour, 0-23
+//
+// ### EvolutionMonster::EventScoreSettings::Run ###
+//	Type: Event type the score settings apply to
+//	EvoMonScoreClass: EvoMon class to apply score for, 681 or 690
+//	EvoMonScoreType: Type of score to apply:
+//		~ 0: Monster level
+//		~ 1: Kill count
+//
+// ### EvolutionMonster::MonsterMapLevel::EvoMon ###
+//	ID: EvoMon index the setting apply to
+//	MapNum: Map number the setting apply to
+//	SetLevel: Base level of EvoMon to start with at specified map
+//
+// ### EvolutionMonster::EvolutionMonsterBox::Box ###
+//	Index: Unique reward index
+//	ItemCat: Reward item category
+//	ItemIndex: Reward item index
+//	RewardProb1-26: Probability to get specifiet reward
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ RandVal = Random value from 10000
+//~~ AccumulatedProb:  EvoMonLevel / 10
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->
+
+<EvolutionMonster Enable="1" EventType="0">
+	<EventTimeSettings>
+		<Run Type="0" RewardWaitTime="10" NotifyTime="13" MonsterRegenTime="15" />
+		<Run Type="1" RewardWaitTime="2" NotifyTime="3" MonsterRegenTime="4" />
+		<Run Type="2" RewardWaitTime="2" NotifyTime="3" MonsterRegenTime="4" />
+	</EventTimeSettings>
+	
+	<SummoningSettings>
+		<Run Type="0" FieldEvoMonMemorizeMode="1" SummonEvoMonMemorizeMode="1" EvoMonLevelSectorValue="0" />
+		<Run Type="1" FieldEvoMonMemorizeMode="0" SummonEvoMonMemorizeMode="0" EvoMonLevelSectorValue="0" />
+		<Run Type="2" FieldEvoMonMemorizeMode="3" SummonEvoMonMemorizeMode="3" EvoMonLevelSectorValue="0" />
+	</SummoningSettings>
+	
+	<MonsterSettings>
+		<Run Type="0" RegEvoMonID="681" SpecialEvoMonID="690" HPP="21" HPV="1.05" DmgV="10" DefP="2" DefV="1.01" AttackRV="8" SuccessBV="3.4" AppearType1="20" AppearType2="67" AppearType3="124" ChangePro="48"  ProV="0.7" ChangeSpecPro="200" DisappearTime="300" DisappearTimeV="10" StartTime="1" EndTime="22" />
+		<Run Type="1" RegEvoMonID="681" SpecialEvoMonID="690" HPP="21" HPV="1.05" DmgV="10" DefP="2" DefV="1.01" AttackRV="8" SuccessBV="3.4" AppearType1="20" AppearType2="67" AppearType3="124" ChangePro="100" ProV="0.6" ChangeSpecPro="20" DisappearTime="300" DisappearTimeV="10" StartTime="1" EndTime="22" />
+		<Run Type="2" RegEvoMonID="681" SpecialEvoMonID="690" HPP="21" HPV="1.05" DmgV="10" DefP="2" DefV="1.01" AttackRV="8" SuccessBV="3.4" AppearType1="20" AppearType2="67" AppearType3="124" ChangePro="100" ProV="0.64" ChangeSpecPro="20" DisappearTime="300" DisappearTimeV="10" StartTime="1" EndTime="22" />
+	</MonsterSettings>
+
+	<EventScoreSettings>
+		<Run Type="0" EvoMonScoreClass="681" EvoMonScoreType="0" />
+		<Run Type="1" EvoMonScoreClass="681" EvoMonScoreType="0" />
+		<Run Type="2" EvoMonScoreClass="681" EvoMonScoreType="0" />
+	</EventScoreSettings>
+	
+	<!-- EvolutionMonsterMapLevel.txt -->
+	<MonsterMapLevel>
+		<EvoMon ID="681" MapNum="2" SetLevel="1" />
+		<EvoMon ID="681" MapNum="1" SetLevel="1" />
+		<EvoMon ID="681" MapNum="8" SetLevel="1" />
+		<EvoMon ID="681" MapNum="80" SetLevel="1" />
+		<EvoMon ID="681" MapNum="95" SetLevel="1" />
+	</MonsterMapLevel>
+	
+	<!-- EvolutionMonsterBox.txt -->
+	<EvolutionMonsterBox>
+		<Box Index="1" ItemCat="14" ItemIndex="248" RewardProb1="10000" RewardProb2="5000" RewardProb3="0" RewardProb4="0" RewardProb5="0" RewardProb6="0" RewardProb7="0" RewardProb8="0" RewardProb9="0" RewardProb10="0" RewardProb11="0" RewardProb12="0" RewardProb13="0" RewardProb14="0" RewardProb15="0" RewardProb16="0" RewardProb17="0" RewardProb18="0" RewardProb19="0" RewardProb20="0" RewardProb21="0" RewardProb22="0" RewardProb23="0" RewardProb24="0" RewardProb25="0" RewardProb26="0" />
+		<Box Index="2" ItemCat="14" ItemIndex="249" RewardProb1="0" RewardProb2="5000" RewardProb3="10000" RewardProb4="5000" RewardProb5="0" RewardProb6="0" RewardProb7="0" RewardProb8="0" RewardProb9="0" RewardProb10="0" RewardProb11="0" RewardProb12="0" RewardProb13="0" RewardProb14="0" RewardProb15="0" RewardProb16="0" RewardProb17="0" RewardProb18="0" RewardProb19="0" RewardProb20="0" RewardProb21="0" RewardProb22="0" RewardProb23="0" RewardProb24="0" RewardProb25="0" RewardProb26="0" />
+		<Box Index="3" ItemCat="14" ItemIndex="250" RewardProb1="0" RewardProb2="0" RewardProb3="0" RewardProb4="5000" RewardProb5="10000" RewardProb6="5000" RewardProb7="0" RewardProb8="0" RewardProb9="0" RewardProb10="0" RewardProb11="0" RewardProb12="0" RewardProb13="0" RewardProb14="0" RewardProb15="0" RewardProb16="0" RewardProb17="0" RewardProb18="0" RewardProb19="0" RewardProb20="0" RewardProb21="0" RewardProb22="0" RewardProb23="0" RewardProb24="0" RewardProb25="0" RewardProb26="0" />
+		<Box Index="4" ItemCat="14" ItemIndex="251" RewardProb1="0" RewardProb2="0" RewardProb3="0" RewardProb4="0" RewardProb5="0" RewardProb6="5000" RewardProb7="10000" RewardProb8="5000" RewardProb9="0" RewardProb10="0" RewardProb11="0" RewardProb12="0" RewardProb13="0" RewardProb14="0" RewardProb15="0" RewardProb16="0" RewardProb17="0" RewardProb18="0" RewardProb19="0" RewardProb20="0" RewardProb21="0" RewardProb22="0" RewardProb23="0" RewardProb24="0" RewardProb25="0" RewardProb26="0" />
+		<Box Index="5" ItemCat="14" ItemIndex="252" RewardProb1="0" RewardProb2="0" RewardProb3="0" RewardProb4="0" RewardProb5="0" RewardProb6="0" RewardProb7="0" RewardProb8="5000" RewardProb9="10000" RewardProb10="5000" RewardProb11="0" RewardProb12="0" RewardProb13="0" RewardProb14="0" RewardProb15="0" RewardProb16="0" RewardProb17="0" RewardProb18="0" RewardProb19="0" RewardProb20="0" RewardProb21="0" RewardProb22="0" RewardProb23="0" RewardProb24="0" RewardProb25="0" RewardProb26="0" />
+		<Box Index="6" ItemCat="14" ItemIndex="253" RewardProb1="0" RewardProb2="0" RewardProb3="0" RewardProb4="0" RewardProb5="0" RewardProb6="0" RewardProb7="0" RewardProb8="0" RewardProb9="0" RewardProb10="5000" RewardProb11="10000" RewardProb12="10000" RewardProb13="10000" RewardProb14="10000" RewardProb15="10000" RewardProb16="10000" RewardProb17="10000" RewardProb18="10000" RewardProb19="10000" RewardProb20="10000" RewardProb21="10000" RewardProb22="10000" RewardProb23="10000" RewardProb24="10000" RewardProb25="10000" RewardProb26="10000" />
+	</EvolutionMonsterBox>
+</EvolutionMonster>

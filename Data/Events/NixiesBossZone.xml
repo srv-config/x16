@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == Modify if you know what you do only!
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### NixiesBossZone ###
+//	Enable: Opens or restricts access to Nixies Lake Boss Zone, 0/1
+//	MaxBossZoneEnterTime: Maximum time player can stay in Nix Boss zone, minutes
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<NixiesBossZone Enable="1" MaxBossZoneEnterTime="15">
+	<!-- More options to come upon requirement -->
+</NixiesBossZone>

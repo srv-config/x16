@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2020 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### ItemOptionSystem ###
+//	Enable: Deactivates or activates the system: 0/1
+//
+// ### ItemOptionSystem::Items::Item ###
+//	Cat: Group of item, see ItemList.xml
+//	Index: Index of item, see ItemList.xml
+//	MinLevel: Minimum level of item to qualify it for the option
+//	Option Index:
+//		~ 0: Total amount of HP is reduced to half, (Probability %)
+//		~ 1: Attack speed is reduced to half, (Probability %)
+//		~ 2: Freeze the enemy for 5 seconds, (Probability %)
+//		~ 3: Stun enemy for 3 seconds, (Probability %)
+//		~ 4: Auto Combo Hurt, There's a chance to strik with Combo Hurt, (Probability %) 
+//		~ 5: Double damage, (Probability %)
+//		~ 6: Increased attack power, (Probability %)
+//		~ 7: Increase in total blood volume, (Probability %)
+//		~ 8: Increased defenses, (Probability %)
+//		~ 9: Damage Reduction, (Probability %)
+//		~ 10: AG Stats Increase
+//		~ 11: One-shot Monster, (Probability %)
+//		~ 12: One-shot PVP, (Probability %)
+//		~ 13: Rebound damage, (Probability %)
+//		~ 14: Five seconds to impact, Poison rebound Ineffective, (Probability %)
+//		~ 15: Being attacked, fully restored to life, (Probability %)
+//		~ 16: When attacked （PVP）, remain invisible for 3 seconds, (Probability %)
+//		~ 17: When attacked, the victim dies instantly (PVP), (Probability %)
+//		~ 18: When attacked, 10% of the target's current blood loss (PVP), (Probability %)
+//		~ 19: When attacked,Rebound total damage probability (PVP), (Probability %)
+//		~ 20: Excellent Damage Resistance, (Probability %), 1-100
+//		~ 21: Critical Damage Resistance, (Probability %), 1-100
+//		~ 22: Double Damage, Resistance, (Probability %), 1-100
+//		~ 23: Increases chance of True Damage Resistance, (Probability %), 1-100
+//		~ 24: Increases Combo damage, (Probability %)
+//		~ 25: Absorb PVP damage, (Probability %)
+//		~ 26: Excellent Damage probability increased, (Probability %)
+//		~ 27: Critical Damage probability increased, (Probability %)
+//		~ 28: Chance of True Damage probability increased, (Probability %)
+//		~ 29: Triples the chance of injury, (Probability %)
+//		~ 30: Three times the chance of damage resistance, (Probability %)
+//		~ 31: Become invincible after being attacked for %d seconds
+//		~ 32: Blind enemy for %d seconds
+//		~ 33: Increase all stats
+//		~ 34: Ignore SD
+//		~ 35: Increase Skill Damage
+//		~ 36: Empty
+//		~ 37: Increase Attack Success Rate
+//		~ 38: Increase SD Resistance, 1-100
+//		~ 39: Stun Resistance, 1-100
+//		~ 40: Combo Damage Decrease
+//		~ 41: Triple Damage Damage Increase
+//		~ 42: Elemental Damage Increase
+//		~ 43: Elemental Defense Increase
+//		~ 46: Stun 4th Tree
+//
+//	OptionValue: Value to applt the option with
+//	Probability to apply the option on item, 0-100
+//	Ancient: If set to 1 the option will apply to specified set item only
+//	Excellent: Minimum excellent options the item has to apply new option
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ System applies static (defined) options to items meeting certain criteria upon equipment.
+//~~ Any static option defined in the file should be manually added to ItemToolTip.bmd so it can be displayed
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemOptionSystem Enabled="0">
+	<Items>
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="0" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="4" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="4" Index="40" MinLevel="5" OptionIndex="4" OptionValue="10000" OptionProbability="100" Ancient="-1" Excellent="0" />
+		<Item Cat="13" Index="37" MinLevel="0" OptionIndex="7" OptionValue="1000" OptionProbability="0" Ancient="-1" Excellent="0" /> 
+	</Items>
+</ItemOptionSystem>

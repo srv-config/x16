@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+// ### GremoryCase::RewardExpiryTime::Use ###
+//	Type: Type of event:
+//		~ 1: Chaos Castle
+//		~ 2: Blood Castle
+//		~ 3: Illusuin Temple
+//		~ 4: Doppelganger
+//		~ 5: None
+//		~ 6: None
+//		~ 7: None
+//		~ 8: Chaos Castle Survival BattleCore
+//		~ 9: Tormented Square BattleCore
+//		~ 10: Chaos Castle (Battle) BattleCore
+//		~ 11: Tormented Square (Battle) BattleCore
+//		~ 12: EvoMon
+//		~ 13: Devil Square
+//		~ 14: Imperial Guardian
+//		~ 15: None
+//		~ 16: Inventory Mix
+//		~ 17: Event Items
+//		~ 18: Labyrinth
+//
+//	Time: Time the reward is available to pick up from gremory case, seconds
+//	Name: Name of the event, used for logging and description purpose
+// STRICTLY NO COMMENTS INSIDE TAGS
+//
+-->
+
+<GremoryCase>
+	<RewardExpiryTime>
+		<Use Type="1" Time="3600" Name="Chaos Castle" />
+		<Use Type="2" Time="3600" Name="Blood Castle" />
+		<Use Type="3" Time="3600" Name="Illusion Temple" />
+		<Use Type="4" Time="3600" Name="Doppelganger" />
+		<!-- <Use Type="5" Time="3600" Name="Empty" /> -->
+		<!-- <Use Type="6" Time="3600" Name="Empty" /> -->
+		<!-- <Use Type="7" Time="3600" Name="Empty" /> -->
+		<Use Type="8" Time="3600" Name="Chaos Castle Survival BattleCore" />
+		<Use Type="9" Time="3600" Name="Tormented Square BattleCore" />
+		<Use Type="10" Time="3600" Name="Chaos Castle (Battle) BattleCore" />
+		<Use Type="11" Time="3600" Name="Tormented Square (Battle) BattleCore" />
+		<Use Type="12" Time="3600" Name="EvoMon" />
+		<Use Type="13" Time="3600" Name="Devil Square" />
+		<Use Type="14" Time="3600" Name="Imperial Guardian" />
+		<!-- <Use Type="15" Time="3600" Name="Empty" /> -->
+		<Use Type="16" Time="86400" Name="Inventory Mix" />
+		<Use Type="17" Time="3600" Name="Event Items" />
+		<Use Type="18" Time="3600" Name="Labyrinth" />
+	</RewardExpiryTime>
+</GremoryCase>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<SpiritStoneExchange>
+	<StoneSettings>
+		<Stone ID="0" Cat="12" Index="404" ZenDiv="20000" />
+		<Stone ID="1" Cat="12" Index="405" ZenDiv="500000" />
+		<Stone ID="2" Cat="12" Index="406" ZenDiv="50000" />
+	</StoneSettings>
+
+	<ExchangeRates>
+		<Stone ID="0">
+			<Range Value="0" Count0="10000" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="4" Count0="8500" Count1="1500" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="14" Count0="0" Count1="0" Count2="5500" Count3="4500" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="22" Count0="0" Count1="0" Count2="0" Count3="1000" Count4="8500" Count5="500" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="30" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="1000" Count6="8500" Count7="500" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="40" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="1000" Count8="8500" Count9="500" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="60" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="1000" Count9="8000" Count10="1000" Count11="0" Count12="0" Count13="0" Count14="0" />
+		</Stone>
+		<Stone ID="1"> 
+			<Range Value="0" Count0="10000" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="24" Count0="0" Count1="9500" Count2="500" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="54" Count0="0" Count1="500" Count2="9000" Count3="500" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="84" Count0="0" Count1="0" Count2="500" Count3="9000" Count4="500" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="119" Count0="0" Count1="0" Count2="0" Count3="500" Count4="9000" Count5="500" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="150" Count0="0" Count1="0" Count2="0" Count3="0" Count4="500" Count5="9000" Count6="500" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="184" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="500" Count6="9000" Count7="500" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="210" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="500" Count7="9000" Count8="500" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="238" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="9500" Count9="500" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+		</Stone>
+		<Stone ID="2"> 
+			<Range Value="0" Count0="10000" Count1="0" Count2="0" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="24" Count0="0" Count1="9500" Count2="500" Count3="0" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="54" Count0="0" Count1="500" Count2="9000" Count3="500" Count4="0" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="89" Count0="0" Count1="0" Count2="500" Count3="9000" Count4="500" Count5="0" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="115" Count0="0" Count1="0" Count2="0" Count3="500" Count4="9000" Count5="500" Count6="0" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+			<Range Value="145" Count0="0" Count1="0" Count2="0" Count3="0" Count4="0" Count5="9500" Count6="500" Count7="0" Count8="0" Count9="0" Count10="0" Count11="0" Count12="0" Count13="0" Count14="0" />
+		</Stone>
+	</ExchangeRates> 
+</SpiritStoneExchange>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### MysteriousStone::Armors::Option ###
+//	Luck: 
+//	Set: 
+//	Rate: Chance rate of gettign specified option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of rates must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// ### MysteriousStone::Weapons ###
+//	MaxExcOption: 
+//
+// ### MysteriousStone::Weapons::Option ###
+//	ExcX: (1-9)
+//	Luck: 
+//	Rate: Chance rate of gettign specified option, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of rates must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MysteriousStone>
+	<Armors> <!-- Maximum 30 entries -->
+		<Option	Luck="0" Set="1" Rate="20000" />					
+		<Option	Luck="0" Set="2" Rate="70000" />
+		<Option	Luck="1" Set="1" Rate="60000" />				
+		<Option	Luck="1" Set="2" Rate="850000" />
+	</Armors>
+
+	<Weapons MaxExcOption="3"> <!-- Maximum 30 entries -->
+		<Option Exc1="0" Exc2="3" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="110000" />
+		<Option Exc1="0" Exc2="6" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="49500" />
+		<Option Exc1="0" Exc2="7" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="263000" />
+		<Option Exc1="0" Exc2="4" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="266000" />
+		<Option Exc1="0" Exc2="5" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="266000" />
+		<Option Exc1="0" Exc2="3" Exc3="6"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="0" Rate="1000" />
+		<Option Exc1="0" Exc2="3" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="5000" />
+		<Option Exc1="0" Exc2="6" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="2000" />
+		<Option Exc1="0" Exc2="7" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="11000" />
+		<Option Exc1="0" Exc2="4" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="13000" />
+		<Option Exc1="0" Exc2="5" Exc3="-1"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="13000" />
+		<Option Exc1="0" Exc2="3" Exc3="6"	Exc4="-1" Exc5="-1" Exc6="-1" Exc7="-1" Exc8="-1" Exc9="-1" Luck="1" Rate="500" />
+	</Weapons>
+</MysteriousStone>

@@ -1,0 +1,109 @@
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//	BAG ITEM: NO LIMIT
+//
+// ### ItemBag::BagConfig ###
+//	Name: Name of an Item or Monster
+//	ItemRate: Chance to get an item from the bag, n/10000
+//	SetItemRate: Drop rate of random set item selected from entire pool of available ancients, n/10000, can be 0
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The SetItemRate is not available for all EVENT_BAG types. Define Set Items via Drop sections manually instead
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	MoneyDrop: Money (Zen) amount to drop from bag (must be greater than 0 if ItemRate is lower than 10000)
+//	IsPentagramForBeginnersDrop: Defines whether to drop Pentagram for Beginners with pre-defined Errtels for Beginners, 0/1
+//	BagUseEffect:
+//			-1: no effect
+//			 0: Firecracker effect type
+//			 2: Silver and Gold Medals effect type, Box of Heaven
+//			58: Cherry Blossom Play Box effect type
+//
+//	BagUseRate: Defines probability to use Bag, n/10000.
+//				If value is lower than 10000 (100%) then a draw is performed between item bag and another drop system in hierarchy
+//
+// ### ItemBag:::SummonBook ### - drops random Summon Book from range - Cat: 14; Index: 217-221
+//	Enable: Activates or deactivates the Summon Book drop, 0/1
+//	DropRate: Summon Book drop rate, n/1000000
+//	ItemCat: Category of Summon Book Item: 14
+//	ItemIndex: Index of Summon Book Item: 217-221
+//
+// ### ItemBag::AddCoin ### - awards with configured coin type and count
+//	Enable: Activates or deactivates the coin award, 0/1
+//	CoinType: 0 - WCoin, 1 - Goblin Point
+//	CoinValue: Points count to award with
+//
+// ### ItemBag::Ruud ### - awards with configured count of Ruud basing of the rate (if Ruud is awarded then no item will be given)
+//	GainRate: Chance rate to award with configured amount of Ruud, n/10000, can be 0
+//	MinValue: Minimum amount of Ruud to award with
+//	MaxValue: Maximum amount of Ruud to award with
+//
+// ### ItemBag::DropAllow ### - by setting lower class the higher one automatically is being allowed
+//	Wizard: 0 - Disallow, 1 - Dark Wizard, 2 - Soul Master, 3 - Grand Master, 4 - Soul Wizard
+//	Knight: 0 - Disallow, 1 - Dark Knight, 2 - Blade Knight, 3 - Blade Master, 4 - Dragon Knight
+//	FairyElf: 0 - Disallow, 1 - Fairy Elf, 2 - Muse Elf, 3 - High Elf, 4 - Noble Elf
+//	MagicGladiator: 0 - Disallow, 1 - Magic Gladiator, 2 - Duel Master, 4 - Magic Knight
+//	DarkLord: 0 - Disallow, 1 - Dark Lord, 2 - Lord Emperor, 4 - Empire Lord
+//	Summoner: 0 - Disallow, 1 - Summoner, 2 - Bloody Summoner, 3 - Dimension Master, 4 - Dimension Summoner
+//	RageFighter: 0 - Disallow, 1 - Rage Fighter, 2 - Fist Master, 4 - Fist Blazer
+//	GrowLancer: 0 - Disallow, 1 - Grow Lancer, 2 - Miracle Lancer, 4 - Shining Lancer
+//	RuneWizard: 0 - Disallow, 1 - Rune Wizard, 2 - Rune Spell Master, 4 - Rune Grand Master
+//	Slayer: 0/1/2/3/4
+//	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
+//	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For easier configuration use PlayerMaxLevel="MAX" to configure maximum level available for the server (automated sum of MaxNormalLevel and MaxMasterLevel)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//	MapNumber: Map Number the drop of items applies to, -1 for all maps
+//
+// ### DropAllow::Drop ###
+//	Rate: Drop rate of items from the section, n/10000
+//	Count: Items count to be dropped at a time - option ignored for LuckyCoin, MuRuumy, LordMix and Cherry Blosson rewards, always 1
+//
+// ### DropAllow::Drop::Item ###
+//	Cat: Category of the item, refer to \Data\Items\ItemList.xml
+//	Index: Index of the item, refer to \Data\Items\ItemList.xml
+//	ItemMinLevel: Minimum level the item should drop with (must be lower or equal to ItemMaxLevel)
+//	ItemMaxLevel: Maximum level of the item should drop with (must be greater or equal to ItemMinLevel)
+//	Durability: Durability is optional attribute, if used then defined value will be used, otherwise generated automatically, 0-255
+//	Skill: 0 - no Skill, -1 - Random (50/50% chance), 1 - with Skill
+//	Luck: 0 - no Luck, -1 - Random (50/50% chance), 1 - with Luck
+//	Option: 0 - no Option, -1 - Random, 1,2,3,4,5,6,7 - with specified option - +4,+8,+12,+16,+20,+24,+28
+//	Exc:
+//		-1: No exc option
+//		-2: Random count of random options (based on rates from ExcellentOptions.xml)
+//		-3;X: Specified count of random options, the 'X' defines count of excellent options, max 9 (options selection based on rates from ExcellentOptions.xml)
+//		-10: A draw of excellent options set from MasteryExcOptions.xml. If used, the skill and luck attributes from this file are ignored, see referred file for further details.
+//		X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Advanced config notes: The values -1, -2 and -3 are stored under Exc1 variable in ItemBagScript.lua, the options count (X) for -3 value is stored under Exc2 variable
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
+//	SocketCount:
+//		0: no Socket slots
+//		1: up to one slot
+//		2: up to two slots
+//		3: up to three slots
+//		4: up to four slots
+//		5: up to five slots
+//	   -2: random count of socket slots (Pentagrams and Socket Items)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Type attribute of the item must be set to 2 - refer to ItemList.xml
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ElementalItem: 0 ~ no Elemental attribute, 1 ~ Fire, 2 ~ Water, 3 ~ Earth, 4 ~ Wind, 5 ~ Darkness, -1 ~ Random attribute
+//	MuunEvolutionItemCat: Attribute used and required for item 16,211 (Evolution Stone) only, defines Muun Item Category
+//	MuunEvolutionItemIndex: Attribute used and required for item 16,211 (Evolution Stone) only, defines Muun Item Index
+//	KindA: Attribute automatically assigned on a basis on ItemList.xml configuration, no necessary to be defined in bag
+//	Duration: Allows to drop expiable item, seconds (not every item is suitable for period items system, please test before putting on live server)
+//
+// Bag Structure Supports multiple DropAllow sections. Each DropAllow section may have multiple Drop sub-sections
+//
+// STRICTLY NO COMMENTS INSIDE TAGS 
+-->

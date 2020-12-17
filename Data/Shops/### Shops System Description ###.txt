@@ -1,0 +1,33 @@
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// ### Shop::Item ###
+//	Cat: Category of an item - refer to ItemList.xml
+//	Index: Index of an item - refer to ItemList.xml
+//	Level: Level of an item, 0-15
+//	Durability: Durability of an item, 0-255 - NOTE: some Items max durability is lower than maximum possible of 255
+//	Skill: Apply skill to item, 0/1
+//	Luck: Apply Luck on item, 0/1
+//	Option: 0-7 (Opt * 4, example, Opt -> 7 * 4 = Item Option +28
+//	Exc:
+//		-1: No exc option
+//		X;X;X;X;X;X;X;X;X: Defined excellent options, the 'X' is excellent option ID based on ExcellentOptions.xml, maximum 9 options can be defined
+//
+//	SetItem (item must be added to set items (ancients), otherwise option will be ignored:
+//		~ 0:  No Ancient
+//		~ 5:  First Set type (+5 Stamina)
+//		~ 6:  Second Set type (+5 Stamina)
+//		~ 9:  First Set type (+10 Stamina)
+//		~ 10: Second Set type (+10 Stamina)
+//	SocketCount: Count of Sockets for socket item, values: 0-5
+//	Elemental: Element type for elemental items: 0 ~ no Elemental Attribute, 1 ~ Fire, 2 ~ Water, 3 ~ Earth, 4 ~ Wind, 5 ~ Darkness
+//	Serial: Generate serial for the shop item, 0/1
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->

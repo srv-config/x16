@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Modifications of this file require changes in client side, GradedOption.txt (Lang.mpr)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### GradedOption::OptionMixCount ###
+//	RateX (1-5): Chance rate of getting specific count of extra graded options, n/10000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all five rates must be equal to 10000. Configure increasing way, from highest to lowest rate
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### GradedOption::List::Option ###
+//	Index: Unique option index
+//	ItemKindB: KindB of item the option may be applied to. System is limited to mastery equipment only, so only KindB od mastery items applies
+//	TextID: Unused for server
+//	GradeXVal (0-9): Value of option at specific grade (level)
+//	Rate: Chance rate of getting specific option, n/10000
+//	Name: Option name, used for loggin and description purpose
+//
+// ### GradedOption::GradeRate::Option ###
+//	Index: Option index, must match index from "List" section
+//	GradeXRate (0-9): Chance rate of getting specific option grade, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of all ten grades per row must be equal to 1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<GradedOptions>
+<OptionMixCount Rate1="9250" Rate2="500" Rate3="200" Rate4="50" /> <!-- Sum of all five must be equal to 10000 -->
+	<List>
+		<Option Index="0" ItemKindB="76" TextID="1025" Grade0Val="3" Grade1Val="5" Grade2Val="6" Grade3Val="7" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Mana full recovery probability %d%% increase"/>
+		<Option Index="1" ItemKindB="76" TextID="1026" Grade0Val="3" Grade1Val="5" Grade2Val="6" Grade3Val="7" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="%d chance of full recovery of life %d%% increase"/>
+		<Option Index="2" ItemKindB="76" TextID="1027" Grade0Val="3" Grade1Val="5" Grade2Val="6" Grade3Val="7" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="The probability of returning enemy damage %d%% increase"/>
+		<Option Index="3" ItemKindB="76" TextID="1028" Grade0Val="3" Grade1Val="5" Grade2Val="6" Grade3Val="7" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="%d chance to ignore enemy defense %d%% increase"/>
+		<Option Index="4" ItemKindB="76" TextID="1029" Grade0Val="5" Grade1Val="7" Grade2Val="9" Grade3Val="12" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Attack (spell) speed %d increase"/>
+		<Option Index="5" ItemKindB="76" TextID="1030" Grade0Val="3" Grade1Val="5" Grade2Val="7" Grade3Val="10" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Probability of excellent damage increased %d%%"/>
+		<Option Index="6" ItemKindB="76" TextID="1031" Grade0Val="3" Grade1Val="5" Grade2Val="6" Grade3Val="7" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Double damage chance %d%% increase"/>
+		<Option Index="7" ItemKindB="76" TextID="1032" Grade0Val="10" Grade1Val="25" Grade2Val="40" Grade3Val="65" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Force %d increase"/>
+		<Option Index="8" ItemKindB="76" TextID="1033" Grade0Val="10" Grade1Val="25" Grade2Val="40" Grade3Val="65" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Increase stamina %d"/>
+		<Option Index="9" ItemKindB="76" TextID="1034" Grade0Val="10" Grade1Val="25" Grade2Val="40" Grade3Val="65" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="%d increase in energy"/>
+		<Option Index="10" ItemKindB="76" TextID="1035" Grade0Val="10" Grade1Val="25" Grade2Val="40" Grade3Val="65" Grade4Val="0" Grade5Val="0" Grade6Val="0" Grade7Val="0" Grade8Val="0" Grade9Val="0" Rate="5000" Name="Agility increased by %d"/>
+	</List>
+	<GradeRate>
+		<Option Index="0" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="1" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="2" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="3" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="4" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="5" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="6" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="7" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="8" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="9" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+		<Option Index="10" Grade0Rate="947500" Grade1Rate="30000" Grade2Rate="15000" Grade3Rate="7500" Grade4Rate="0" Grade5Rate="0" Grade6Rate="0" Grade7Rate="0" Grade8Rate="0" Grade9Rate="0" />
+	</GradeRate>
+</GradedOptions>

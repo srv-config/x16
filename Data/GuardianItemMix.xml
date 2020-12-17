@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2019 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Changes to the file require modification of GuardianMix.txt on client side (Lanf.mpr)
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### GuardianItemMix::PetItemCreation::Mix ###
+//	ID: Unique mix ID
+//	MainItemCat: Category of main material item
+//	MainItemLevel: Index of main material item
+//	MainItemDur: Durability of main material item
+//	SubItemCatX: Category of sub-material item
+//	SubItemIndexX: Index of sub-material item
+//	SubItemDurX: Durability of sub-material item
+///	ReqMoney: Money required for the mix, Zen
+//	SuccessRate: Mix success rate, n/1000000
+//	ResultItemCat: Result item category
+//	ResultItemIndex: Result item index
+//	ResultItemLevel: Result item level, 0-15
+//
+// ### GuardianItemMix::GuardianItemCreation::Mix ###
+//	ID: Unique mix ID
+//	MainItemCat: Category of main material item
+//	MainItemLevel: Index of main material item
+//	MainItemDur: Durability of main material item
+//	SubItemCatX: Category of sub-material item
+//	SubItemIndexX: Index of sub-material item
+//	SubItemDurX: Durability of sub-material item
+///	ReqMoney: Money required for the mix, Zen
+//	SuccessRate: Mix success rate, n/1000000
+//	ResultItemCat: Result item category
+//	ResultItemIndex: Result item index
+//	ResultItemLevel: Result item level, 0-15
+//
+// ### GuardianItemMix::GuardianItemLevelUp::Mix ###
+//	ReqLevel: Input item level, 0-15
+//	ItemCatX: Input item category
+//	ItemLevelX: Input item level, 0-15
+//	ItemCountX: Numer of inout items
+///	ReqMoney: Money required for the mix, Zen
+//	SuccessRate: Mix success rate, n/1000000
+//	FailType: Action to take after mix failure 
+//		~ 0: No change in input item level
+//		~ 1: Item level drop by 1
+//		~ 2: Item level drop to 0
+//
+// ### GuardianItemMix::GuardianItemOptChange::Mix ###
+//	ReqGuardianNum: Guardian item number:
+//		1: 12,471
+//
+//	ItemCat: Item category
+//	ItemIndex: Item index
+//	MaxOptCount: 
+//
+// STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<GuardianItemMix>
+	<PetItemCreation>
+		<Mix ID="0" MainItemCat="13" MainItemIndex="31" MainItemLevel="0" MainItemDur="1" SubItemCat1="14" SubItemIndex1="13" SubItemDur1="5" SubItemCat2="14" SubItemIndex2="14" SubItemDur2="5" SubItemCat3="14" SubItemIndex3="22" SubItemDur3="1" SubItemCat4="12" SubItemIndex4="15" SubItemDur4="1" ReqMoney="5000000" SuccessRate="500000" ResultItemCat="13" ResultItemIndex="4" ResultItemLevel="0" />
+		<Mix ID="1" MainItemCat="13" MainItemIndex="31" MainItemLevel="1" MainItemDur="1" SubItemCat1="14" SubItemIndex1="13" SubItemDur1="2" SubItemCat2="14" SubItemIndex2="14" SubItemDur2="2" SubItemCat3="14" SubItemIndex3="22" SubItemDur3="1" SubItemCat4="12" SubItemIndex4="15" SubItemDur4="1" ReqMoney="1000000" SuccessRate="500000" ResultItemCat="13" ResultItemIndex="5" ResultItemLevel="0" />
+	</PetItemCreation>
+
+	<GuardianItemCreation>	
+		<Mix ID="0" MainItemCat="14" MainItemIndex="477" MainItemLevel="0" MainItemDur="1" SubItemCat1="14" SubItemIndex1="466" SubItemDur1="10" SubItemCat2="14" SubItemIndex2="13" SubItemDur2="5" SubItemCat3="-1" SubItemIndex3="-1" SubItemDur3="-1" SubItemCat4="-1" SubItemIndex4="-1" SubItemDur4="-1" ReqMoney="1000000" SuccessRate="1000000" ResultItemCat="12" ResultItemIndex="471" ResultItemLevel="0" />
+	</GuardianItemCreation>
+	
+	<GuardianItemLevelUp>
+		<Mix ReqLevel="0" ItemCat1="14" ItemIndex1="467" ItemCount1="1" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="150000" SuccessRate="700000" FailType="0" />
+		<Mix ReqLevel="1" ItemCat1="14" ItemIndex1="467" ItemCount1="3" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="300000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="2" ItemCat1="14" ItemIndex1="467" ItemCount1="5" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="450000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="3" ItemCat1="14" ItemIndex1="467" ItemCount1="7" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="600000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="4" ItemCat1="14" ItemIndex1="467" ItemCount1="9" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="750000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="5" ItemCat1="14" ItemIndex1="467" ItemCount1="11" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="900000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="6" ItemCat1="14" ItemIndex1="467" ItemCount1="13" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1050000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="7" ItemCat1="14" ItemIndex1="467" ItemCount1="15" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1200000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="8" ItemCat1="14" ItemIndex1="467" ItemCount1="15" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1350000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="9" ItemCat1="14" ItemIndex1="467" ItemCount1="15" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1500000" SuccessRate="700000" FailType="1" />
+		<Mix ReqLevel="10" ItemCat1="14" ItemIndex1="468" ItemCount1="1" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1750000" SuccessRate="700000" FailType="2" />
+		<Mix ReqLevel="11" ItemCat1="14" ItemIndex1="468" ItemCount1="2" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="2000000" SuccessRate="700000" FailType="2" />
+		<Mix ReqLevel="12" ItemCat1="14" ItemIndex1="468" ItemCount1="3" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="2250000" SuccessRate="700000" FailType="2" />
+		<Mix ReqLevel="13" ItemCat1="14" ItemIndex1="468" ItemCount1="4" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="2500000" SuccessRate="700000" FailType="2" />
+		<Mix ReqLevel="14" ItemCat1="14" ItemIndex1="468" ItemCount1="5" ItemCat2="14" ItemIndex2="16" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="3000000" SuccessRate="700000" FailType="2" />
+	</GuardianItemLevelUp>
+
+	<GuardianItemOptChange>
+		<Mix ReqGuardianNum="1" SubItemCat="14" SubItemIndex="470" MaxOptCount="5" />
+	</GuardianItemOptChange>
+</GuardianItemMix>
