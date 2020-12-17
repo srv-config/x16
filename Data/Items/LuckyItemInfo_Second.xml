@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == Modify if you know what you do only!
 // == File is a part of IGCN Group MuOnline Server files.
@@ -34,9 +34,9 @@
 //		-1: Random, 1-7
 //		0: No option
 //		1-7: with option +4 to +28
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ For servers with max 16 option any higher option will be reduced to 16
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 //	Exc:
 //		-1: No exc option
@@ -55,6 +55,7 @@
 //		~ 7: Grow Lancer
 //		~ 8: Rune Wizard
 //		~ 9: Slayer
+//		~ 10: Gun Crusher
 //
 // ### LuckyItem::ItemLevelDrawSettings::List ###
 //	ID: ID of the section, links to ID from TicketSettings section
@@ -121,62 +122,67 @@
 
 	<TicketItemList>
 		<List ID="1" Name="2nd Lucky Helm Ticket">
-			<Item Cat="7" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Helm +Luck +Option (Class 4) -->
-			<Item Cat="7" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Helm +Luck +Option (Class 1) -->
-			<Item Cat="7" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Helm +Luck +Option (Class 2) -->
-			<Item Cat="7" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Helm +Luck +Option (Class 0) -->
-			<Item Cat="7" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Helm +Luck +Option (Class 5) -->
-			<Item Cat="7" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Helm +Luck +Option (Class 6) -->
-			<Item Cat="7" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Helm +Luck +Option (Class 7) -->
-			<Item Cat="7" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Helmet +Luck +Option (Class 8) -->
-			<Item Cat="7" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Helm (B) +Luck +Option (Class 9) -->
+			<Item Cat="7" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Helm -->
+			<Item Cat="7" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Helm -->
+			<Item Cat="7" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Helm -->
+			<Item Cat="7" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Helm -->
+			<Item Cat="7" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Helm -->
+			<Item Cat="7" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Helm -->
+			<Item Cat="7" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Helm -->
+			<Item Cat="7" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Helmet -->
+			<Item Cat="7" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Helm (B) -->
+			<Item Cat="7" Index="219" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="10" /> <!-- Frere Helm -->
 		</List>
 		<List ID="2" Name="2nd Lucky Armor Ticket">
-			<Item Cat="8" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Armor +Luck +Option (Class 4) -->
-			<Item Cat="8" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Armor +Luck +Option (Class 1) -->
-			<Item Cat="8" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Armor +Luck +Option (Class 2) -->
-			<Item Cat="8" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Armor +Luck +Option (Class 0) -->
-			<Item Cat="8" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Armor +Luck +Option (Class 5) -->
-			<Item Cat="8" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Armor +Luck +Option (Class 3) -->
-			<Item Cat="8" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Armor +Luck +Option (Class 6) -->
-			<Item Cat="8" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Armor +Luck +Option (Class 7) -->
-			<Item Cat="8" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Armor +Luck +Option (Class 8) -->
-			<Item Cat="8" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Armor (B) +Luck +Option (Class 9) -->
+			<Item Cat="8" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Armor -->
+			<Item Cat="8" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Armor -->
+			<Item Cat="8" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Armor -->
+			<Item Cat="8" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Armor -->
+			<Item Cat="8" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Armor -->
+			<Item Cat="8" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Armor -->
+			<Item Cat="8" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Armor -->
+			<Item Cat="8" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Armor -->
+			<Item Cat="8" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Armor -->
+			<Item Cat="8" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Armor (B) -->
+			<Item Cat="8" Index="219" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="10" /> <!-- Frere Armor -->
 		</List>
 		<List ID="3" Name="2nd Lucky Pants Ticket">
-			<Item Cat="9" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Pants +Luck +Option (Class 4) -->
-			<Item Cat="9" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Pants +Luck +Option (Class 1) -->
-			<Item Cat="9" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Pants +Luck +Option (Class 2) -->
-			<Item Cat="9" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Pants +Luck +Option (Class 0) -->
-			<Item Cat="9" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Pants +Luck +Option (Class 5) -->
-			<Item Cat="9" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Pants +Luck +Option (Class 3) -->
-			<Item Cat="9" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Pants +Luck +Option (Class 6) -->
-			<Item Cat="9" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Pants +Luck +Option (Class 7) -->
-			<Item Cat="9" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Pants +Luck +Option (Class 8) -->
-			<Item Cat="9" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Pants (B) +Luck +Option (Class 9) -->
+			<Item Cat="9" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Pants -->
+			<Item Cat="9" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Pants -->
+			<Item Cat="9" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Pants -->
+			<Item Cat="9" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Pants -->
+			<Item Cat="9" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Pants -->
+			<Item Cat="9" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Pants -->
+			<Item Cat="9" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Pants -->
+			<Item Cat="9" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Pants -->
+			<Item Cat="9" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Pants -->
+			<Item Cat="9" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Pants (B) -->
+			<Item Cat="9" Index="219" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="10" /> <!-- Frere Pants -->
 		</List>
 		<List ID="4" Name="2nd Lucky Gloves Ticket">
-			<Item Cat="10" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Gloves +Luck +Option (Class 4) -->
-			<Item Cat="10" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Gloves +Luck +Option (Class 1) -->
-			<Item Cat="10" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Gloves +Luck +Option (Class 2) -->
-			<Item Cat="10" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Gloves +Luck +Option (Class 0) -->
-			<Item Cat="10" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Gloves +Luck +Option (Class 5) -->
-			<Item Cat="10" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Gloves +Luck +Option (Class 3) -->
-			<Item Cat="10" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie +Luck +Option (Class 7) -->
-			<Item Cat="10" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Gloves +Luck +Option (Class 8) -->
-			<Item Cat="10" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Gloves (B) +Luck +Option (Class 9) -->
+			<Item Cat="10" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Gloves -->
+			<Item Cat="10" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Gloves -->
+			<Item Cat="10" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Gloves -->
+			<Item Cat="10" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Gloves -->
+			<Item Cat="10" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Gloves -->
+			<Item Cat="10" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Gloves -->
+			<Item Cat="10" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie -->
+			<Item Cat="10" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Gloves -->
+			<Item Cat="10" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Gloves (B) -->
+			<Item Cat="10" Index="219" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="10" /> <!-- Frere Gloves -->
 		</List>
 		<List ID="5" Name="2nd Lucky Boots Ticket">
-			<Item Cat="11" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Boots +Luck +Option (Class 4) -->
-			<Item Cat="11" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Boots +Luck +Option (Class 1) -->
-			<Item Cat="11" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Boots +Luck +Option (Class 2) -->
-			<Item Cat="11" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Boots +Luck +Option (Class 0) -->
-			<Item Cat="11" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Boots +Luck +Option (Class 5) -->
-			<Item Cat="11" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Boots +Luck +Option (Class 3) -->
-			<Item Cat="11" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Boots +Luck +Option (Class 6) -->
-			<Item Cat="11" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Boots +Luck +Option (Class 7) -->
-			<Item Cat="11" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Boots +Luck +Option (Class 8) -->
-			<Item Cat="11" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Boots (B) +Luck +Option (Class 9) -->
+			<Item Cat="11" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Boots -->
+			<Item Cat="11" Index="67" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Dragon Boots -->
+			<Item Cat="11" Index="68" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Guardian Boots -->
+			<Item Cat="11" Index="69" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Legendary Boots -->
+			<Item Cat="11" Index="70" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Red Wing Boots -->
+			<Item Cat="11" Index="71" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Atlans Boots -->
+			<Item Cat="11" Index="72" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Storm Jahad Boots -->
+			<Item Cat="11" Index="97" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Princie Boots -->
+			<Item Cat="11" Index="125" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Legendary Boots -->
+			<Item Cat="11" Index="187" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Demonic Boots (B) -->
+			<Item Cat="11" Index="219" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="10" /> <!-- Frere Boots -->
 		</List>
 	</TicketItemList>
 

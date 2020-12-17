@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -131,16 +131,20 @@
 //		0: None
 //		1: Damage Decrease
 //		2: Defense Success Rate increase
+//		3: Damage Decrease (to be set if formula is used)
+//		4. Base Defense Increase (to be set if formula is used)
 //
 //	Life: Option effect type (Life)
 //		0: None
 //		1: Obtains Life when monster is killed
 //		2: Increase Maximum Life
+//		3: Increase Maximum Life (to be set if formula is used)
 //
 //	Mana: Option effect type (Mana)
 //		0: None
 //		1: Obtains Mana when monster is killed
 //		2: Increase Maximum Mana
+//		3: Increase Maximum Mana (to be set if formula is used)
 //
 //	Skill: Option effect type (Skill)
 //		0: None
@@ -196,7 +200,7 @@
 		<Option ID="10" Number="2" Operator="2"   Value="4"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Decreases Damage by %d%%" />
 		<Option ID="11" Number="3" Operator="2"   Value="5"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="15" ItemKindA_4="18" Rate="5000" Name="Reflect Damage increase by %d%%" />
 		<Option ID="12" Number="4" Operator="2"   Value="10" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="15" ItemKindA_4="18" Rate="5000" Name="Increases Defense Success Rate by %d%%" />
-		<Option ID="13" Number="5" Operator="1"   Value="30" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increases the amount of Zen acquired for hunting monsters by %d%%" />
+		<Option ID="13" Number="5" Operator="2"   Value="30" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increases the amount of Zen acquired for hunting monsters by %d%%" />
 		<Option ID="14" Number="6" Operator="100" Value="2"  FormulaID="2"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Life by %d" />
 		<Option ID="15" Number="7" Operator="100" Value="3"  FormulaID="3"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Mana by %d" />
 		<Option ID="16" Number="8" Operator="100" Value="4"  FormulaID="4"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Decreases Damage by %d" />

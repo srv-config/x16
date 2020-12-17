@@ -639,7 +639,7 @@
 		<Msg ID="610" Text="[OFF-LEVEL / AFK]" />
 		<Msg ID="611" Text="!!! [%s] just successfully mixed %s +15 !!!" />
 		<Msg ID="612" Text="You need to be at least level %d to teleport to your partner location" />
-		<Msg ID="613" Text="" /> <!-- Empty -->
+		<Msg ID="613" Text="You are above maximum level of %d to move to that location." />
 		<Msg ID="614" Text="Divorcing is not allowed" />
 		<Msg ID="615" Text="Another mount is already used." />
 		<Msg ID="616" Text="Cannot unequip mount." />
@@ -793,7 +793,8 @@
 		<Msg ID="766" Text="Awakening failure, Awakening Monster is in compensation status." />
 		<Msg ID="767" Text="Awakening is not a monster with a failure or permission relationship." />
 		<Msg ID="768" Text="%s has earned %s." />
-		<!-- 769~771 -->
+		<Msg ID="769" Text="%s's evolution monster has disappeared." />
+		<!-- 770~771 -->
 		<Msg ID="772" Text="Slayer" />
 		<!-- 773 -->
 		<Msg ID="774" Text="Creating party is possible only if level difference between players is not higher than %d" />
@@ -807,6 +808,8 @@
 		<Msg ID="782" Text="Reset" />
 		<Msg ID="783" Text="Milestone Reset" />
 		<Msg ID="784" Text="You have exceeded the amount of Ruud you can possess." />
+		<Msg ID="785" Text="Gun Crusher" />
+		<Msg ID="786" Text="[Warning]: to use /post you need %d resets" />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
@@ -931,5 +934,7 @@
 		<Msg ID="129" Text="Abyss of Atlas 2" />
 		<Msg ID="130" Text="Abyss of Atlas 3" />
 		<Msg ID="131" Text="Scorched Canyon" />
+		<Msg ID="132" Text="Red Smoke Icarus" />
+		<Msg ID="133" Text="Temple of Arenil" />
 	</Map>
 </Language>

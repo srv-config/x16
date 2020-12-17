@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -275,6 +275,31 @@
 	<Item KindA="14" Cat="4" Index="34" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
 	<Item KindA="14" Cat="4" Index="34" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
 	<Item KindA="14" Cat="4" Index="34" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+<!-- Bloodangel Magic Gun -->
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;6;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;6;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;6;-1;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;6;-1;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;7;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;7;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;7;-1;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;7;-1;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;4;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;4;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;4;-1;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;4;-1;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;5;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;5;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;5;-1;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;5;-1;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="80000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="2" Rate="40000" LuckRate="500000" SkillRate="1000000" />
+	<Item KindA="14" Cat="4" Index="48" ExcOption="0;3;6;-1;-1;-1;-1;-1;-1" BonusOption="3" Rate="40000" LuckRate="500000" SkillRate="1000000" />
 <!-- Bloodangel Staff -->
 	<Item KindA="14" Cat="5" Index="41" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="-1" Rate="40000" LuckRate="500000" SkillRate="1000000" />
 	<Item KindA="14" Cat="5" Index="41" ExcOption="0;3;-1;-1;-1;-1;-1;-1;-1" BonusOption="1" Rate="40000" LuckRate="500000" SkillRate="1000000" />

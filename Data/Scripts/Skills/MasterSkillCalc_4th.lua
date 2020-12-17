@@ -22,15 +22,15 @@ CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER										  = 9
+CLASS_GUNCRUSHER									  = 10
 
--- SkillID: 1071, Soul Barrier Strengthener - (Grand Master)
 function DeathStab_4thEnchant_Knight(InDamage, Energy)
 	local OutDamage = InDamage * (Energy / 10 + 200) / 100
 	
 	return OutDamage
 end
 
-function RagefulBlow_4thEnchant_Knight(InDamage, Energy)
+function AngerBlow_4thEnchant(Class, InDamage, Strength, Dexterity, Vitality, Energy)
 	local OutDamage = InDamage * (Energy / 10 + 200) / 100
 	
 	return OutDamage
@@ -245,4 +245,72 @@ end
 function PierceAttack_4thEnchant_Slayer(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	return OutDamage
-end	
+end
+
+function StrikeOfDestruction_4thEnchant_Knight(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * (Energy / 10 + 200) / 100
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 1203, Sword Blow Enhancement Skill
+function SwordBlow_4thEnchant_Knight(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = (InDamage * 1.2) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 4) then
+		OutDamage = (InDamage * 1.4) * (Energy / 10 + 200) / 100
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 1204, Solid Protection Enhanced
+function SolidProtection_4thEnchant_Knight(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local AbsorbHP = 2.21
+	local ConvertDamage = 2.21
+	local IncAtkPower = 2.21
+	local Duration = 180
+	
+	return AbsorbHP, IncAtkPower, ConvertDamage, Duration
+end
+
+-- SkillID: 1211, Dark Plasma Enhancement Skill
+function DarkPlasma_4thEnchant_GunCrusher(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 1212, Ice Blast Enhancement Skill
+function IceBlast_4thEnchant_GunCrusher(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	
+	return OutDamage
+end
+
+-- SkillID: 1213, Busting Flare Enhancement Skill
+function BurstingFlare_4thEnchant_GunCrusher(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	end
+	
+	return OutDamage
+end

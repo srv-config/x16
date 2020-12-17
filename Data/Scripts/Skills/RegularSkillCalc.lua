@@ -23,8 +23,9 @@ CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER									 	  = 9
+CLASS_GUNCRUSHER									  = 10
 
--- SkillID: 16, Soul Barrier - (Dark Wizard, Soul Master, Grand Master)
+-- SkillID: 16, Soul Barrier
 function WizardMagicDefense(Index, TargetIndex, Dexterity, Energy)
 	local SkillEffect = Dexterity / 50 + Energy / 200 + 10
 	local SkillTime = Energy / 40 + 60
@@ -38,37 +39,50 @@ function WizardMagicDefense(Index, TargetIndex, Dexterity, Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 40, Nova - (Dark Wizard, Soul Master, Grand Master)
+-- SkillID: 40, Nova
 function Wizard_NovaSkillCalc(InDamage, Energy)
  local OutDamage = InDamage
  
  return OutDamage
 end
 
--- SkillID: 724, Meteor Strike - (Dark Wizard, Soul Master, Grand Master)
+-- SkillID: 42, Anger Blow
+function AngerBlow_Calc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
+ local OutDamage = 0
+ 
+ 	if (Class == CLASS_KNIGHT) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	elseif (Class == CLASS_SLAYER) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	end
+ 
+ return OutDamage
+end
+
+-- SkillID: 724, Meteor Strike
 function WizardMeteorStrikeCalcDamage(InDamage, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 725, Meteor Storm - (Dark Wizard, Soul Master, Grand Master)
+-- SkillID: 725, Meteor Storm
 function WizardMeteorStormCalcDamage(InDamage, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 726, Soul Seeker - (Dark Wizard, Soul Master, Grand Master)
+-- SkillID: 726, Soul Seeker
 function WizardSoulSeekerCalcDamage(InDamage, Energy)
  local OutDamage = InDamage
  
  return OutDamage
 end
 
--- SkillID: 19, 20, 21, 22, 23, 41, 42, 43, 44, 49, 55, 57, Falling Slash, Lunge, Uppercut,
--- Cyclone, Slash, Twisting Slash, Rageful Blow, Death Stab,Crescent Moon Slash, Fire Breath,
--- Fire Slash, Spiral Slash - (Dark Knight, Blade Knight, Blade Master, Magic Gladiator, Duel Master)
+-- SkillID: 19, 20, 21, 22, 23, 41, 43, 44, 49, 55, 57, Falling Slash, Lunge, Uppercut,
+-- Cyclone, Slash, Twisting Slash, Death Stab, Crescent Moon Slash, Fire Breath,
+-- Fire Slash, Spiral Slash
 function Knight_Gladiator_CalcSkillBonus(SkillID, Class, InDamage, Strength, Energy)	
 	local OutDamage = 0
 	
@@ -81,7 +95,7 @@ function Knight_Gladiator_CalcSkillBonus(SkillID, Class, InDamage, Strength, Ene
 	return OutDamage
 end
 
--- SkillID: 48, Swell Life - (Dark Knight, Blade Knight, Blade Master)
+-- SkillID: 48, Swell Life
 function KnightSkillAddLife(Vitality, Energy, PartyBonus)
 	local SkillEffect = Vitality / 100 + 12 + Energy / 20 + PartyBonus
 	local SkillTime = Energy / 10 + 60
@@ -89,7 +103,7 @@ function KnightSkillAddLife(Vitality, Energy, PartyBonus)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 232, Strike of Destruction -(Dark Knight, Blade Knight, Blade Master)
+-- SkillID: 232, Strike of Destruction
 function StrikeOfDestructionCalc(InDamage, Energy)
 	local OutDamage = InDamage * (Energy /10 + 200) / 100;
 	
@@ -103,14 +117,14 @@ function KnightFireBlowCalcDamage(InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: X, Combo Skill - (Dark Knight, Blade Knight, Blade Master)
+-- SkillID: X, Combo Skill
 function ComboSkillDamage(Strength, Dexterity, Vitality, Energy, InDamage)
  local Damage = (Strength * 1.5) + Dexterity + Energy
  local OutDamage = InDamage
  return Damage, OutDamage
 end
 
--- SkillID: 731, Ice Blood - (Blade Master)
+-- SkillID: 731, Ice Blood
 function GladiatorIceBloodCalcDamageAndDot(InDamage, Energy)
 	local OutDamage = InDamage * 2
 	local SuccessRate = 6
@@ -119,7 +133,7 @@ function GladiatorIceBloodCalcDamageAndDot(InDamage, Energy)
 	return OutDamage, SuccessRate, DebuffTime
 end
 
--- SkillID: 732, Fire Blood - (Blade Master)
+-- SkillID: 732, Fire Blood
 function GladiatorFireBloodCalcDamageAndDot(InDamage, Strength, Energy)
 	local OutDamage = InDamage * 2
 	local SuccessRate = 6
@@ -129,28 +143,28 @@ function GladiatorFireBloodCalcDamageAndDot(InDamage, Strength, Energy)
 	return OutDamage, SuccessRate, DebuffDamage, DebuffTime
 end
 
--- SkillID: 733, Dark Blast - (Blade Master)
+-- SkillID: 733, Dark Blast
 function GladiatorDarkBlastCalcDamage(InDamage, Strength, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 46, 51, 52, Starfall, Ice Arrow, Penetration - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 46, 51, 52, Starfall, Ice Arrow, Penetration
 function Elf_CalcSkillBonus(SkillID, InDamage, Dexterity, Energy)
 	local OutDamage = InDamage * 2
 	
 	return OutDamage
 end
 
--- SkillID: 24, Triple-Shot - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 24, Triple-Shot
 function Elf_CalcTripleShot(InDamage, Strength, Dexterity, Energy)
  local OutDamage = InDamage
  
  return OutDamage
 end
 
--- SkillID: 26, Heal - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 26, Heal
 function ElfHeal(Class, Index, TargetIndex, Energy)
 	local SkillEffect = 0
 	
@@ -177,6 +191,8 @@ function ElfHeal(Class, Index, TargetIndex, Energy)
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -185,7 +201,7 @@ function ElfHeal(Class, Index, TargetIndex, Energy)
 	return SkillEffect
 end
 
--- SkillID: 28, Greater Damage - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 28, Greater Damage
 function ElfAttack(Class, Index, TargetIndex, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
@@ -210,7 +226,9 @@ function ElfAttack(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_SLAYER) then
-			SkillEffect = 3 + Energy / 7				
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -219,7 +237,7 @@ function ElfAttack(Class, Index, TargetIndex, Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 27, Greater Defense - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 27, Greater Defense
 function ElfDefense(Class, Index, TargetIndex, Energy)
 	local SkillEffect = 0
 	local SkillTime = 60
@@ -244,7 +262,9 @@ function ElfDefense(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_SLAYER) then
-			SkillEffect = 2 + Energy / 8			
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -253,28 +273,28 @@ function ElfDefense(Class, Index, TargetIndex, Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 234, Recovery - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 234, Recovery
 function ElfShieldRecovery(Energy, PlayerLevel)
  local SkillEffect = Energy / 4 + PlayerLevel
  
  return SkillEffect
 end
 
--- SkillID: 235, Multi-Shot - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 235, Multi-Shot
 function MultiShotCalc(InDamage, Dexterity, Energy)
  local OutDamage = InDamage
  
  return OutDamage
 end
 
--- SkillID: 727, Focus Shot - (Fairy Elf, Muse Elf, High Elf)
+-- SkillID: 727, Focus Shot
 function ElfFocusShotCalcDamage(InDamage, Strength, Dexterity, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 47, Impale -(Magic Gladiator, Duel Master, Dark Lord, Lord Emperor)
+-- SkillID: 47, Impale
 function ImpaleSkillCalc(Class, InDamage, Energy)
 	local OutDamage = 0
 	
@@ -287,7 +307,7 @@ function ImpaleSkillCalc(Class, InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: 55, Fire Slash - (Magic Gladiator, Duel Master)
+-- SkillID: 55, Fire Slash
 function GladiatorFireSlash(InDamage, Strength, Energy, BarrageCount)
     local OutDamage = 0
     
@@ -303,42 +323,42 @@ function GladiatorFireSlash(InDamage, Strength, Energy, BarrageCount)
     return OutDamage
 end
 
--- SkillID: 56, Power Slash - (Magic Gladiator, Duel Master)
+-- SkillID: 56, Power Slash
 function GladiatorPowerSlash(InDamage, Energy)
 	local OutDamage = InDamage * 2
 	
 	return OutDamage
 end
 
--- SkillID: 236, Flame Strike - (Magic Gladiator, Duel Master)
+-- SkillID: 236, Flame Strike
 function FlameStrikeCalc(InDamage, Energy)
 	local OutDamage = InDamage * 2
 	
 	return OutDamage
 end
 
--- SkillID: 237, Gigantic Storm - (Magic Gladiator, Duel Master)
+-- SkillID: 237, Gigantic Storm
 function GiganticStormCalc(InDamage, Strength, Dexterity, Energy)
  local OutDamage = InDamage
  
  return OutDamage
 end
 
--- SkillID: 724, Meteor Strike - (Magic Gladiator, Duel Master)
+-- SkillID: 724, Meteor Strike
 function GladiatorMeteorStrikeCalcDamage(InDamage, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 60 ,61, 62, 65, 74, 78, Force, Fire Burst, Earthshake, Electric Spike, Fire Blast, Fire Scream - (Dark Lord, Lord Emperor)
+-- SkillID: 60 ,61, 62, 65, 74, 78, Force, Fire Burst, Earthshake, Electric Spike, Fire Blast, Fire Scream
 function Lord_CalcSkillBonus(SkillID, InDamage, Strength, Energy, Command)
 	local OutDamage = ( InDamage * ( ( Energy / 20 + 200 ) ) ) / 100;
 	
 	return OutDamage
 end
 
--- SkillID: 64, Increase Critical Damage - (Dark Lord, Lord Emperor)
+-- SkillID: 64, Increase Critical Damage
 function DarkLordCriticalDamage(Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
@@ -346,7 +366,7 @@ function DarkLordCriticalDamage(Command, Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 238, Chaotic Diseier - (Dark Lord, Lord Emperor)
+-- SkillID: 238, Chaotic Diseier
 function ChaoticDiseierCalc(InDamage, Energy)
 	local OutDamage = InDamage * (Energy / 25 + 200) / 100
 	
@@ -360,21 +380,21 @@ function LordWindSoulCalcDamage(InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: 214, Drain Life - PVP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 214, Drain Life - PVP
 function SummonerDrainLife_PvP(Energy, Damage)
 	local AddHP = Energy / 23 + (10 * Damage / 100)
 	
 	return AddHP
 end
 
--- SkillID: 214, Drain Life - MvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 214, Drain Life - MvP
 function SummonerDrainLife_Monster(Energy, MonsterLevel)
 	local AddHP = (Energy / 15) + (MonsterLevel / 2.5)
 	
 	return AddHP
 end
 
--- SkillID: 215, Chain Lighting - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 215, Chain Lighting
 function ChainLightningCalc(InDamage, TargetNumber)
 	local DamagePercent = 0
 	
@@ -393,7 +413,7 @@ function ChainLightningCalc(InDamage, TargetNumber)
 	return OutDamage
 end
 
--- SkillID: 217, Damage Reflection - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 217, Damage Reflection
 function SummonerDamageReflect(Energy)
 	local Reflect = 30 + (Energy / 42)
 	local Time = 30 + (Energy / 25)
@@ -405,7 +425,7 @@ function SummonerDamageReflect(Energy)
 	return Reflect, Time
 end
 
--- SkillID: 218, Berserker - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 218, Berserker
 function SummonerBerserker(Energy)
 	local SkillEffectUP = (Energy / 30)
 	local SkillEffectDOWN = (Energy / 60)
@@ -414,7 +434,7 @@ function SummonerBerserker(Energy)
 	return SkillEffectUP, SkillEffectDOWN, SkillTime
 end
 
--- SkillID: 218, Berserker - Magic Damage - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 218, Berserker - Magic Damage
 function SummonerBerserkerMagicDamage(Energy, Effect)
 	local MagicMin = (Energy / 9) * Effect / 100
 	local MagicMax = (Energy / 4) * Effect / 100
@@ -422,7 +442,7 @@ function SummonerBerserkerMagicDamage(Energy, Effect)
 	return MagicMin, MagicMax
 end
 
--- SkillID: 289, Darkness - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 289, Darkness
 function SummonerDarkness(Energy)
 	local SkillEffectUP = (Energy / 30)
 	local SkillEffectDOWN = (Energy / 60)
@@ -430,7 +450,7 @@ function SummonerDarkness(Energy)
 	return SkillEffectUP, SkillEffectDOWN
 end
 
--- SkillID: 289, Darkness - Curse Damage - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 289, Darkness - Curse Damage
 function SummonerDarknessCurseDamage(Energy, Effect)
 	local CurseMin = ((Energy / 9) + 0.015) * Effect / 100
 	local CurseMax = ((Energy / 4) + 0.015) * Effect / 100
@@ -438,7 +458,7 @@ function SummonerDarknessCurseDamage(Energy, Effect)
 	return CurseMin, CurseMax
 end
 
--- SkillID: 219, Sleep - MvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 219, Sleep - MvP
 function Sleep_Monster(Energy, Curse, MonsterLevel)
 	local SkillSuccessRate = Energy / 30 + Curse / 6 + 20
 	local SkillTime = Energy / 100 + 5 - MonsterLevel / 20
@@ -446,7 +466,7 @@ function Sleep_Monster(Energy, Curse, MonsterLevel)
 	return SkillSuccessRate, SkillTime
 end
 
--- SkillID: 219, Sleep - PvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 219, Sleep - PvP
 function Sleep_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	local SkillSuccessRate = Energy / 37 + Curse / 6 + 15
 	local SkillTime = Energy / 250 + (PlayerLevel - TargetLevel) / 100 + 4
@@ -454,7 +474,7 @@ function Sleep_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	return SkillSuccessRate, SkillTime
 end
 
--- SkillID: 221, Weakness - MvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 221, Weakness - MvP
 function SummonerWeakness_Monster(Energy, Curse, MonsterLevel)
 	local SkillSuccessRate = Energy / 50 + Curse / 6 + 32
 	local SkillEffect = Energy / 58 + 4
@@ -463,7 +483,7 @@ function SummonerWeakness_Monster(Energy, Curse, MonsterLevel)
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
 
--- SkillID: 221, Weakness - PvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 221, Weakness - PvP
 function SummonerWeakness_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 93 + 3
@@ -472,7 +492,7 @@ function SummonerWeakness_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
 
--- SkillID: 222, Innovation - MvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 222, Innovation - MvP
 function SummonerInnovation_Monster(Energy, Curse, MonsterLevel)
 	local SkillSuccessRate = Energy / 50 + Curse / 6 + 32
 	local SkillEffect = Energy / 90 + 20
@@ -481,7 +501,7 @@ function SummonerInnovation_Monster(Energy, Curse, MonsterLevel)
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
 
--- SkillID: 222, Innovation - PvP - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 222, Innovation - PvP
 function SummonerInnovation_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 110 + 12
@@ -490,7 +510,7 @@ function SummonerInnovation_PvP(Energy, Curse, PlayerLevel, TargetLevel)
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
 
--- SkillID: 223, Explosion - Damage over time - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 223, Explosion - Damage over time
 function ExplosionDotDamage(Damage)
 	local DotDamage = Damage * 60 / 100
 	local Time = 5
@@ -498,7 +518,7 @@ function ExplosionDotDamage(Damage)
 	return DotDamage, Time
 end
 
--- SkillID: 224, Requiem - Damage over time - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 224, Requiem - Damage over time
 function RequiemDotDamage(Damage)
 	local DotDamage = Damage * 60 / 100
 	local Time = 5
@@ -506,7 +526,7 @@ function RequiemDotDamage(Damage)
 	return DotDamage, Time
 end
 
--- SkillID: 230, Lightning Shock - (Summoner, Bloody Summoner, Dimension Master)
+-- SkillID: 230, Lightning Shock
 function SummonerLightningShock(InDamage, Energy)
 	local OutDamage = InDamage
 	
@@ -527,42 +547,42 @@ function SummonerAquaBeastCalcDamage(InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: 260, Killing Blow - (Rage Fighter, Fist Master)
+-- SkillID: 260, Killing Blow
 function RageFighterKillingBlow(InDamage, Vitality)
 	local OutDamage = InDamage * (Vitality / 10 + 50) / 100.0
 	
 	return OutDamage
 end
 
--- SkillID: 261, Beast Uppercut - (Rage Fighter, Fist Master)
+-- SkillID: 261, Beast Uppercut
 function RageFighterBeastUppercut(InDamage, Vitality)
 	local OutDamage = InDamage * (Vitality / 10 + 50) / 100.0
 	
 	return OutDamage
 end
 
--- SkillID: 262, Chain Drive - (Rage Fighter, Fist Master)
+-- SkillID: 262, Chain Drive
 function RageFighterChainDrive(InDamage, Vitality)
 	local OutDamage = (InDamage + Vitality / 10) * (Vitality / 10 + 50) / 100.0
 	
 	return OutDamage
 end
 
--- SkillID: 263, Dark Side - (Rage Fighter, Fist Master)
+-- SkillID: 263, Dark Side
 function RageFighterDarkSideIncDamage(InDamage, Dexterity, Energy)
  local OutDamage = (Dexterity / 8 + InDamage + Energy / 10) * (Dexterity / 8 + Energy / 10 + 100) / 100.0
  
  return OutDamage
 end
 
--- SkillID: 264, Dragon Roar - (Rage Fighter, Fist Master)
+-- SkillID: 264, Dragon Roar
 function RageFighterDragonRoar(InDamage, Energy)
 	local OutDamage = (InDamage + Energy / 10) * (Energy / 10 + 50) / 100.0
 	
 	return OutDamage
 end
 
--- SkillID: 265, Dragon Slasher - (Rage Fighter, Fist Master)
+-- SkillID: 265, Dragon Slasher
 function RageFighterDragonSlasher(InDamage, Energy, TargetType)
 	local OutDamage = 0
 	
@@ -575,7 +595,7 @@ function RageFighterDragonSlasher(InDamage, Energy, TargetType)
 	return OutDamage
 end
 
--- SkillID: 265, 564 - Dragon Slasher - SD Reduction - (Rage Fighter, Fist Master)
+-- SkillID: 265, 564 - Dragon Slasher - SD Reduction
 function DragonSlasher_DecreaseVictimSD(SkillID, Strength, Energy)
 	local SuccessRate = 0
 	local DecreasePercent = 0
@@ -593,7 +613,7 @@ function DragonSlasher_DecreaseVictimSD(SkillID, Strength, Energy)
 	
 	return SuccessRate, DecreasePercent
 end
--- SkillID: 266, Ignore Defense - (Rage Fighter, Fist Master)
+-- SkillID: 266, Ignore Defense
 function FighterIgnoreEnemyDefCalcEffect(Energy)
 	local SkillEffect = (Energy - 404) / 100 + 3.0
 	local SkillTime = Energy / 5 + 60
@@ -605,7 +625,7 @@ function FighterIgnoreEnemyDefCalcEffect(Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 267, Increase Health - (Rage Fighter, Fist Master)
+-- SkillID: 267, Increase Health
 function FighterIncLifeCalcEffect(Energy)
 	local SkillEffect = (Energy - 132) / 10.0 + 30.0;
 	local SkillTime = Energy / 5 + 60
@@ -613,7 +633,7 @@ function FighterIncLifeCalcEffect(Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 268, Increase Block - (Rage Fighter, Fist Master)
+-- SkillID: 268, Increase Block
 function FighterIncDefRateCalcEffect(Energy)
 	local SkillEffect = (Energy - 80) / 10.0 + 10.0;
 	local SkillTime = Energy / 5 + 60
@@ -625,21 +645,21 @@ function FighterIncDefRateCalcEffect(Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 269, Charge - (Rage Fighter, Fist Master)
+-- SkillID: 269, Charge
 function RageFighterCharge(InDamage, Vitality)
 	local OutDamage = InDamage * (Vitality / 10 + 50) / 100.0
 	
 	return OutDamage
 end
 
--- SkillID: 270, Phoenix Shot - (Rage Fighter, Fist Master)
+-- SkillID: 270, Phoenix Shot
 function RageFighterPhoenixShot(InDamage, Dexterity, Vitality)
 	local OutDamage = InDamage * (Vitality / 10 + 200) / 100.0
  
 	return OutDamage
 end
 
--- SkillID: 282, Spirit Hook - (Fist Master)
+-- SkillID: 282, Spirit Hook
 function RageFighterSpiritHook(InDamage, Vitality)
 	local OutDamage = (InDamage + Vitality / 10) * (Vitality / 10 + 50) / 100.0
 	
@@ -669,7 +689,7 @@ function FenrirSkillCalc(InDamage, PlayerLevel, PlayerMasterLevel)
 	return OutDamage
 end
 
--- SkillID: 271, Spin Step - (Grow Lancer, Mirage Lancer)
+-- SkillID: 271, Spin Step
 function GrowLancerSpinStep(InDamage, Dexterity, SkillTreeBonus)
 	local OutDamage = (InDamage * 1.1) * (Dexterity / 10 + 97 + SkillTreeBonus) / 100.0
 	local ExplosionDamage = (InDamage * 0.7) * (Dexterity / 10 + 97 + SkillTreeBonus) / 100.0
@@ -677,7 +697,7 @@ function GrowLancerSpinStep(InDamage, Dexterity, SkillTreeBonus)
 	return OutDamage, ExplosionDamage
 end
 
--- SkillID: 276, Harsh Strike - (Grow Lancer, Mirage Lancer)
+-- SkillID: 276, Harsh Strike
 function GrowLancerHarshStrike(InDamage, Strength, SkillTreeBonus, BarrageCount)
 	local OutDamage = 0
 	
@@ -690,7 +710,7 @@ function GrowLancerHarshStrike(InDamage, Strength, SkillTreeBonus, BarrageCount)
 	return OutDamage
 end
 
--- SkillID: 274, Magic Pin - (Grow Lancer, Mirage Lancer)
+-- SkillID: 274, Magic Pin
 function GrowLancerMagicPin(InDamage, Dexterity, SkillTreeBonus, BarrageCount)
 	local OutDamage = 0
 	
@@ -705,14 +725,14 @@ function GrowLancerMagicPin(InDamage, Dexterity, SkillTreeBonus, BarrageCount)
 	return OutDamage
 end
 
--- SkillID: 279, Breche - (Grow Lancer, Mirage Lancer)
+-- SkillID: 279, Breche
 function GrowLancerBreche(InDamage, Strength, SkillTreeBonus)
 	local OutDamage = (InDamage * 0.5) * (Strength / 10 + 97 + SkillTreeBonus) / 100.0
 
 	return OutDamage
 end
 
--- SkillID: 277, Shining Peak - (Grow Lancer, Mirage Lancer)
+-- SkillID: 277, Shining Peak
 function GrowLancerShiningPeak(InDamage, Strength, Dexterity, SkillTreeBonus_Retailation, SkillTreeBonus_Rage)
 	local OutDamage = InDamage * (((Strength / 10 + 97 + SkillTreeBonus_Retailation) + (Dexterity / 10 + 97 + SkillTreeBonus_Rage)) * 0.8) / 100.0
 	OutDamage = OutDamage / 3
@@ -720,7 +740,7 @@ function GrowLancerShiningPeak(InDamage, Strength, Dexterity, SkillTreeBonus_Ret
 	return OutDamage
 end
 
--- SkillID: 278, Wrath - (Grow Lancer, Mirage Lancer)
+-- SkillID: 278, Wrath
 function GrowLancerWrath(Strength, Dexterity, Energy)
 	local SkillIncDamage = 50
 	local SkillDecDefense = 30
@@ -729,7 +749,7 @@ function GrowLancerWrath(Strength, Dexterity, Energy)
 	return SkillIncDamage, SkillDecDefense, SkillTime
 end
 
--- SkillID: 273, Obsidian - (Grow Lancer, Mirage Lancer)
+-- SkillID: 273, Obsidian
 function GrowLancerObsidian(Strength, Dexterity, Energy)
 	local SkillEffect = Strength / 20
 	local SkillTime = 120
@@ -783,7 +803,7 @@ function BlindingBuffCalcSuccessAndTime(CharacterLevel)
 	return SuccessRate, Duration
 end
 
--- SkillID: 739, Dark Phoenix Shot - (Rage Fighter, Fist Master)
+-- SkillID: 739, Dark Phoenix Shot
 function FighterDarkPhoenixShotCalcDamage(InDamage, Dexterity, Vitality)
 	local OutDamage = InDamage * (Dexterity / 10 + 50) / 100.0
  
@@ -791,28 +811,28 @@ function FighterDarkPhoenixShotCalcDamage(InDamage, Dexterity, Vitality)
 end
 
 
--- SkillID: 283, Magic Arrow - (Rune Wizard, Rune Spell Master, Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 283, Magic Arrow
 function RuneWizardMagicArrowCalcDamage(InDamage, Strength, Dexterity, Vitality, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 284, Plasma Ball - (Rune Spell Master, Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 284, Plasma Ball
 function RuneWizardPlasmaBallCalcDamage(InDamage, Strength, Dexterity, Vitality, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 285, Lightning Storm - (Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 285, Lightning Storm
 function RuneWizardLightningStormCalcDamage(InDamage, Strength, Dexterity, Vitality, Energy)
 	local OutDamage = InDamage
 	
 	return OutDamage
 end
 
--- SkillID: 286, Burst - (Rune Spell Master, Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 286, Burst
 function RuneWizardBurstCalc(Energy)
 	local SkillEffect1 = Energy / 30
 	local SkillEffect2 = Energy / 100
@@ -821,7 +841,7 @@ function RuneWizardBurstCalc(Energy)
 	return SkillEffect1, SkillEffect2, SkillTime
 end
 
--- SkillID: 287, Haste - (Rune Spell Master, Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 287, Haste
 function RuneWizardHasteCalc(Energy)
 	local SkillEffect1 = Energy / 30
 	local SkillEffect2 = Energy / 100
@@ -830,7 +850,7 @@ function RuneWizardHasteCalc(Energy)
 	return SkillEffect1, SkillEffect2, SkillTime
 end
 
--- SkillID: 233: Expansion of Wizardry - (Dark Wizard, Soul Master, Grand Master, Rune Spell Master, Grand Rune Master, Grand Rune Wizard)
+-- SkillID: 233: Expansion of Wizardry
 function WizardExpansionWizardryCalc(Class, Energy)
 	local SkillEffect = Energy / 9 * 0.20
 	local SkillTime = 1800
@@ -838,7 +858,7 @@ function WizardExpansionWizardryCalc(Class, Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 293, Bat Flock - (Damage over time) - (Slayer, Royal Slayer, Master Slayer)
+-- SkillID: 293, Bat Flock - (Damage over time)
 function BatFlock_DotDamage(InDamage, Strength, Energy)
 	local Damage = InDamage
 	local DotDamage = InDamage / 10
@@ -847,7 +867,7 @@ function BatFlock_DotDamage(InDamage, Strength, Energy)
 	return Damage, DotDamage, Time
 end
 
--- SkillID: 293, Bat Flock - (Damage) - (Slayer, Royal Slayer, Master Slayer)
+-- SkillID: 293, Bat Flock - (Damage)
 function SlayerBatFlockCalc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.5
@@ -855,13 +875,13 @@ function SlayerBatFlockCalc(InDamage, Strength, Dexterity)
 	return OutDamage
 end
 
--- SkillID: 294, Pierce Attack - (Slayer, Royal Slayer, Master Slayer)
+-- SkillID: 294, Pierce Attack
 function SlayerPierceAttackCalc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	return OutDamage
 end
 
--- SkillID: 292, Sword Inertia - (Slayer, Royal Slayer, Master Slayer)
+-- SkillID: 292, Sword Inertia
 function SlayerSwordInertiaCalc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.16
@@ -869,11 +889,121 @@ function SlayerSwordInertiaCalc(InDamage, Strength, Dexterity)
 	return OutDamage
 end
 
--- SkillID: 297, Demolish - (Slayer, Royal Slayer, Master Slayer)
+-- SkillID: 297, Demolish
 function SlayerDemolishCalc(Strength, Dexterity, Vitality, Energy)
 	local SkillEffect = ((Strength / 8) + (Dexterity / 28) + 120)
 	local SkillTime = 60
 	SkillEffect = SkillEffect * 0.03
 	
 	return SkillEffect, SkillTime
+end
+
+-- SkillID: 1500, Sword's Fury
+function KnightSwordAngerCalc(Strength, Dexterity, Vitality, Energy)
+	local SkillAddRange = 1
+	local SkillTime = -10
+	
+	return SkillAddRange, SkillTime
+end
+
+-- SkillID: 1501, Sword Blow
+function SwordBlow_Knight(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = (InDamage * 1.2) * (Energy / 10 + 200) / 100
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 1502, Strong Belief
+function KnightStrongBelief(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local DefenseUp = 20
+	local DmgDownPercent = 8 -- 1-100
+	local Duration = (NormalLevel + MasterLevel) / 4 + 20
+
+	return DefenseUp, DmgDownPercent, Duration
+end
+
+-- SkillID: 1503, Solid Protection
+function KnightSolidProtection (NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local AbsorbHP = 2.21
+	local ConvertDamage = 2.21
+	local IncAtkPower = 2.21
+	local Duration = 180
+
+	return AbsorbHP, IncAtkPower, ConvertDamage, Duration
+end
+
+-- SkillID: 2001, Dark Plasma
+function GunCrusherDarkPlasmaCalc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 2002, Ice Break
+function GunCrusherIceBreakCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 2004, Death Fire
+function GunCrusherDeathFireCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 2003, Ice Blast
+function GunCrusherIceBlastCalc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	
+	return OutDamage
+end
+
+-- SkillID: 2005, Bursting Flare
+function GunCrusherBurstingFlareCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 2006, Death Ice
+function GunCrusherDeathIceCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	end
+	
+	return OutDamage
 end

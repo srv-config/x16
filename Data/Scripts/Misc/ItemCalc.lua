@@ -9,7 +9,7 @@ CLASS_RAGEFIGHTER                                     = 6	-- Rage Fighter, Fist 
 CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
 CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
 CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer 
-
+CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker, Heist Gun Crusher
 
 
 function MakeItemID(ItemType, ItemIndex)
@@ -73,6 +73,8 @@ function Wings_CalcAbsorb(WingID, WingLevel, MLS_WingOption)
 		OutAbsorb = (WingLevel * 2) + 43
 	elseif WingID == MakeItemID(12,480) then
 		OutAbsorb = 65
+	elseif (WingID == MakeItemID(12,489) or WingID == MakeItemID(12,496)) then
+		OutAbsorb = (WingLevel * 2) + 39 + MLS_WingOption
 	else
 		OutAbsorb = 12 + (WingLevel * 2)
 	end
@@ -119,6 +121,8 @@ function Wings_CalcIncAttack(WingID, WingLevel)
 		OutIncAttack = (WingLevel * 2)  + 39
 	elseif WingID == MakeItemID(12,480) then
 		OutIncAttack = 65
+	elseif (WingID == MakeItemID(12,489) or WingID == MakeItemID(12,496)) then
+		OutIncAttack = (WingLevel * 2) + 39
 	else
 		OutIncAttack = (WingLevel * 2) + 12
 	end

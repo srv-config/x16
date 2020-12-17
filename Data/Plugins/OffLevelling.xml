@@ -47,8 +47,6 @@
 // ### OffLevellingSystem::PickItems::Item ### ~ section allow to define specified item list to be picked up from ground
 //	Cat: Category of item to pick up from ground, refer to ItemList.xml
 //	Index: Index of item to pick up from ground, refer to ItemList.xml
-//	MinLevel: Minimum level of item to pick up, 0-15
-//	MaxLevel: Maximum level of item to pick up, 0-15
 //
 // ### OffLevellingSystem::PerMapAdjustments::Map ###
 //	Number: Number of a Map
@@ -67,8 +65,8 @@
 	<Timing StartHour="0" StartMinute="0" EndHour="23" EndMinute="59" />
 		
 	<PickItems Enable="1" PickUpZen="1" PickUpAllExc="1" PickUpAllSocket="1" PickUpAllAncient="1">
-		<Item Cat="14" Index="13" MinLevel="0" MaxLevel="15" />
-		<Item Cat="14" Index="14" MinLevel="0" MaxLevel="15" />
+		<Item Cat="14" Index="13" />
+		<Item Cat="14" Index="14" />
 	</PickItems>
 
 	<PerMapAdjustments>
@@ -189,5 +187,6 @@
 		<Map Number="129" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Abyss of Atlans 2 -->
 		<Map Number="130" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Abyss of Atlans 3 -->
 		<Map Number="131" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Scorched Canyon -->
+		<Map Number="132" Disable="0" CoinType="-1" CoinValue="100" /> <!-- Red Smoke Icarus -->
 	</PerMapAdjustments>
 </OffLevellingSystem>

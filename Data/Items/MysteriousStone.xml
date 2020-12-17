@@ -9,33 +9,41 @@
 // ============================================================
 //
 // ### MysteriousStone::Armors::Option ###
-//	Luck: 
-//	Set: 
-//	Rate: Chance rate of gettign specified option, n/1000000
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ Sum of rates must be equal to 1000000
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	Set: Set item tier (I/II), condition to meet:
+//		1: All Stats +7
+//		2: All Stats +15
+//	Luck: Luck option to apply:
+//		0: Do not apply
+//		1: Apply
+//
+//	Rate: Chance rate oof specific rule, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of rates must be equal to 1000000, for best results rates should be configured hughest to lowest
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // ### MysteriousStone::Weapons ###
-//	MaxExcOption: 
+//	MaxExcOption: Maximum number of exc option to allow option change by Mysterious Stone
 //
 // ### MysteriousStone::Weapons::Option ###
-//	ExcX: (1-9)
-//	Luck: 
-//	Rate: Chance rate of gettign specified option, n/1000000
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ Sum of rates must be equal to 1000000
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//	ExcX: Set of excellent options to apply, for excellent options IDs refer to ExcellentOptions.xml
+//	Luck: Luck option to apply:
+//		0: Do not apply
+//		1: Apply
+//
+//	Rate: Chance rate oof specific rule, n/1000000
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Sum of rates must be equal to 1000000, for best results rates should be configured hughest to lowest
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <MysteriousStone>
 	<Armors> <!-- Maximum 30 entries -->
-		<Option	Luck="0" Set="1" Rate="20000" />					
-		<Option	Luck="0" Set="2" Rate="70000" />
-		<Option	Luck="1" Set="1" Rate="60000" />				
-		<Option	Luck="1" Set="2" Rate="850000" />
+		<Option	Set="1" Luck="0"  Rate="850000" />
+		<Option	Set="2" Luck="0"  Rate="70000" />
+		<Option	Set="1" Luck="1"  Rate="60000" />	
+		<Option	Set="2" Luck="1"  Rate="20000" />
 	</Armors>
 
 	<Weapons MaxExcOption="3"> <!-- Maximum 30 entries -->

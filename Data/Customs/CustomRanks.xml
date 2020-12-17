@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+// ============================================================
+// == INTERNATIONAL GAMING CENTER NETWORK
+// == www.igcn.mu
+// == (C) 2010-2021 IGC-Network (R)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// == File is a part of IGCN Group MuOnline Server files.
+// ============================================================
+//
+// Enabled = 1/0 
+// Ranks are applied based on Priority when the highest priority is met 
+// Priority is in following order
+// 0) IWCLord & SiegeLord
+// 1) VipType
+// 2) MaxReset > 0
+// 3) MaxLevel > 0
+// ImageName is for client refernece only, in server side it has no effect
+// The same rank settings must be copied to client ServerInfo.bmd file.
+//
+-->
+<CustomRanks Enabled="1">
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="1"  IWCLord="0" ImageName="Rank1.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="2"  IWCLord="0" ImageName="Rank2.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="3"  IWCLord="0" ImageName="Rank3.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="4"  IWCLord="0" ImageName="Rank4.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="5"  IWCLord="0" ImageName="Rank5.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="6"  IWCLord="0" ImageName="Rank6.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="7"  IWCLord="0" ImageName="Rank7.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="8"  IWCLord="0" ImageName="Rank8.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="9"  IWCLord="0" ImageName="Rank9.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="10" IWCLord="0" ImageName="Rank10.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="11" IWCLord="0" ImageName="Rank11.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="12" IWCLord="0" ImageName="Rank12.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="13" IWCLord="0" ImageName="Rank13.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="14" IWCLord="0" ImageName="Rank14.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="0"  IWCLord="1" ImageName="BingCZ.tga" />
+	<Rank MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" VipType="15" IWCLord="0" SiegeLord="1" ImageName="LuoLan.tga" />	
+</CustomRanks>

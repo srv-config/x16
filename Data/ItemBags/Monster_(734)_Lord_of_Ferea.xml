@@ -17,7 +17,7 @@
 <AddCoin Enable="0" CoinType="0" CoinValue="0" />
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
 
-<DropAllow Wizard="1" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="1" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="359" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="360" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -25,7 +25,7 @@
 		<Item Cat="13" Index="362" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="1" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="1" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="351" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="352" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -33,7 +33,7 @@
 		<Item Cat="13" Index="354" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="1" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="1" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="363" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="364" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -41,7 +41,7 @@
 		<Item Cat="13" Index="366" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="1" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="1" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="371" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="372" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -49,7 +49,7 @@
 		<Item Cat="13" Index="374" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="1" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="1" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="379" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="380" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -57,7 +57,7 @@
 		<Item Cat="13" Index="382" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="1" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="1" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="387" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="388" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -65,7 +65,7 @@
 		<Item Cat="13" Index="390" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="1" GrowLancer="0" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="1" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="391" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="392" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -73,7 +73,7 @@
 		<Item Cat="13" Index="394" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="1" RuneWizard="0" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="1" RuneWizard="0" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="399" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="400" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -81,7 +81,7 @@
 		<Item Cat="13" Index="402" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="1" Slayer="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="1" Slayer="0" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="355" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="356" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -89,7 +89,7 @@
 		<Item Cat="13" Index="358" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="1" GunCrusher="0" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="2000" Count="3">
 		<Item Cat="13" Index="383" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="13" Index="384" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
@@ -97,7 +97,15 @@
 		<Item Cat="13" Index="386" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
 	</Drop>
 </DropAllow>
-<DropAllow Wizard="1" Knight="1" FairyElf="1" MagicGladiator="1" DarkLord="1" Summoner="1" RageFighter="1" GrowLancer="1" RuneWizard="1" Slayer="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="0" Knight="0" FairyElf="0" MagicGladiator="0" DarkLord="0" Summoner="0" RageFighter="0" GrowLancer="0" RuneWizard="0" Slayer="0" GunCrusher="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+	<Drop Rate="2000" Count="3">
+		<Item Cat="13" Index="403" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="13" Index="404" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="13" Index="405" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
+		<Item Cat="13" Index="406" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" />
+	</Drop>
+</DropAllow>
+<DropAllow Wizard="1" Knight="1" FairyElf="1" MagicGladiator="1" DarkLord="1" Summoner="1" RageFighter="1" GrowLancer="1" RuneWizard="1" Slayer="1" GunCrusher="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="3500" Count="2">
 		<Item Cat="12" Index="212" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="-2" ElementalItem="-1" />
 		<Item Cat="12" Index="213" ItemMinLevel="0" ItemMaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="-2" ElementalItem="-1" />

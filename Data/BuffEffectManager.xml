@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -15,7 +15,7 @@
 //	Type: 
 //	NoticeType: 
 //	ClearType: 
-//	BuffOutputValue: 
+//	BuffOutputValue: 				
 //	Name: 
 //	Description: 
 //
@@ -87,7 +87,7 @@
 		<Buff Index="53" EffectType="26" ItemType="14" ItemIndex="81" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elixir of Energy" Description="Energy Status +50" />
 		<Buff Index="54" EffectType="26" ItemType="14" ItemIndex="82" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Elixir of Control" Description="Control Status +50" />
 		<Buff Index="55" EffectType="27" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Poison" Description="Poisoned status of condition" />
-		<Buff Index="56" EffectType="28" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Ice" Description="Mobility speed decreases." />
+		<Buff Index="56" EffectType="28" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Ice" Description="Mobility speed decreases" />
 		<Buff Index="57" EffectType="29" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Iced Arrow" Description="Mobility disabled" />
 		<Buff Index="58" EffectType="30" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Defensibility reduction" Description="Random defensibility decreases at 10%." />
 		<Buff Index="59" EffectType="31" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Attack power reduction" Description="" />
@@ -242,10 +242,10 @@
 		<Buff Index="214" EffectType="120" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Evasion" Description="Increases your block chance and makes you immune to immobilizing effect" />
 		<Buff Index="215" EffectType="119" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Internet Cafe" Description="Extra XP/Chaos Castle in PC Cafe/Acesss to Kalima/Accum. Gob. Pts./Stam. Sys. Disabled" />
 		<Buff Index="216" EffectType="121" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Circle Shield" Description="Chance to decrease opponent's AG by 10" />
-		<Buff Index="217" EffectType="122" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Obsidian" Description="Increases Skill Damage by %d" />
+		<Buff Index="217" EffectType="122" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Obsidian" Description="Increases Skill Damage" />
 		<Buff Index="218" EffectType="123" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Wrath" Description="Decreases Defense by 30%, increases Damage by 50%" />
 		<Buff Index="219" EffectType="124" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Burst" Description="Increases chance of True Damage" />
-		<Buff Index="220" EffectType="122" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Obsidian PowUp" Description="Increases Skill Damage by %d" />
+		<Buff Index="220" EffectType="122" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Obsidian PowUp" Description="Increases Skill Damage" />
 		<Buff Index="221" EffectType="121" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Circle Shield PowUp" Description="Chance to increase AG reduce effect by %d on hit." />
 		<Buff Index="222" EffectType="121" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Circle Shield Mastery" Description="Chance to increase AG reduce effect by %d on hit." />
 		<Buff Index="223" EffectType="123" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Wrath PowUp" Description="Decreases Defense by 30%, increases Damage by 50%" />
@@ -326,7 +326,7 @@
 		<Buff Index="304" EffectType="43" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Weakness Mastery" Description="Weakness effect affects the target's attribute damage." />
 		<Buff Index="305" EffectType="43" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Innovation Mastery" Description="Weakness effect affects the target's attribute defense." />
 		<Buff Index="306" EffectType="289" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Death Scythe" Description="Death Scythe attacks enemy targets with your character." />
-		<Buff Index="307" EffectType="290" ItemType="12" ItemIndex="471" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Guardian Leon" Description="Guardian mount item" />
+		<Buff Index="307" EffectType="290" ItemType="12" ItemIndex="471" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Guardian Ghost Horse" Description="Guardian mount item" />
 		<Buff Index="308" EffectType="291" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Movement speed increase" Description="Guardian mount skill only" />
 		<Buff Index="309" EffectType="292" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Elite Monster - Bleeding" Description="Elite Monster - Bleeding" />
 		<Buff Index="310" EffectType="293" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Elite Monsters - Poison" Description="Elite Monsters - Poison" />
@@ -341,6 +341,21 @@
 		<Buff Index="319" EffectType="299" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Strengthener" Description="Ignores enemy's defense by %d when attacking." />
 		<Buff Index="320" EffectType="299" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Mastery" Description="Ignores enemy's defense by %d when attacking." />
 		<Buff Index="321" EffectType="300" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="1" Name="Demolish - Reduces Attack Power" Description="" />
+		<Buff Index="322" EffectType="290" ItemType="12" ItemIndex="483" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Ice Wear" Description="Guardian mount item" />
+		<Buff Index="323" EffectType="290" ItemType="12" ItemIndex="484" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Ice Wear (Rare)" Description="Guardian mount item" />
+		<Buff Index="324" EffectType="301" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Sword's Fury" Description="Switch to Fury Knight. The range and damage range of blow-based attack skills are increased." />
+		<Buff Index="325" EffectType="302" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Strong Belief" Description="Switch to Belief Knight. Stat efficiency is changed and you can use solid protection skills." />
+		<Buff Index="326" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection" Description="Increases the party member's attack and magic powers, absorbs the party member's HP, and takes part of the damage instead." />
+		<Buff Index="327" EffectType="301" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Sword's Firy Strengthener" Description="Switch to Fury Knight. The range and damage range of blow-based attack skills are increased." />
+		<Buff Index="328" EffectType="301" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Sword's Fury Mastery" Description="Switch to Fury Knight. The range and damage range of blow-based attack skills are increased." />
+		<Buff Index="329" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Strengthener" Description="Increases the party member's attack and magic powers, absorbs the party member's HP, and takes part of the damage instead." />
+		<Buff Index="330" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Proficiency" Description="Increases the party member's attack and magic powers and absorbs the party member's HP and takes part of the damage instead.." />
+		<Buff Index="331" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Mastery" Description="Increases the party member's attack and magic powers, absorbs the party member's HP, and takes part of the damage instead." />
+		<Buff Index="332" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Mastery" Description="Increases the party member's attack and magic powers, absorbs the party member's HP, and takes part of the damage instead." />
+		<Buff Index="333" EffectType="304" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Effect" Description="Black Knight's Blessing Effect" />
+		<Buff Index="334" EffectType="302" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Strong Belief Strengthener" Description="Switch to Belief Knight. Stat efficiency is changed and you can use solid protection skills." />
+		<Buff Index="335" EffectType="303" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Solid Protection Enhancement" Description="Increases the party member's attack and magic powers, absorbs the party member's HP, and takes part of the damage instead." />
+		<Buff Index="336" EffectType="302" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Strong Belief Strengthener" Description="Switch to Belief Knight. Stat efficiency is changed and you can use solid protection skills." />
 	</General>
 	<Period>
 		<Buff Index="179" EffectType1="0" EffectValue1="25" EffectType2="0" EffectValue2="0" Duration="604800" Name="Fire Tower" />

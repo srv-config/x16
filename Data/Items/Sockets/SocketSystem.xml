@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -57,6 +57,7 @@
 		<Socket CatID="9" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Pants -->
 		<Socket CatID="10" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Gloves -->
 		<Socket CatID="11" Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" /> <!-- Boots -->
+		<Socket CatID="20" Count1="7000" Count2="2500" Count3="500" Count4="0" Count5="0" /> <!-- Necklaces -->
 		
 		<TwoHandWeapons Count1="6000" Count2="4000" Count3="3000" Count4="1500" Count5="750" />
 	</SocketRateSettings>

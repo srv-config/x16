@@ -21,6 +21,7 @@ CLASS_RAGEFIGHTER                                     = 6	-- Rage Fighter, Fist 
 CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
 CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
 CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer
+CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker, Heist Gun Crusher
 
 -- Character Damage - Fist Fighting - (Dark Wizard, Soul Master, Grand Master)
 function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
@@ -186,6 +187,20 @@ function SlayerDamageCalc(Strength, Dexterity, Vitality, Energy)
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
 
+function GunCrusherDamageCalc(Strength, Dexterity, Vitality, Energy)
+	local AttackDamageMinLeft = 0
+	local AttackDamageMaxLeft = 0
+	local AttackDamageMinRight = 0
+	local AttackDamageMaxRight = 0
+	
+	AttackDamageMinLeft = Strength / 8 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Strength / 8 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+	
+	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
+end
+
 -- Character Magic Damage - (Dark Wizard, Soul Master, Grand Master)
 function WizardMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
@@ -301,6 +316,17 @@ function SlayerMagicDamageCalc(Energy)
 	return MagicDamageMin, MagicDamageMax
 end
 
+-- Character Magic Damage - (Gun Crusher, Gun Breaker, Master Gun Breaker)
+function GunCrusherMagicDamageCalc(Energy)
+	local MagicDamageMin = 0
+	local MagicDamageMax = 0
+	
+	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 4 -- Maximum Magic Damage
+	
+	return MagicDamageMin, MagicDamageMax
+end
+
 -- Character Attack Speed - for Anti-Hack purpose only, does not take effect in Game for versions lower than w Season 8 Episode 3
 function CalcAttackSpeed(Class, Dexterity)
 	local AttackSpeed = 0
@@ -336,43 +362,50 @@ function CalcAttackSpeed(Class, Dexterity)
 	elseif(Class == CLASS_SLAYER) then
 		AttackSpeed = Dexterity / 12
 		MagicSpeed = Dexterity / 12
+	elseif(Class == CLASS_GUNCRUSHER) then
+		AttackSpeed = Dexterity / 20
+		MagicSpeed = Dexterity / 20
 	end
 	
 	return AttackSpeed, MagicSpeed
 end
 
 -- Character Attack Success Rate - PvM 
-function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Command, Level)
+function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy, Command, NormalLevel, MasterLevel)
 	local AttackSuccessRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_KNIGHT) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_ELF) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_DARKLORD) then
-		AttackSuccessRate = Level * 5 + Dexterity * 3 + Strength / 4 + Command / 10
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 3 + Strength / 4 + Command / 10
 	elseif(Class == CLASS_SUMMONER) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackSuccessRate = Level * 3 + Dexterity * 1.25 + Strength / 6
+		AttackSuccessRate = TotalLevel * 3 + Dexterity * 1.25 + Strength / 6
 	elseif(Class == CLASS_GROWLANCER) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.25 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.25 + Strength / 4
 	elseif(Class == CLASS_RUNEWIZARD) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	elseif(Class == CLASS_SLAYER) then
-		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+	elseif(Class == CLASS_GUNCRUSHER) then
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	end
 	
 	return AttackSuccessRate
 end	
 
 -- Character Defense Success Rate - PvM
-function CalcDefenseSuccessRate_PvM(Class, Dexterity)
+function CalcDefenseSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy, NormalLevel, MasterLevel)
 	local DefenseSuccessRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
 		DefenseSuccessRate = Dexterity / 3
@@ -394,6 +427,8 @@ function CalcDefenseSuccessRate_PvM(Class, Dexterity)
 		DefenseSuccessRate = Dexterity / 3
 	elseif(Class == CLASS_SLAYER) then
 		DefenseSuccessRate = Dexterity / 3
+	elseif(Class == CLASS_GUNCRUSHER) then
+		DefenseSuccessRate = Dexterity / 4
 	end
 	
 	return DefenseSuccessRate
@@ -423,64 +458,72 @@ function CalcDefense(Class, Dexterity)
 		Defense = Dexterity / 5
 	elseif(Class == CLASS_SLAYER) then
 		Defense = Dexterity / 5
+	elseif(Class == CLASS_GUNCRUSHER) then
+		Defense = Dexterity / 3
 	end
 	
 	return Defense
 end
 
 -- Character Attack Success Rate - PvP
-function CalcAttackSuccessRate_PvP(Class, Dexterity, Level)
+function CalcAttackSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy, Command, NormalLevel, MasterLevel)
 	local AttackRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		AttackRate = Dexterity * 4 + 3 * Level
+		AttackRate = Dexterity * 4 + 3 * TotalLevel
 	elseif(Class == CLASS_KNIGHT) then
-		AttackRate = Dexterity * 4.5 + 3 * Level
+		AttackRate = Dexterity * 4.5 + 3 * TotalLevel
 	elseif(Class == CLASS_ELF) then
-		AttackRate = Dexterity * 0.6 + 3 * Level
+		AttackRate = Dexterity * 0.6 + 3 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		AttackRate = Dexterity * 3.5 + 3 * Level
+		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
-		AttackRate = Dexterity * 4 + 3 * Level
+		AttackRate = Dexterity * 4 + 3 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
-		AttackRate = Dexterity * 3.5 + 3 * Level
+		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		AttackRate = Dexterity * 3.6 + 2.6 * Level
+		AttackRate = Dexterity * 3.6 + 2.6 * TotalLevel
 	elseif(Class == CLASS_GROWLANCER) then
-		AttackRate = Dexterity * 2 + 3 * Level
+		AttackRate = Dexterity * 2 + 3 * TotalLevel
 	elseif(Class == CLASS_RUNEWIZARD) then
-		AttackRate = Dexterity * 4 + 3 * Level
+		AttackRate = Dexterity * 4 + 3 * TotalLevel
 	elseif(Class == CLASS_SLAYER) then
-		AttackRate = Dexterity * 4 + 3 * Level
+		AttackRate = Dexterity * 4 + 3 * TotalLevel
+	elseif(Class == CLASS_GUNCRUSHER) then
+		AttackRate = Dexterity * 3.5 + 3 * TotalLevel
 	end
 	
 	return AttackRate
 end
 
 -- Character Defense Success Rate - PvP
-function CalcDefenseSuccessRate_PvP(Class, Dexterity, Level)
+function CalcDefenseSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy, NormalLevel, MasterLevel)
 	local DefenseRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
 	
 	if(Class == CLASS_WIZARD) then
-		DefenseRate = Dexterity / 4 + 2 * Level
+		DefenseRate = Dexterity / 4 + 2 * TotalLevel
 	elseif(Class == CLASS_KNIGHT) then
-		DefenseRate = Dexterity / 2 + 2 * Level
+		DefenseRate = Dexterity / 2 + 2 * TotalLevel
 	elseif(Class == CLASS_ELF) then
-		DefenseRate = Dexterity / 10 + 2 * Level
+		DefenseRate = Dexterity / 10 + 2 * TotalLevel
 	elseif(Class == CLASS_GLADIATOR) then
-		DefenseRate = Dexterity / 4 + 2 * Level
+		DefenseRate = Dexterity / 4 + 2 * TotalLevel
 	elseif(Class == CLASS_DARKLORD) then
-		DefenseRate = Dexterity / 2 + 2 * Level
+		DefenseRate = Dexterity / 2 + 2 * TotalLevel
 	elseif(Class == CLASS_SUMMONER) then
-		DefenseRate = Dexterity / 2 + 2 * Level
+		DefenseRate = Dexterity / 2 + 2 * TotalLevel
 	elseif(Class == CLASS_RAGEFIGHTER) then
-		DefenseRate = Dexterity / 5 + 1.5 * Level
+		DefenseRate = Dexterity / 5 + 1.5 * TotalLevel
 	elseif(Class == CLASS_GROWLANCER) then
-		DefenseRate = Dexterity / 5 + 2 * Level
+		DefenseRate = Dexterity / 5 + 2 * TotalLevel
 	elseif(Class == CLASS_RUNEWIZARD) then
-		DefenseRate = Dexterity / 3 + 4 * Level
+		DefenseRate = Dexterity / 3 + 4 * TotalLevel
 	elseif(Class == CLASS_SLAYER) then
-		DefenseRate = Dexterity / 3 + 4 * Level
+		DefenseRate = Dexterity / 3 + 4 * TotalLevel
+	elseif(Class == CLASS_GUNCRUSHER) then
+		DefenseRate = Dexterity / 2 + 2 * TotalLevel
 	end
 	
 	return DefenseRate
@@ -574,7 +617,7 @@ function GrowLancerElementalDamageCalc(Strength, Dexterity, Vitality, Energy, It
 	return MinDamage, MaxDamage
 end
 
--- Character Elemental Damage - PvP and MvP - Rune Wizard, Rune Spell Master, Grand Rune Master)
+-- Character Elemental Damage - PvP and MvP - (Rune Wizard, Rune Spell Master, Grand Rune Master)
 function RuneWizardElementalDamageCalc(Strength, Dexterity, Vitality, Energy, ItemMinDamage, ItemMaxDamage)
 	local MinDamage = 0
 	local MaxDamage = 0
@@ -585,8 +628,19 @@ function RuneWizardElementalDamageCalc(Strength, Dexterity, Vitality, Energy, It
 	return MinDamage, MaxDamage
 end
 
--- Character Elemental Damage - PvP and MvP - Slayer, Royal Slayer, Master Slayer)
+-- Character Elemental Damage - PvP and MvP - (Slayer, Royal Slayer, Master Slayer)
 function SlayerElementalDamageCalc(Strength, Dexterity, Vitality, Energy, ItemMinDamage, ItemMaxDamage)
+	local MinDamage = 0
+	local MaxDamage = 0
+	
+	MinDamage = ItemMinDamage + (Energy / 9)
+	MaxDamage = ItemMaxDamage + (Energy / 6)
+	
+	return MinDamage, MaxDamage
+end
+
+-- Character Elemental Damage - PvP and MvP - (Gun Crusher, Gun Breaker, Master Gun Breaker)
+function GunCrusherElementalDamageCalc(Strength, Dexterity, Vitality, Energy, ItemMinDamage, ItemMaxDamage)
 	local MinDamage = 0
 	local MaxDamage = 0
 	
@@ -619,6 +673,8 @@ function ElementalDefenseCalc(Class, Dexterity)
 	elseif(Class == CLASS_RUNEWIZARD) then
 		Defense = Dexterity / 3
 	elseif(Class == CLASS_SLAYER) then
+		Defense = Dexterity / 3
+	elseif(Class == CLASS_GUNCRUSHER) then
 		Defense = Dexterity / 3
 	end
 	

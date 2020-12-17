@@ -61,6 +61,8 @@
 		<Map Index="36" Name="Kalima7" />
 		<Map Index="34" Name="Crywolf" />
 		<Map Index="31" Name="Land of Trials" />
+		<Map Index="114" Name="labyrinth of Dimension" />
+		<Map Index="115" Name="labyrinth of Dimension" />
 		<Map Index="116" Name="Deep Dungeon 1" />
 		<Map Index="117" Name="Deep Dungeon 2" />
 		<Map Index="118" Name="Deep Dungeon 3" />
@@ -76,6 +78,8 @@
 		<Map Index="129" Name="Abyssal Atlans 2" />
 		<Map Index="130" Name="Abyssal Atlans 3" />
 		<Map Index="131" Name="Scorched Canyon" />
+		<Map Index="132" Name="Red Smoke Icarus" />
+		<Map Index="133" Name="Arenil Temple" />
 	</MapIncluded>
 	<MonstersExcluded> <!-- Monsters excluded from huntin records -->
 		<Monster Index="413" Name="Gold Rabbit" />

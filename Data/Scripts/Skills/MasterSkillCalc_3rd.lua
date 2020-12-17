@@ -22,6 +22,8 @@ CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER									  	  = 9
+CLASS_GUNCRUSHER									  = 10
+
 
 -- SkillID: 392, Nova Strengthener - (Grand Master)
 function NovaSkillCalc_Master_Wizard(InDamage, Energy)
@@ -113,22 +115,21 @@ function LungeCalc_Master_Knight(Class, InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: 331, Rageful Blow Strengthener - (Blade Master)
-function RagefulBlow_Master_Knight(InDamage, Energy)
- local OutDamage = InDamage * (Energy / 10 + 200) / 100
+-- SkillID: 331, 812, Anger Blow Strengthener
+function AngerBlow_Master_Level1(Class, SkillId, InDamage, Strength, Dexterity, Vitality, Energy)
+ local OutDamage = 0
+ 
+ 	if (Class == CLASS_KNIGHT and SkillId == 812) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	elseif (Class == CLASS_SLAYER and SkillId == 331) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	end
  
  return OutDamage
 end
 
--- SkillID: 336, Slash Strengthener - (Blade Master)
+-- SkillID: 336, Death Stab Strengthener - (Blade Master)
 function DeathStab_MasterLevel1_Knight(InDamage, Energy)
-	local OutDamage = InDamage * (Energy / 10 + 200) / 100
-	
-	return OutDamage
-end
-
--- SkillID: 337, Strike of Destruction - (Blade Master)
-function StrikeOfDestructionCalc_MasterLevel1_Knight(InDamage, Energy)
 	local OutDamage = InDamage * (Energy / 10 + 200) / 100
 	
 	return OutDamage
@@ -210,7 +211,9 @@ function ElfHeal_Level1(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_SLAYER) then
-			SkillEffect = Energy / 5 + 5				
+			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = Energy / 5 + 5			
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -259,6 +262,8 @@ function ElfDefense_Level1(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -300,6 +305,8 @@ function ElfDefense_Level2(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -333,7 +340,9 @@ function ElfAttack_Level1(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_SLAYER) then
-			SkillEffect = 3 + Energy / 7				
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -367,7 +376,9 @@ function ElfAttack_Level2(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_SLAYER) then
-			SkillEffect = 3 + Energy / 7			
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_GUNCRUSHER) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -847,11 +858,25 @@ function FighterIncDefRateCalcEffect_Level2(Energy)
 	return SkillEffect, SkillTime
 end
 
--- SkillID: 631, Rush - (Blade Master)
-function RushCalc_Master_Knight(InDamage, Energy)
-	local OutDamage = InDamage * (Energy / 10 + 200) / 100
+-- SkillID: 631, 813, Rush
+function RushCalc_Master(Class, SkillId, InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	
+	if (Class == CLASS_KNIGHT and SkillId == 813) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	elseif (Class == CLASS_SLAYER and SkillId == 631) then
+		OutDamage = InDamage * (Energy / 10 + 200) / 100
+	end
 	
 	return OutDamage
+end
+
+-- SkillID: 652, Evasion
+function EvasionCalc_Master(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local SkillEffect = 50
+	local SkillTime = 7
+	
+	return SkillEffect, SkillTime
 end
 
 -- SkillID: 687, Spin Step PowUp - (Mirage Lancer)
@@ -1147,4 +1172,196 @@ function SlayerDemolish_MasterLevel2_Calc(Strength, Dexterity, Vitality, Energy,
 	SkillEffect = SkillEffect * 0.03 + SkillTreeValue
 	
 	return SkillEffect, SkillTime
+end
+
+-- SkillID: 802, Sword's Fury Mastery
+function KnightSwordAngerCalc_MasterLevel2(Strength, Dexterity, Vitality, Energy, SkillTreeValue)
+	local BaseAddRange = 1
+	local SkillTime = -10
+	
+	local SkillAddRange = BaseAddRange + SkillTreeValue
+	
+	return SkillAddRange, SkillTime
+end
+
+-- SkillID: 803, Solid Protection Strengthener (1)
+function KnightSolidProtection_MasterLevel1 (NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local AbsorbHP = 2.21
+	local ConvertDamage = 2.21
+	local IncAtkPower = 2.21
+	local Duration = 180
+	
+	return AbsorbHP, IncAtkPower, ConvertDamage, Duration
+end
+
+-- SkillID: 804, Solid Protection Strengthener (2)
+function KnightSolidProtection_MasterLevel2 (NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local AbsorbHP = 2.21
+	local ConvertDamage = 2.21
+	local IncAtkPower = 2.21
+	local Duration = 180
+	
+	return AbsorbHP, IncAtkPower, ConvertDamage, Duration
+end
+
+-- SkillID: 806, Solid Protection Mastery
+function KnightSolidProtection_MasterLevel3 (NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
+	local AbsorbHP = 2.21
+	local ConvertDamage = 2.21
+	local IncAtkPower = 2.21
+	local Duration = 180
+	
+	return AbsorbHP, IncAtkPower, ConvertDamage, Duration
+end
+
+-- SkillID: 807, Strike of Destruction Strenghtener - (Blade Master)
+function StrikeOfDestructionCalc_MasterLevel1_Knight(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 0.8) * (Energy / 10 + 200) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * (Energy / 10 + 200) / 100
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 809, Strike of Destruction Mastery - (Blade Master)
+function StrikeOfDestructionCalc_MasterLevel2_Knight(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * (Energy / 10 + 200) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * (Energy / 10 + 200) + SkillTreeValue) / 100
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 810, Strong Belief Strengthener
+function KnightStrongBelief_MasterLevel1(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy, SkillTreeValue)
+	local DefenseUp = 20 + SkillTreeValue
+	local DmgDownPercent = 10 -- 1-100
+	local Duration = (NormalLevel + MasterLevel) / 4 + 20
+
+	return DefenseUp, DmgDownPercent, Duration
+end
+
+-- SkillID: 811, Tornado Cutting Strengthener
+function TorandoCuttingCalc_Level1(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = InDamage * (Energy / 10 + 200) / 100
+	
+	return OutDamage
+end
+
+-- SkillID: 820, Dark Plasma Strenghtener - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDarkPlasma_Level1(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	
+	return OutDamage
+end
+
+-- SkillID: 821, Dark Plasma Proficiency - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDarkPlasma_Level2(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+	OutDamage = InDamage * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 822, Dark Plasma Mastery - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDarkPlasma_Level3(InDamage, Strength, Dexterity, Vitality, Energy, SkillTreeValue)
+	local OutDamage = 0
+	OutDamage = InDamage * (((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 823, Ice Break Strenghtener - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherIceBreak_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 824, Ice Break Mastery - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherIceBreak_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 825, Death Fire Strenghtener - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDeathFire_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 826, Death Fire Mastery - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDeathFire_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 825, Death Ice Strenghtener - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDeathIce_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 826, Death Ice Mastery - (Master Gun Breaker, Heist Gun Crusher)
+function GunCrusherDeathIce_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount, SkillTreeValue)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	end
+	
+	return OutDamage
 end

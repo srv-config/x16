@@ -72,13 +72,14 @@
 	<EditionSettings>
 		<Edition ID="1" OptionRate1="20" OptionRate2="40" OptionRate3="40" OptionRate4="0" OptionRate5="0" />
 		<Edition ID="2" OptionRate1="20" OptionRate2="40" OptionRate3="40" OptionRate4="0" OptionRate5="0" />
+		<Edition ID="3" OptionRate1="20" OptionRate2="40" OptionRate3="40" OptionRate4="0" OptionRate5="0" />
 	</EditionSettings>
 
 	<OptionLinkSettings>
 	<!-- Left -->
 		<Option LinkID="1" Index1="19" ValueIdx1="1" Rate1="2000" Index2="23" ValueIdx2="4" Rate2="2000" Index3="18" ValueIdx3="6" Rate3="2000" Index4="16" ValueIdx4="6" Rate4="2000" Index5="11" ValueIdx5="0" Rate5="2000" Edition="1" ItemCat="12" ItemIndex="449" Name="Rage" />
 		<Option LinkID="2" Index1="19" ValueIdx1="1" Rate1="2000" Index2="28" ValueIdx2="4" Rate2="2000" Index3="29" ValueIdx3="6" Rate3="2000" Index4="30" ValueIdx4="6" Rate4="2000" Index5="11" ValueIdx5="0" Rate5="2000" Edition="2" ItemCat="12" ItemIndex="450" Name="Ancestor" />
-		<!-- <Option LinkID="3" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="451" Name="Flurry" /> -->
+		<Option LinkID="3" Index1="19" ValueIdx1="1" Rate1="2000" Index2="28" ValueIdx2="4" Rate2="2000" Index3="29" ValueIdx3="6" Rate3="2000" Index4="30" ValueIdx4="6" Rate4="2000" Index5="11" ValueIdx5="0" Rate5="2000" Edition="3" ItemCat="12" ItemIndex="451" Name="Honor" />
 		<!-- <Option LinkID="4" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="452" Name="Honor" /> -->
 		<!-- <Option LinkID="5" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="453" Name="Ultimate" /> -->
 		<!-- <Option LinkID="6" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="454" Name="Conquest" /> -->
@@ -87,7 +88,7 @@
 	<!-- Right -->
 		<Option LinkID="9" Index1="9" ValueIdx1="5" Rate1="2000" Index2="17" ValueIdx2="2" Rate2="2000" Index3="15" ValueIdx3="2" Rate3="2000" Index4="14" ValueIdx4="3" Rate4="2000" Index5="12" ValueIdx5="0" Rate5="2000" Edition="1" ItemCat="12" ItemIndex="457" Name="Rage II" />
 		<Option LinkID="10" Index1="9" ValueIdx1="5" Rate1="2000" Index2="17" ValueIdx2="2" Rate2="2000" Index3="15" ValueIdx3="2" Rate3="2000" Index4="14" ValueIdx4="3" Rate4="2000" Index5="12" ValueIdx5="0" Rate5="2000" Edition="2" ItemCat="12" ItemIndex="458" Name="Ancestor II" />
-		<!-- <Option LinkID="11" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="459" Name="Flurry II" /> -->
+		<Option LinkID="11" Index1="9" ValueIdx1="5" Rate1="2000" Index2="17" ValueIdx2="2" Rate2="2000" Index3="15" ValueIdx3="2" Rate3="2000" Index4="14" ValueIdx4="3" Rate4="2000" Index5="12" ValueIdx5="0" Rate5="2000" Edition="3" ItemCat="12" ItemIndex="459" Name="Honor II" />
 		<!-- <Option LinkID="12" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="460" Name="Honor II" /> -->
 		<!-- <Option LinkID="13" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="461" Name="Ultimate II" /> -->
 		<!-- <Option LinkID="14" Index1="0" ValueIdx1="0" Rate1="0" Index2="0" ValueIdx2="0" Rate2="0" Index3="0" ValueIdx3="0" Rate3="0" Index4="0" ValueIdx4="0" Rate4="0" Index5="0" ValueIdx5="0" Rate5="0" Edition="0" ItemCat="0" ItemIndex="462" Name="Conquest II" /> -->
@@ -98,7 +99,7 @@
 	<LinkedOptionActivation> <!-- Linked option is being activated when left and right earning (link indexes) are worn together -->
 		<Link ID1="1" ID2="9" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Rage" />
 		<Link ID1="2" ID2="10" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Ancestor" />
-		<!-- <Link ID1="3" ID2="11" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Flurry" /> -->
+		<Link ID1="3" ID2="11" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Honor" />
 		<!-- <Link ID1="4" ID2="12" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Honor" /> -->
 		<!-- <Link ID1="5" ID2="13" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Ultimate" /> -->
 		<!-- <Link ID1="6" ID2="14" OptIdx1="21" OptValIdx1="7" OptIdx2="24" OptValIdx2="2" Name="Conquest" /> -->
@@ -125,8 +126,17 @@
 		<OptionSet Index="5" Value="7" Edition="2" Description="Attack Speed Increase" />									
 		<OptionSet Index="6" Value="1" Edition="2" Description="Attack Power Increase and Critical Damage Power Increase" />																
 		<OptionSet Index="7" Value="2" Edition="2" Description="Ignore enemy defense" />
+	<!-- Edition 3 -->
+		<OptionSet Index="0" Value="600" Edition="3" Description="Max Life Increase and Max Mana Increase" />												
+		<OptionSet Index="1" Value="21" Edition="3" Description="Skill Damage Increase" />										
+		<OptionSet Index="2" Value="6" Edition="3" Description="Excellent Damage Probability Increase and Critical Damage Probability Increase" />																		
+		<OptionSet Index="3" Value="10" Edition="3" Description="AG Auto Recovery Amount Increase" />										
+		<OptionSet Index="4" Value="2" Edition="3" Description="Attack Power / Wizardry Increase" />										
+		<OptionSet Index="5" Value="7" Edition="3" Description="Attack Speed Increase" />									
+		<OptionSet Index="6" Value="3" Edition="3" Description="Attack Power Increase and Critical Damage Power Increase" />																
+		<OptionSet Index="7" Value="3" Edition="3" Description="Ignore enemy defense" />
 	</OptionSettings>
-	
+
 	<OptionsList> <!-- Section used by tools only -->
 		<Option Index="0" Name="Strength Increase" Operator="1" />
 		<Option Index="1" Name="Agility Increase" Operator="1" />

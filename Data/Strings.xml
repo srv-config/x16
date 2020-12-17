@@ -15,5 +15,6 @@
 	<String Id="6" Tag="Rage Fighter" />
 	<String Id="7" Tag="Grow Lancer" />	
 	<String Id="8" Tag="Rune Wizard" />	
-	<String Id="9" Tag="Slayer" />		
+	<String Id="9" Tag="Slayer" />	
+	<String Id="10" Tag="Gun Crusher" />		
 </ChangeClassCMD>

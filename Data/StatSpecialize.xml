@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -23,6 +23,7 @@
 //		~ 8: Grow Lancer
 //		~ 9: Rune Wizard
 //		~ 10: Slayer
+//		~ 11: Gun Crusher
 //
 // ### StatSpecialize::Class::Option ###
 //	StatType: Type of statistic to apply rule to
@@ -107,5 +108,9 @@
 	<Class ID="10"> <!-- Slayer	 -->
 		<Option StatType="1" Index="1" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 		<Option StatType="1" Index="6" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+	</Class>
+	<Class ID="11"> <!-- Gun Crusher -->
+		<Option StatType="3" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="3" Index="10" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 </StatSpecialize>

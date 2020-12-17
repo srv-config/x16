@@ -159,6 +159,8 @@
 		<Map Number="129" File="129_AbyssOfAtlas2.att" />
 		<Map Number="130" File="130_AbyssOfAtlas3.att" />
 		<Map Number="131" File="131_ScorchedCanyon.att" />
+		<Map Number="132" File="132_RedSmokeIcarus.att" />
+		<Map Number="133" File="133_ArenilTemple.att" />
 	</DefaultMaps>
 	
 	<CrywolfEventAttr>

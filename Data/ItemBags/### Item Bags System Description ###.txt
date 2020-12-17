@@ -2,7 +2,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -54,7 +54,8 @@
 //	RageFighter: 0 - Disallow, 1 - Rage Fighter, 2 - Fist Master, 4 - Fist Blazer
 //	GrowLancer: 0 - Disallow, 1 - Grow Lancer, 2 - Miracle Lancer, 4 - Shining Lancer
 //	RuneWizard: 0 - Disallow, 1 - Rune Wizard, 2 - Rune Spell Master, 4 - Rune Grand Master
-//	Slayer: 0/1/2/3/4
+//	Slayer: 0 - Disallow, 1 - Slayer, 2 - Royal Slayer, 3 - Master Slayer, 4 - Slaughterer
+//	GunCrusher: 0 - Disallow, 1 - Gun Crusher, 2 - Gun Breaker, 3: Master Gun Breaker, 4 - Heist Gun Crusher
 //	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
 //	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

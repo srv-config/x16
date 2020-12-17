@@ -50,14 +50,24 @@
 		<Option Index="3" Name="(up to %d Lvl) Attack/Wizardry/Curse damage increase by 0.1f every 20 Lv" />
 		<Option Index="4" Name="A 3%% chance of health recovery by %d" />
 	</OptionList>
+	
 	<OptionSettings>
+	<!-- Ghost Horse -->
 		<Guardian Number="1" OptionNumber="0" FormulaID="0" LowerBound="0" UpperBound="-1" />
 		<Guardian Number="1" OptionNumber="1" FormulaID="1" LowerBound="0" UpperBound="-1" />
 		<Guardian Number="1" OptionNumber="2" FormulaID="2" LowerBound="0" UpperBound="1100" />
 		<Guardian Number="1" OptionNumber="3" FormulaID="3" LowerBound="0" UpperBound="1100" />
 		<Guardian Number="1" OptionNumber="4" FormulaID="4" LowerBound="0" UpperBound="-1" />
+	<!-- Ice Dragon -->
+		<Guardian Number="2" OptionNumber="0" FormulaID="10" LowerBound="0" UpperBound="-1" />
+		<Guardian Number="2" OptionNumber="1" FormulaID="11" LowerBound="0" UpperBound="-1" />
+		<Guardian Number="2" OptionNumber="2" FormulaID="12" LowerBound="0" UpperBound="1100" />
+		<Guardian Number="2" OptionNumber="3" FormulaID="13" LowerBound="0" UpperBound="1100" />
+		<Guardian Number="2" OptionNumber="4" FormulaID="14" LowerBound="0" UpperBound="-1" />	
 	</OptionSettings>
+	
 	<OptionRate One="7000" Two="2000" Three="1000" Four="0" />
+	
 	<EliteOptionList>
 		<Option Index="0" Name="Bleeding Damage Resistance +%d" />
 		<Option Index="1" Name="Poison Damage Resistance +%d" />
@@ -65,11 +75,19 @@
 		<Option Index="3" Name="Attack Speed Reduction Resistance +%d" />
 		<Option Index="4" Name="Defense Reduction Resistance +%d" />
 	</EliteOptionList>
-	<EliteOptionSettings>
+	
+	<EliteOptionSettings BaseRate="2000" RateDenominator="10000">
+	<!-- Ghost Horse -->
 		<Guardian Number="1" OptionSet="0" OptionNumber1="0" FormulaID1="5" ValueType1="0" OptionNumber2="2" FormulaID2="7" ValueType2="0" />
 		<Guardian Number="1" OptionSet="1" OptionNumber1="1" FormulaID1="6" ValueType1="0" OptionNumber2="2" FormulaID2="7" ValueType2="0" />
 		<Guardian Number="1" OptionSet="2" OptionNumber1="0" FormulaID1="5" ValueType1="0" OptionNumber2="3" FormulaID2="8" ValueType2="0" />
 		<Guardian Number="1" OptionSet="3" OptionNumber1="1" FormulaID1="6" ValueType1="0" OptionNumber2="4" FormulaID2="9" ValueType2="0" />
 		<Guardian Number="1" OptionSet="4" OptionNumber1="0" FormulaID1="5" ValueType1="0" OptionNumber2="4" FormulaID2="9" ValueType2="0" />
+	<!-- Ice Dragon -->
+		<Guardian Number="2" OptionSet="0" OptionNumber1="0" FormulaID1="15" ValueType1="0" OptionNumber2="2" FormulaID2="17" ValueType2="0" />
+		<Guardian Number="2" OptionSet="1" OptionNumber1="1" FormulaID1="16" ValueType1="0" OptionNumber2="2" FormulaID2="17" ValueType2="0" />
+		<Guardian Number="2" OptionSet="2" OptionNumber1="0" FormulaID1="15" ValueType1="0" OptionNumber2="3" FormulaID2="18" ValueType2="0" />
+		<Guardian Number="2" OptionSet="3" OptionNumber1="1" FormulaID1="16" ValueType1="0" OptionNumber2="4" FormulaID2="19" ValueType2="0" />
+		<Guardian Number="2" OptionSet="4" OptionNumber1="0" FormulaID1="15" ValueType1="0" OptionNumber2="4" FormulaID2="19" ValueType2="0" />
 	</EliteOptionSettings>
 </GuardianItemOption>

@@ -17,7 +17,7 @@
 <AddCoin Enable="0" CoinType="0" CoinValue="0" />
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
 
-<DropAllow Wizard="1" Knight="1" FairyElf="1" MagicGladiator="1" DarkLord="1" Summoner="1" RageFighter="1" GrowLancer="1" RuneWizard="1" Slayer="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
+<DropAllow Wizard="1" Knight="1" FairyElf="1" MagicGladiator="1" DarkLord="1" Summoner="1" RageFighter="1" GrowLancer="1" RuneWizard="1" Slayer="1" GunCrusher="1" PlayerMinLevel="1" PlayerMaxLevel="MAX" MapNumber="-1">
 	<Drop Rate="10000" Count="1">
 		<Item Cat="0" Index="16" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />
 		<Item Cat="2" Index="10" ItemMinLevel="0" ItemMaxLevel="0" Skill="1" Luck="1" Option="1" Exc="-2" SetItem="0" SocketCount="0" ElementalItem="0" />

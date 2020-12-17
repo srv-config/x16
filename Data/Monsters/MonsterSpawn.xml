@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2020 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -44,8 +44,8 @@
 //		~ 7: North-West
 //		~ 8: West
 //		~ -1: Random
-//	Count:  Count of monsters to spawn ~ (Spot Type: 1, 3)
-//	Element:  Element type to spawn the monster with ~ (Spot Type: 3)
+//	Count: Count of monsters to spawn ~ (Spot Type: 1, 3)
+//	Element: Element type to spawn the monster with ~ (Spot Type: 3)
 //		~ 0: No Elemental attribute
 //		~ 1: Fire
 //		~ 2: Water
@@ -65,7 +65,7 @@
 //	Map Number: 69, 70, 71 for Imperial Guardian Event are managed from: ImperialGuardian_Monster_Spawn.xml file
 //	Map Number: 96 for Arca Battle (Debenter) Event are managed from: ArcaBattle.xml file
 //	Map Number: 97 for Chaos Castle Survival is managed from: ChaosCastle_Survival_Monster.xml file
-//	Map Number: 98, 99 for Illusion Temple  League (disabled) Event are managed from: IllusionTemple_League_NPC.xml file
+//	Map Number: 98, 99 for Illusion Temple League (disabled) Event are managed from: IllusionTemple_League_NPC.xml file
 //	Map Number: 101 (Uruk Mountain) is event map, do not add monsters directly on it. Number of regular Uruk Mountain map to add monsters from this file is 100
 //	Map Number: 102 (Tormented Square) Event is managed from: TormentedSquare_Monsters.xml file
 //	Mining Areas are managed from: MiningSystem.xml file
@@ -630,8 +630,8 @@
 	<Map Number="3" Name="Noria">
 		<Spot Type="0" Description="NPC/Traps">
 			<Spawn Index="237" Distance="0" StartX="171" StartY="105" Dir="3" /> <!-- Charon -->
-			<!-- <Spawn Index="242" Distance="0" StartX="173" StartY="125" Dir="1" /> --> <!--  Elf Lala ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="243" Distance="0" StartX="195" StartY="124" Dir="2" /> --> <!--  Eo the Craftsman ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="242" Distance="0" StartX="173" StartY="125" Dir="1" /> --> <!-- Elf Lala ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="243" Distance="0" StartX="195" StartY="124" Dir="2" /> --> <!-- Eo the Craftsman ~ shop managed via ShopList.xml -->
 			<Spawn Index="240" Distance="0" StartX="172" StartY="96" Dir="3" /> <!-- Safety Guardian -->
 			<Spawn Index="238" Distance="0" StartX="180" StartY="103" Dir="1" /> <!-- Chaos Goblin -->
 			<Spawn Index="450" Distance="0" StartX="179" StartY="126" Dir="1" /> <!-- Cherry Blossom Spirit -->
@@ -1265,7 +1265,7 @@
 	<Map Number="6" Name="Arena">
 		<Spot Type="0" Description="NPC/Traps">
 			<Spawn Index="200" Distance="6" StartX="63" StartY="160" Dir="1" /> <!-- Soccer Ball -->
-			<!-- <Spawn Index="239" Distance="6" StartX="72" StartY="164" Dir="1" /> --> <!--  Arena Guard ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="239" Distance="6" StartX="72" StartY="164" Dir="1" /> --> <!-- Arena Guard ~ shop managed via ShopList.xml -->
 		</Spot>
 	</Map>
 	<Map Number="7" Name="Atlans (1 ~ 3)">
@@ -1467,7 +1467,7 @@
 			<Spawn Index="51" Distance="30" StartX="237" StartY="26" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="238" StartY="40" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="235" StartY="48" Dir="-1" />
-			<Spawn Index="51" Distance="30" StartX="251" StartY="51" Dir="-1" />
+			<Spawn Index="51" Distance="30" StartX="230" StartY="25" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="206" StartY="55" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="200" StartY="49" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="193" StartY="52" Dir="-1" />
@@ -1498,7 +1498,7 @@
 			<Spawn Index="51" Distance="30" StartX="62" StartY="140" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="70" StartY="133" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="168" StartY="54" Dir="-1" />
-			<Spawn Index="51" Distance="30" StartX="7" StartY="52" Dir="-1" />
+			<Spawn Index="51" Distance="30" StartX="58" StartY="40" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="225" StartY="45" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="207" StartY="9" Dir="-1" />
 			<Spawn Index="51" Distance="30" StartX="154" StartY="69" Dir="-1" />
@@ -2601,7 +2601,7 @@
 		<Spot Type="0" Description="NPC/Traps">
 			<Spawn Index="369" Distance="0" StartX="78" StartY="13" Dir="2" /> <!-- Osbourne -->
 			<Spawn Index="370" Distance="0" StartX="86" StartY="13" Dir="1" /> <!-- Jerridon -->
-			<!-- <Spawn Index="371" Distance="0" StartX="82" StartY="16" Dir="1" /> --> <!-- Leo the Helper -->																		   
+			<!-- <Spawn Index="371" Distance="0" StartX="82" StartY="16" Dir="1" /> --> <!-- Leo the Helper -->																		 
 		</Spot>
 		<Spot Type="2" Description="Single Point Monsters">
 			<Spawn Index="304" Distance="30" StartX="106" StartY="49" Dir="-1" /> <!-- Witch Queen -->
@@ -3783,7 +3783,7 @@
 			<Spawn Index="558" Distance="30" StartX="180" StartY="127" Dir="-1" />
 			<Spawn Index="558" Distance="30" StartX="213" StartY="147" Dir="-1" />
 			<Spawn Index="558" Distance="30" StartX="223" StartY="148" Dir="-1" />
-		<!-- 7 O'Clock Island -->															  
+		<!-- 7 O'Clock Island -->															 
 			<Spawn Index="444" Distance="5" StartX="222" StartY="10" Dir="-1" /> <!-- Shadow Pawn -->
 			<Spawn Index="444" Distance="5" StartX="228" StartY="10" Dir="-1" />
 			<Spawn Index="444" Distance="5" StartX="224" StartY="14" Dir="-1" />
@@ -3850,7 +3850,7 @@
 			<Spawn Index="557" Distance="30" StartX="148" StartY="26" Dir="-1" />
 			<Spawn Index="557" Distance="30" StartX="145" StartY="23" Dir="-1" />
 			<Spawn Index="557" Distance="30" StartX="158" StartY="17" Dir="-1" />
-		<!-- 11 O'Clock Island -->											   
+		<!-- 11 O'Clock Island -->											 
 			<Spawn Index="443" Distance="5" StartX="36" StartY="44" Dir="-1" /> <!-- Sapi-Tres -->
 			<Spawn Index="443" Distance="5" StartX="41" StartY="44" Dir="-1" />
 			<Spawn Index="443" Distance="5" StartX="36" StartY="51" Dir="-1" />
@@ -3926,7 +3926,7 @@
 			<Spawn Index="559" Distance="30" StartX="26" StartY="116" Dir="-1" /> <!-- Shadow Master -->
 			<Spawn Index="559" Distance="30" StartX="14" StartY="104" Dir="-1" />
 			<Spawn Index="559" Distance="30" StartX="13" StartY="93" Dir="-1" />
-		<!-- 1 O'Clock Island -->																  
+		<!-- 1 O'Clock Island -->																 
 			<Spawn Index="443" Distance="5" StartX="68" StartY="192" Dir="-1" /> <!-- Sapi-Tres -->
 			<Spawn Index="443" Distance="5" StartX="68" StartY="202" Dir="-1" />
 			<Spawn Index="443" Distance="5" StartX="68" StartY="215" Dir="-1" />
@@ -4475,12 +4475,12 @@
 			<Spawn Index="643" Distance="0" StartX="46" StartY="52" Dir="3" /> <!-- Mait -->
 			<!-- <Spawn Index="643" Distance="0" StartX="46" StartY="58" Dir="3" />
 			<Spawn Index="643" Distance="0" StartX="46" StartY="63" Dir="3" /> -->
-			<!-- <Spawn Index="683" Distance="0" StartX="58" StartY="51" Dir="2" /> --> <!--  Marce ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="684" Distance="0" StartX="64" StartY="57" Dir="2" /> --> <!--  Silvia ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="685" Distance="0" StartX="68" StartY="66" Dir="2" /> --> <!--  Izabel ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="686" Distance="0" StartX="58" StartY="63" Dir="2" /> --> <!--  Sophia (repair) -->
-			<!-- <Spawn Index="687" Distance="0" StartX="62" StartY="42" Dir="3" /> --> <!--  Bolo (repair) ~  Marce.xml ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="688" Distance="0" StartX="43" StartY="46" Dir="3" /> --> <!--  Christine ~  Marce.xml ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="683" Distance="0" StartX="58" StartY="51" Dir="2" /> --> <!-- Marce ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="684" Distance="0" StartX="64" StartY="57" Dir="2" /> --> <!-- Silvia ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="685" Distance="0" StartX="68" StartY="66" Dir="2" /> --> <!-- Izabel ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="686" Distance="0" StartX="58" StartY="63" Dir="2" /> --> <!-- Sophia (repair) -->
+			<!-- <Spawn Index="687" Distance="0" StartX="62" StartY="42" Dir="3" /> --> <!-- Bolo (repair) ~ Marce.xml ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="688" Distance="0" StartX="43" StartY="46" Dir="3" /> --> <!-- Christine ~ Marce.xml ~ shop managed via ShopList.xml -->
 			<Spawn Index="695" Distance="0" StartX="66" StartY="46" Dir="3" /> <!-- Levine -->
 			<Spawn Index="695" Distance="0" StartX="67" StartY="57" Dir="3" />
 			<Spawn Index="695" Distance="0" StartX="58" StartY="68" Dir="3" />
@@ -4488,8 +4488,8 @@
 	</Map>
 	<Map Number="80" Name="Karutan 1">
 		<Spot Type="0" Description="NPC/Traps">
-			<!-- <Spawn Index="577" Distance="0" StartX="121" StartY="102" Dir="3" /> --> <!--  Leina the Merchant ~ shop managed via ShopList.xml -->
-			<!-- <Spawn Index="578" Distance="0" StartX="117" StartY="126" Dir="3" /> --> <!--  Weapons Merchant_Bolo ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="577" Distance="0" StartX="121" StartY="102" Dir="3" /> --> <!-- Leina the Merchant ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="578" Distance="0" StartX="117" StartY="126" Dir="3" /> --> <!-- Weapons Merchant_Bolo ~ shop managed via ShopList.xml -->
 			<Spawn Index="240" Distance="0" StartX="123" StartY="132" Dir="2" /> <!-- Safety Guardian -->
 			<Spawn Index="240" Distance="0" StartX="122" StartY="96" Dir="3" />
 			<Spawn Index="240" Distance="0" StartX="157" StartY="127" Dir="1" />
@@ -4783,7 +4783,7 @@
 		<Spot Type="0" Description="NPC/Traps">
 			<Spawn Index="581" Distance="0" StartX="29" StartY="210" Dir="2" /> <!-- Deruvish -->
 			<Spawn Index="582" Distance="0" StartX="38" StartY="216" Dir="2" /> <!-- Adniel -->
-			<!-- <Spawn Index="583" Distance="0" StartX="56" StartY="202" Dir="2" /> --> <!--  Jin ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="583" Distance="0" StartX="56" StartY="202" Dir="2" /> --> <!-- Jin ~ shop managed via ShopList.xml -->
 			<Spawn Index="240" Distance="0" StartX="50" StartY="184" Dir="3" /> <!-- Safety Guardian -->
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
@@ -5018,7 +5018,7 @@
 	</Map>
 	<Map Number="92" Name="Arka War">
 		<Spot Type="0" Description="NPC/Traps">
-			<!-- <Spawn Index="604" Distance="0" StartX="56" StartY="202" Dir="2" /> --> <!--  Jin ~ shop managed via ShopList.xml -->
+			<!-- <Spawn Index="604" Distance="0" StartX="56" StartY="202" Dir="2" /> --> <!-- Jin ~ shop managed via ShopList.xml -->
 		</Spot>
 		<!-- Monster Spawn for Arca War Event Map is managed trough ArcaBattle.xml file -->
 	</Map>
@@ -5380,7 +5380,7 @@
 			<Spawn Index="689" Distance="0" StartX="138" StartY="123" EndX="139" EndY="122" Dir="-1" Count="1" Element="0" />
 			<Spawn Index="689" Distance="0" StartX="139" StartY="127" EndX="141" EndY="128" Dir="-1" Count="1" Element="0" />
 			<Spawn Index="689" Distance="0" StartX="136" StartY="128" EndX="137" EndY="129" Dir="-1" Count="1" Element="0" />
-			<Spawn Index="689" Distance="0" StartX="137" StartY="132" EndX="138" EndY="133" Dir="-1" Count="1" Element="0" />
+			<Spawn Index="689" Distance="0" StartX="132" StartY="137" EndX="138" EndY="133" Dir="-1" Count="1" Element="0" />
 			<Spawn Index="689" Distance="0" StartX="133" StartY="132" EndX="134" EndY="133" Dir="-1" Count="1" Element="0" />
 			<Spawn Index="689" Distance="0" StartX="113" StartY="122" EndX="114" EndY="123" Dir="-1" Count="1" Element="0" />
 			<Spawn Index="689" Distance="0" StartX="122" StartY="122" EndX="123" EndY="123" Dir="-1" Count="1" Element="0" />
@@ -5420,10 +5420,7 @@
 			<Spawn Index="714" Distance="30" StartX="210" StartY="140" EndX="252" EndY="178" Dir="-1" Count="1" Element="0" /> <!-- Nars Elemental Beast -->
 			<Spawn Index="715" Distance="30" StartX="189" StartY="147" EndX="191" EndY="149" Dir="-1" Count="1" Element="0" /> <!-- Nars Elemental Knight -->
 			<Spawn Index="715" Distance="30" StartX="192" StartY="145" EndX="194" EndY="147" Dir="-1" Count="1" Element="0" />
-			<Spawn Index="714" Distance="30" StartX="187" StartY="125" EndX="188" EndY="125" Dir="-1" Count="1" Element="0" /> <!-- Nars Elemental Beast -->
-			<Spawn Index="714" Distance="30" StartX="188" StartY="125" EndX="188" EndY="125" Dir="-1" Count="1" Element="0" />
-			<Spawn Index="714" Distance="30" StartX="188" StartY="125" EndX="222" EndY="179" Dir="-1" Count="1" Element="0" />
-			<Spawn Index="713" Distance="30" StartX="111" StartY="144" EndX="124" EndY="179" Dir="-1" Count="1" Element="0" /> <!-- Nars Devil Fairy -->
+			<Spawn Index="713" Distance="30" StartX="124" StartY="150" EndX="152" EndY="170" Dir="-1" Count="1" Element="0" /> <!-- Nars Devil Fairy -->
 			<Spawn Index="714" Distance="30" StartX="136" StartY="160" EndX="138" EndY="162" Dir="-1" Count="1" Element="0" /> <!-- Nars Elemental Beast -->
 			<Spawn Index="713" Distance="30" StartX="136" StartY="164" EndX="138" EndY="166" Dir="-1" Count="1" Element="0" /> <!-- Nars Devil Fairy -->
 			<Spawn Index="714" Distance="30" StartX="139" StartY="162" EndX="141" EndY="164" Dir="-1" Count="1" Element="0" /> <!-- Nars Elemental Beast -->
@@ -5476,7 +5473,6 @@
 			<Spawn Index="715" Distance="30" StartX="92" StartY="9" EndX="94" EndY="11" Dir="-1" Count="1" Element="1" /> <!-- Nars Elemental Knight -->
 			<Spawn Index="714" Distance="30" StartX="93" StartY="14" EndX="95" EndY="16" Dir="-1" Count="1" Element="1" /> <!-- Nars Elemental Beast -->
 			<Spawn Index="714" Distance="30" StartX="153" StartY="12" EndX="155" EndY="14" Dir="-1" Count="1" Element="1" />
-			<Spawn Index="714" Distance="30" StartX="188" StartY="12" EndX="190" EndY="14" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="713" Distance="30" StartX="90" StartY="39" EndX="92" EndY="41" Dir="-1" Count="1" Element="1" /> <!-- Nars Devil Fairy -->
 			<Spawn Index="715" Distance="30" StartX="89" StartY="41" EndX="91" EndY="43" Dir="-1" Count="1" Element="1" /> <!-- Nars Elemental Knight -->
 			<Spawn Index="715" Distance="30" StartX="88" StartY="35" EndX="90" EndY="37" Dir="-1" Count="1" Element="1" />
@@ -6178,7 +6174,7 @@
 			<Spawn Index="745" Distance="0" StartX="77" StartY="10" EndX="78" EndY="11" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="745" Distance="0" StartX="84" StartY="17" EndX="85" EndY="18" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="745" Distance="0" StartX="84" StartY="10" EndX="85" EndY="11" Dir="-1" Count="1" Element="1" />
-			<Spawn Index="745" Distance="0" StartX="15" StartY="83" EndX="16" EndY="84" Dir="-1" Count="1" Element="1" />
+			<Spawn Index="745" Distance="0" StartX="28" StartY="62" EndX="16" EndY="84" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="745" Distance="0" StartX="22" StartY="90" EndX="23" EndY="91" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="745" Distance="0" StartX="94" StartY="61" EndX="95" EndY="62" Dir="-1" Count="1" Element="1" />
 			<Spawn Index="745" Distance="0" StartX="100" StartY="61" EndX="101" EndY="62" Dir="-1" Count="1" Element="1" />
@@ -6284,7 +6280,7 @@
 	</Map>
 	<Map Number="116" Name="Deep Dungeon 1">
 		<Spot Type="4" Description="Single Point Elemental Monsters">
-			<Spawn Index="770" Distance="3" StartX="99" StartY="130" Dir="-1" Element="1" /> <!--  Deep Dungeon Larva -->
+			<Spawn Index="770" Distance="3" StartX="99" StartY="130" Dir="-1" Element="1" /> <!-- Deep Dungeon Larva -->
 			<Spawn Index="770" Distance="4" StartX="187" StartY="156" Dir="-1" Element="4" />
 			<Spawn Index="770" Distance="3" StartX="59" StartY="152" Dir="6" Element="1" />
 			<Spawn Index="770" Distance="3" StartX="68" StartY="140" Dir="-1" Element="1" />
@@ -6400,7 +6396,7 @@
 			<Spawn Index="770" Distance="4" StartX="215" StartY="152" Dir="-1" Element="5" />
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
-			<Spawn Index="767" Distance="3" StartX="43" StartY="162" EndX="57" EndY="166" Dir="-1" Count="3" Element="1" />  <!--  Deep Dungeon Skeleton Warrior -->
+			<Spawn Index="767" Distance="3" StartX="43" StartY="162" EndX="57" EndY="166" Dir="-1" Count="3" Element="1" /> <!-- Deep Dungeon Skeleton Warrior -->
 			<Spawn Index="767" Distance="12" StartX="166" StartY="156" EndX="180" EndY="170" Dir="-1" Count="8" Element="4" />
 			<Spawn Index="767" Distance="10" StartX="166" StartY="173" EndX="176" EndY="181" Dir="8" Count="2" Element="4" />
 			<Spawn Index="767" Distance="7" StartX="105" StartY="241" EndX="114" EndY="250" Dir="-1" Count="2" Element="3" />
@@ -6443,7 +6439,7 @@
 			<Spawn Index="767" Distance="8" StartX="113" StartY="216" EndX="121" EndY="224" Dir="-1" Count="3" Element="3" />
 			<Spawn Index="767" Distance="8" StartX="136" StartY="215" EndX="141" EndY="229" Dir="-1" Count="2" Element="3" />
 			<Spawn Index="767" Distance="8" StartX="186" StartY="191" EndX="198" EndY="197" Dir="6" Count="2" Element="4" />
-			<Spawn Index="771" Distance="3" StartX="11" StartY="154" EndX="16" EndY="163" Dir="-1" Count="3" Element="1" /> <!--  Deep Dungeon Cyclops -->
+			<Spawn Index="771" Distance="3" StartX="11" StartY="154" EndX="16" EndY="163" Dir="-1" Count="3" Element="1" /> <!-- Deep Dungeon Cyclops -->
 			<Spawn Index="771" Distance="3" StartX="21" StartY="175" EndX="25" EndY="188" Dir="-1" Count="3" Element="1" />
 			<Spawn Index="771" Distance="12" StartX="79" StartY="180" EndX="98" EndY="190" Dir="-1" Count="4" Element="2" />
 			<Spawn Index="771" Distance="12" StartX="54" StartY="224" EndX="63" EndY="236" Dir="-1" Count="4" Element="2" />
@@ -6475,7 +6471,7 @@
 	</Map>
 	<Map Number="117" Name="Deep Dungeon 2">
 		<Spot Type="4" Description="Single Point Elemental Monsters">
-			<Spawn Index="772" Distance="4" StartX="77" StartY="38" Dir="-1" Element="2" /> <!--  Deep Dungeon Ghost -->
+			<Spawn Index="772" Distance="4" StartX="77" StartY="38" Dir="-1" Element="2" /> <!-- Deep Dungeon Ghost -->
 			<Spawn Index="772" Distance="4" StartX="99" StartY="67" Dir="-1" Element="2" />
 			<Spawn Index="772" Distance="4" StartX="85" StartY="7" Dir="-1" Element="3" />
 			<Spawn Index="772" Distance="4" StartX="115" StartY="10" Dir="-1" Element="3" />
@@ -6581,7 +6577,7 @@
 			<Spawn Index="772" Distance="4" StartX="235" StartY="70" Dir="-1" Element="5" />
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
-			<Spawn Index="768" Distance="6" StartX="3" StartY="32" EndX="15" EndY="43" Dir="-1" Count="3" Element="2" /> <!--  Deep Dungeon Chief Skeleton Archer -->
+			<Spawn Index="768" Distance="6" StartX="3" StartY="32" EndX="15" EndY="43" Dir="-1" Count="3" Element="2" /> <!-- Deep Dungeon Chief Skeleton Archer -->
 			<Spawn Index="768" Distance="12" StartX="4" StartY="14" EndX="17" EndY="29" Dir="-1" Count="5" Element="2" />
 			<Spawn Index="768" Distance="4" StartX="55" StartY="78" EndX="69" EndY="91" Dir="-1" Count="2" Element="1" />
 			<Spawn Index="768" Distance="6" StartX="78" StartY="87" EndX="82" EndY="118" Dir="-1" Count="2" Element="1" />
@@ -6612,7 +6608,7 @@
 			<Spawn Index="768" Distance="6" StartX="33" StartY="72" EndX="47" EndY="93" Dir="-1" Count="2" Element="1" />
 			<Spawn Index="768" Distance="12" StartX="136" StartY="49" EndX="147" EndY="62" Dir="-1" Count="4" Element="3" />
 			<Spawn Index="768" Distance="4" StartX="49" StartY="68" EndX="56" EndY="79" Dir="-1" Count="3" Element="3" />
-			<Spawn Index="771" Distance="6" StartX="9" StartY="99" EndX="22" EndY="116" Dir="-1" Count="5" Element="1" /> <!--  Deep Dungeon Cyclops -->
+			<Spawn Index="771" Distance="6" StartX="9" StartY="99" EndX="22" EndY="116" Dir="-1" Count="5" Element="1" /> <!-- Deep Dungeon Cyclops -->
 			<Spawn Index="771" Distance="8" StartX="136" StartY="97" EndX="144" EndY="113" Dir="-1" Count="2" Element="3" />
 			<Spawn Index="771" Distance="6" StartX="236" StartY="111" EndX="250" EndY="124" Dir="-1" Count="2" Element="5" />
 			<Spawn Index="771" Distance="6" StartX="238" StartY="89" EndX="246" EndY="99" Dir="-1" Count="2" Element="5" />
@@ -6647,7 +6643,7 @@
 	</Map>
 	<Map Number="118" Name="Deep Dungeon 3">
 		<Spot Type="4" Description="Single Point Elemental Monsters">
-			<Spawn Index="768" Distance="4" StartX="19" StartY="51" Dir="-1" Element="1" /> <!--  Deep Dungeon Chief Skeleton Archer -->
+			<Spawn Index="768" Distance="4" StartX="19" StartY="51" Dir="-1" Element="1" /> <!-- Deep Dungeon Chief Skeleton Archer -->
 			<Spawn Index="768" Distance="4" StartX="37" StartY="41" Dir="-1" Element="1" />
 			<Spawn Index="768" Distance="4" StartX="62" StartY="72" Dir="-1" Element="1" />
 			<Spawn Index="768" Distance="4" StartX="68" StartY="103" Dir="-1" Element="1" />
@@ -6668,7 +6664,7 @@
 			<Spawn Index="768" Distance="4" StartX="24" StartY="73" Dir="-1" Element="1" />
 			<Spawn Index="768" Distance="4" StartX="14" StartY="58" Dir="-1" Element="1" />
 			<Spawn Index="768" Distance="4" StartX="15" StartY="41" Dir="-1" Element="1" />
-			<Spawn Index="774" Distance="4" StartX="60" StartY="117" Dir="-1" Element="2" /> <!--  Deep Dungeon Hell Spider -->
+			<Spawn Index="774" Distance="4" StartX="60" StartY="117" Dir="-1" Element="2" /> <!-- Deep Dungeon Hell Spider -->
 			<Spawn Index="774" Distance="4" StartX="100" StartY="127" Dir="-1" Element="2" />
 			<Spawn Index="774" Distance="4" StartX="24" StartY="138" Dir="-1" Element="2" />
 			<Spawn Index="774" Distance="4" StartX="23" StartY="151" Dir="-1" Element="2" />
@@ -6757,7 +6753,7 @@
 			<Spawn Index="774" Distance="4" StartX="127" StartY="244" Dir="-1" Element="4" />
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
-			<Spawn Index="768" Distance="6" StartX="60" StartY="50" EndX="69" EndY="57" Dir="-1" Count="2" Element="1" /> <!--  Deep Dungeon Chief Skeleton Archer -->
+			<Spawn Index="768" Distance="6" StartX="60" StartY="50" EndX="69" EndY="57" Dir="-1" Count="2" Element="1" /> <!-- Deep Dungeon Chief Skeleton Archer -->
 			<Spawn Index="768" Distance="10" StartX="9" StartY="38" EndX="18" EndY="63" Dir="-1" Count="5" Element="1" />
 			<Spawn Index="768" Distance="6" StartX="42" StartY="125" EndX="58" EndY="132" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="768" Distance="6" StartX="84" StartY="171" EndX="93" EndY="178" Dir="-1" Count="2" Element="2" />
@@ -6793,7 +6789,7 @@
 			<Spawn Index="768" Distance="6" StartX="163" StartY="196" EndX="166" EndY="212" Dir="-1" Count="2" Element="4" />
 			<Spawn Index="768" Distance="6" StartX="165" StartY="172" EndX="172" EndY="182" Dir="-1" Count="2" Element="4" />
 			<Spawn Index="768" Distance="6" StartX="45" StartY="26" EndX="54" EndY="32" Dir="-1" Count="2" Element="1" />
-			<Spawn Index="773" Distance="6" StartX="38" StartY="62" EndX="54" EndY="67" Dir="-1" Count="3" Element="1" /> <!--  Deep Dungeon Hell Hound -->
+			<Spawn Index="773" Distance="6" StartX="38" StartY="62" EndX="54" EndY="67" Dir="-1" Count="3" Element="1" /> <!-- Deep Dungeon Hell Hound -->
 			<Spawn Index="773" Distance="6" StartX="37" StartY="46" EndX="46" EndY="57" Dir="-1" Count="4" Element="1" />
 			<Spawn Index="773" Distance="8" StartX="33" StartY="115" EndX="41" EndY="122" Dir="-1" Count="3" Element="1" />
 			<Spawn Index="773" Distance="6" StartX="71" StartY="70" EndX="78" EndY="75" Dir="-1" Count="2" Element="1" />
@@ -6843,7 +6839,7 @@
 	</Map>
 	<Map Number="119" Name="Deep Dungeon 4">
 		<Spot Type="4" Description="Single Point Elemental Monsters">
-			<Spawn Index="774" Distance="4" StartX="46" StartY="3" Dir="-1" Element="1" /> <!--  Deep Dungeon Hell Spider -->
+			<Spawn Index="774" Distance="4" StartX="46" StartY="3" Dir="-1" Element="1" /> <!-- Deep Dungeon Hell Spider -->
 			<Spawn Index="774" Distance="4" StartX="82" StartY="4" Dir="-1" Element="1" />
 			<Spawn Index="774" Distance="4" StartX="87" StartY="51" Dir="-1" Element="1" />
 			<Spawn Index="774" Distance="4" StartX="112" StartY="52" Dir="-1" Element="1" />
@@ -6935,7 +6931,7 @@
 			<Spawn Index="774" Distance="4" StartX="220" StartY="179" Dir="-1" Element="5" />
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
-			<Spawn Index="769" Distance="4" StartX="11" StartY="5" EndX="25" EndY="9" Dir="-1" Count="3" Element="1" /> <!--  Deep Dungeon Elite Skeleton Warrior -->
+			<Spawn Index="769" Distance="4" StartX="11" StartY="5" EndX="25" EndY="9" Dir="-1" Count="3" Element="1" /> <!-- Deep Dungeon Elite Skeleton Warrior -->
 			<Spawn Index="769" Distance="6" StartX="135" StartY="2" EndX="148" EndY="10" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="769" Distance="6" StartX="199" StartY="23" EndX="209" EndY="40" Dir="-1" Count="3" Element="3" />
 			<Spawn Index="769" Distance="4" StartX="157" StartY="135" EndX="168" EndY="146" Dir="-1" Count="5" Element="4" />
@@ -6966,7 +6962,7 @@
 			<Spawn Index="769" Distance="6" StartX="165" StartY="85" EndX="170" EndY="105" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="769" Distance="8" StartX="217" StartY="179" EndX="224" EndY="204" Dir="-1" Count="3" Element="5" />
 			<Spawn Index="769" Distance="4" StartX="20" StartY="11" EndX="30" EndY="19" Dir="-1" Count="3" Element="1" />
-			<Spawn Index="775" Distance="8" StartX="87" StartY="26" EndX="98" EndY="42" Dir="-1" Count="3" Element="1" /> <!--  Deep Dungeon Thunder Lich -->
+			<Spawn Index="775" Distance="8" StartX="87" StartY="26" EndX="98" EndY="42" Dir="-1" Count="3" Element="1" /> <!-- Deep Dungeon Thunder Lich -->
 			<Spawn Index="775" Distance="4" StartX="175" StartY="12" EndX="185" EndY="21" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="775" Distance="6" StartX="177" StartY="90" EndX="189" EndY="101" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="775" Distance="4" StartX="174" StartY="113" EndX="189" EndY="123" Dir="-1" Count="3" Element="4" />
@@ -6997,7 +6993,7 @@
 	</Map>
 	<Map Number="120" Name="Deep Dungeon 5">
 		<Spot Type="4" Description="Single Point Elemental Monsters">
-			<Spawn Index="776" Distance="4" StartX="39" StartY="83" Dir="-1" Element="1" /> <!--  Deep Dungeon Poison Bull Fighter -->
+			<Spawn Index="776" Distance="4" StartX="39" StartY="83" Dir="-1" Element="1" /> <!-- Deep Dungeon Poison Bull Fighter -->
 			<Spawn Index="776" Distance="4" StartX="29" StartY="60" Dir="-1" Element="1" />
 			<Spawn Index="776" Distance="4" StartX="44" StartY="47" Dir="-1" Element="1" />
 			<Spawn Index="776" Distance="4" StartX="68" StartY="13" Dir="-1" Element="1" />
@@ -7184,15 +7180,15 @@
 			<Spawn Index="776" Distance="10" StartX="53" StartY="37" Dir="-1" Element="1" />
 			<Spawn Index="776" Distance="10" StartX="68" StartY="37" Dir="-1" Element="1" />
 			<Spawn Index="776" Distance="10" StartX="74" StartY="38" Dir="-1" Element="1" />
-			<Spawn Index="778" Distance="3" StartX="237" StartY="230" Dir="-1" Element="6" /> <!--  Deep Dungeon Gorgon -->
+			<Spawn Index="778" Distance="3" StartX="237" StartY="230" Dir="-1" Element="6" /> <!-- Deep Dungeon Gorgon -->
 		</Spot>
 		<Spot Type="3" Description="Elemental Monster Spawn">
-			<Spawn Index="767" Distance="8" StartX="35" StartY="196" EndX="45" EndY="201" Dir="-1" Count="3" Element="2" /> <!--  Deep Dungeon Skeleton Warrior -->
+			<Spawn Index="767" Distance="8" StartX="35" StartY="196" EndX="45" EndY="201" Dir="-1" Count="3" Element="2" /> <!-- Deep Dungeon Skeleton Warrior -->
 			<Spawn Index="767" Distance="8" StartX="38" StartY="207" EndX="47" EndY="214" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="767" Distance="8" StartX="12" StartY="230" EndX="31" EndY="235" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="767" Distance="6" StartX="33" StartY="117" EndX="39" EndY="127" Dir="-1" Count="3" Element="2" />
 			<Spawn Index="767" Distance="8" StartX="27" StartY="189" EndX="32" EndY="208" Dir="-1" Count="3" Element="2" />
-			<Spawn Index="775" Distance="10" StartX="4" StartY="239" EndX="13" EndY="247" Dir="-1" Count="3" Element="2" /> <!--  Deep Dungeon Thunder Lich -->
+			<Spawn Index="775" Distance="10" StartX="4" StartY="239" EndX="13" EndY="247" Dir="-1" Count="3" Element="2" /> <!-- Deep Dungeon Thunder Lich -->
 			<Spawn Index="775" Distance="6" StartX="43" StartY="112" EndX="64" EndY="118" Dir="-1" Count="2" Element="2" />
 			<Spawn Index="775" Distance="8" StartX="134" StartY="190" EndX="139" EndY="204" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="775" Distance="8" StartX="136" StartY="226" EndX="141" EndY="240" Dir="-1" Count="3" Element="4" />
@@ -7258,7 +7254,7 @@
 			<Spawn Index="775" Distance="8" StartX="241" StartY="98" EndX="250" EndY="110" Dir="-1" Count="3" Element="5" />
 			<Spawn Index="775" Distance="8" StartX="202" StartY="76" EndX="207" EndY="85" Dir="-1" Count="3" Element="5" />
 			<Spawn Index="775" Distance="8" StartX="175" StartY="89" EndX="185" EndY="94" Dir="-1" Count="3" Element="5" />
-			<Spawn Index="776" Distance="6" StartX="3" StartY="166" EndX="13" EndY="177" Dir="-1" Count="2" Element="4" /> <!--  Deep Dungeon Poison Bull Fighter -->
+			<Spawn Index="776" Distance="6" StartX="3" StartY="166" EndX="13" EndY="177" Dir="-1" Count="2" Element="4" /> <!-- Deep Dungeon Poison Bull Fighter -->
 			<Spawn Index="776" Distance="8" StartX="71" StartY="235" EndX="91" EndY="250" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="776" Distance="6" StartX="34" StartY="147" EndX="42" EndY="158" Dir="-1" Count="2" Element="2" />
 			<Spawn Index="776" Distance="6" StartX="32" StartY="168" EndX="42" EndY="178" Dir="-1" Count="2" Element="2" />
@@ -7271,7 +7267,7 @@
 			<Spawn Index="776" Distance="6" StartX="228" StartY="35" EndX="248" EndY="48" Dir="-1" Count="3" Element="3" />
 			<Spawn Index="776" Distance="6" StartX="166" StartY="48" EndX="175" EndY="58" Dir="-1" Count="3" Element="3" />
 			<Spawn Index="776" Distance="6" StartX="130" StartY="31" EndX="155" EndY="39" Dir="-1" Count="3" Element="3" />
-			<Spawn Index="777" Distance="6" StartX="21" StartY="28" EndX="37" EndY="39" Dir="-1" Count="2" Element="1" /> <!--  Deep Dungeon Dark Knight -->
+			<Spawn Index="777" Distance="6" StartX="21" StartY="28" EndX="37" EndY="39" Dir="-1" Count="2" Element="1" /> <!-- Deep Dungeon Dark Knight -->
 			<Spawn Index="777" Distance="6" StartX="2" StartY="53" EndX="13" EndY="64" Dir="-1" Count="2" Element="1" />
 			<Spawn Index="777" Distance="10" StartX="67" StartY="148" EndX="71" EndY="162" Dir="-1" Count="4" Element="2" />
 			<Spawn Index="777" Distance="10" StartX="43" StartY="120" EndX="54" EndY="126" Dir="-1" Count="3" Element="2" />
@@ -7341,7 +7337,7 @@
 			<Spawn Index="786" Distance="3" StartX="77" StartY="207" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="77" StartY="189" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="81" StartY="187" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="85" StartY="195" Dir="-1" Element="1" />
+			<Spawn Index="786" Distance="3" StartX="80" StartY="153" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="90" StartY="191" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="91" StartY="184" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="92" StartY="174" Dir="-1" Element="1" />
@@ -7354,38 +7350,30 @@
 			<Spawn Index="786" Distance="3" StartX="68" StartY="141" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="67" StartY="130" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="68" StartY="126" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="57" StartY="120" Dir="-1" Element="1" />
+			<Spawn Index="786" Distance="3" StartX="42" StartY="98" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="118" StartY="204" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="116" StartY="213" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="119" StartY="218" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="119" StartY="240" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="111" StartY="243" Dir="-1" Element="1" />
+			<Spawn Index="786" Distance="3" StartX="98" StartY="138" Dir="-1" Element="1" />
+			<Spawn Index="786" Distance="3" StartX="88" StartY="122" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="106" StartY="241" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="95" StartY="239" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="37" StartY="192" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="33" StartY="193" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="41" StartY="211" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="33" StartY="213" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="20" StartY="163" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="8" StartX="19" StartY="168" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="24" StartY="171" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="38" StartY="171" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="31" StartY="172" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="45" StartY="169" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="48" StartY="183" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="53" StartY="192" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="59" StartY="184" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="66" StartY="180" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="52" StartY="215" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="59" StartY="222" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="66" StartY="219" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="113" StartY="224" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="99" StartY="230" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="92" StartY="234" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="91" StartY="227" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="67" StartY="167" Dir="-1" Element="1" />
 			<Spawn Index="786" Distance="3" StartX="65" StartY="166" Dir="-1" Element="1" />
-			<Spawn Index="786" Distance="3" StartX="202" StartY="164" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="198" StartY="167" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="190" StartY="167" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="187" StartY="171" Dir="-1" Element="4" />
@@ -7402,29 +7390,6 @@
 			<Spawn Index="786" Distance="3" StartX="184" StartY="202" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="185" StartY="208" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="192" StartY="211" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="193" StartY="207" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="199" StartY="215" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="200" StartY="222" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="209" StartY="222" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="191" StartY="225" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="184" StartY="222" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="181" StartY="216" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="174" StartY="219" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="176" StartY="225" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="171" StartY="225" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="175" StartY="210" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="171" StartY="205" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="165" StartY="207" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="162" StartY="204" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="162" StartY="212" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="154" StartY="215" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="154" StartY="209" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="146" StartY="213" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="136" StartY="212" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="141" StartY="213" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="130" StartY="214" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="145" StartY="169" Dir="-1" Element="4" />
-			<Spawn Index="786" Distance="3" StartX="146" StartY="176" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="147" StartY="173" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="123" StartY="188" Dir="-1" Element="4" />
 			<Spawn Index="786" Distance="3" StartX="129" StartY="189" Dir="-1" Element="4" />
@@ -7435,33 +7400,17 @@
 			<Spawn Index="786" Distance="3" StartX="227" StartY="156" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="234" StartY="158" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="241" StartY="154" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="237" StartY="168" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="231" StartY="171" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="215" StartY="164" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="213" StartY="167" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="196" StartY="153" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="197" StartY="147" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="195" StartY="125" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="198" StartY="121" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="231" StartY="116" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="226" StartY="116" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="227" StartY="121" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="215" StartY="75" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="209" StartY="70" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="203" StartY="63" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="195" StartY="59" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="210" StartY="65" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="219" StartY="57" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="225" StartY="60" Dir="-1" Element="2" />
-			<Spawn Index="786" Distance="3" StartX="223" StartY="64" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="230" StartY="65" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="241" StartY="63" Dir="-1" Element="2" />
 			<Spawn Index="786" Distance="3" StartX="178" StartY="63" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="168" StartY="60" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="165" StartY="55" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="160" StartY="51" Dir="-1" Element="5" />
-			<Spawn Index="786" Distance="3" StartX="154" StartY="75" Dir="-1" Element="5" />
-			<Spawn Index="786" Distance="3" StartX="152" StartY="79" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="131" StartY="68" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="129" StartY="73" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="144" StartY="30" Dir="-1" Element="5" />
@@ -7473,30 +7422,16 @@
 			<Spawn Index="786" Distance="3" StartX="118" StartY="23" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="113" StartY="24" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="93" StartY="22" Dir="-1" Element="5" />
-			<Spawn Index="786" Distance="3" StartX="88" StartY="23" Dir="-1" Element="5" />
 			<Spawn Index="786" Distance="3" StartX="58" StartY="27" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="55" StartY="26" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="50" StartY="23" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="47" StartY="21" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="37" StartY="30" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="38" StartY="41" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="27" StartY="37" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="23" StartY="37" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="34" StartY="82" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="31" StartY="87" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="28" StartY="92" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="45" StartY="85" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="45" StartY="90" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="68" StartY="84" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="67" StartY="89" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="88" StartY="87" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="93" StartY="83" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="99" StartY="102" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="104" StartY="100" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="101" StartY="98" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="107" StartY="95" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="111" StartY="92" Dir="-1" Element="3" />
-			<Spawn Index="786" Distance="3" StartX="81" StartY="93" Dir="-1" Element="3" />
+			<Spawn Index="786" Distance="3" StartX="48" StartY="108" Dir="-1" Element="3" />
+			<Spawn Index="786" Distance="3" StartX="102" StartY="195" Dir="-1" Element="3" />
+
 			<Spawn Index="786" Distance="3" StartX="81" StartY="70" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="77" StartY="66" Dir="-1" Element="3" />
 			<Spawn Index="786" Distance="3" StartX="73" StartY="63" Dir="-1" Element="3" />
@@ -7517,23 +7452,10 @@
 			<Spawn Index="787" Distance="3" StartX="201" StartY="135" Dir="-1" Element="2" />
 			<Spawn Index="787" Distance="3" StartX="197" StartY="138" Dir="-1" Element="2" />
 			<Spawn Index="787" Distance="3" StartX="220" StartY="128" Dir="-1" Element="2" />
-			<Spawn Index="787" Distance="3" StartX="221" StartY="159" Dir="-1" Element="2" />
-			<Spawn Index="787" Distance="3" StartX="183" StartY="118" Dir="-1" Element="2" />
 			<Spawn Index="787" Distance="3" StartX="177" StartY="80" Dir="-1" Element="2" />
-			<Spawn Index="787" Distance="3" StartX="170" StartY="76" Dir="-1" Element="2" />
-			<Spawn Index="787" Distance="3" StartX="184" StartY="66" Dir="-1" Element="2" />
-			<Spawn Index="787" Distance="3" StartX="149" StartY="75" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="147" StartY="80" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="140" StartY="79" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="136" StartY="75" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="132" StartY="79" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="152" StartY="68" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="152" StartY="71" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="133" StartY="38" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="131" StartY="39" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="114" StartY="75" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="114" StartY="81" Dir="-1" Element="5" />
-			<Spawn Index="787" Distance="3" StartX="115" StartY="87" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="178" StartY="97" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="177" StartY="101" Dir="-1" Element="5" />
 			<Spawn Index="787" Distance="3" StartX="68" StartY="52" Dir="-1" Element="3" />
@@ -7541,8 +7463,6 @@
 			<Spawn Index="787" Distance="3" StartX="62" StartY="50" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="66" StartY="50" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="65" StartY="79" Dir="-1" Element="3" />
-			<Spawn Index="787" Distance="3" StartX="57" StartY="77" Dir="-1" Element="3" />
-			<Spawn Index="787" Distance="3" StartX="49" StartY="77" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="43" StartY="73" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="37" StartY="77" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="37" StartY="71" Dir="-1" Element="3" />
@@ -7553,7 +7473,6 @@
 			<Spawn Index="787" Distance="3" StartX="35" StartY="48" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="42" StartY="25" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="45" StartY="27" Dir="-1" Element="3" />
-			<Spawn Index="787" Distance="3" StartX="42" StartY="39" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="87" StartY="81" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="75" StartY="75" Dir="-1" Element="3" />
 			<Spawn Index="787" Distance="3" StartX="72" StartY="72" Dir="-1" Element="3" />
@@ -7581,7 +7500,6 @@
 			<Spawn Index="787" Distance="8" StartX="206" StartY="200" EndX="219" EndY="208" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="787" Distance="8" StartX="167" StartY="188" EndX="180" EndY="197" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="787" Distance="8" StartX="145" StartY="185" EndX="157" EndY="198" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="787" Distance="8" StartX="214" StartY="239" EndX="214" EndY="239" Dir="-1" Count="3" Element="1" />
 			<Spawn Index="787" Distance="8" StartX="206" StartY="179" EndX="230" EndY="197" Dir="-1" Count="7" Element="4" />
 			<Spawn Index="787" Distance="12" StartX="204" StartY="174" EndX="228" EndY="196" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="787" Distance="8" StartX="157" StartY="176" EndX="157" EndY="176" Dir="-1" Count="4" Element="1" />
@@ -7601,7 +7519,6 @@
 			<Spawn Index="788" Distance="8" StartX="211" StartY="226" EndX="228" EndY="239" Dir="-1" Count="4" Element="4" />
 			<Spawn Index="788" Distance="8" StartX="225" StartY="199" EndX="234" EndY="209" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="788" Distance="8" StartX="217" StartY="210" EndX="227" EndY="217" Dir="-1" Count="3" Element="4" />
-			<Spawn Index="788" Distance="8" StartX="202" StartY="203" EndX="202" EndY="203" Dir="-1" Count="4" Element="1" />
 			<Spawn Index="788" Distance="8" StartX="175" StartY="153" EndX="190" EndY="162" Dir="-1" Count="3" Element="4" />
 			<Spawn Index="788" Distance="8" StartX="237" StartY="115" EndX="248" EndY="133" Dir="-1" Count="5" Element="2" />
 			<Spawn Index="788" Distance="6" StartX="228" StartY="75" EndX="237" EndY="85" Dir="-1" Count="4" Element="2" />
@@ -7615,18 +7532,7 @@
 			<Spawn Index="788" Distance="6" StartX="77" StartY="40" EndX="91" EndY="52" Dir="-1" Count="3" Element="3" />
 			<Spawn Index="789" Distance="8" StartX="71" StartY="226" EndX="82" EndY="237" Dir="-1" Count="4" Element="1" /> <!-- Mutton Tile -->
 			<Spawn Index="789" Distance="8" StartX="52" StartY="165" EndX="61" EndY="177" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="789" Distance="8" StartX="19" StartY="190" EndX="28" EndY="204" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="789" Distance="8" StartX="124" StartY="165" EndX="137" EndY="180" Dir="-1" Count="5" Element="4" />
-			<Spawn Index="789" Distance="8" StartX="152" StartY="227" EndX="165" EndY="238" Dir="-1" Count="3" Element="4" />
-			<Spawn Index="789" Distance="8" StartX="145" StartY="185" EndX="156" EndY="201" Dir="-1" Count="3" Element="4" />
-			<Spawn Index="789" Distance="8" StartX="158" StartY="152" EndX="175" EndY="166" Dir="-1" Count="5" Element="4" />
-			<Spawn Index="789" Distance="8" StartX="162" StartY="185" EndX="162" EndY="185" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="789" Distance="8" StartX="232" StartY="47" EndX="244" EndY="58" Dir="-1" Count="5" Element="2" />
 			<Spawn Index="789" Distance="8" StartX="218" StartY="23" EndX="229" EndY="44" Dir="-1" Count="5" Element="2" />
-			<Spawn Index="789" Distance="8" StartX="185" StartY="66" EndX="185" EndY="66" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="789" Distance="8" StartX="185" StartY="66" EndX="185" EndY="66" Dir="-1" Count="4" Element="1" />
-			<Spawn Index="789" Distance="8" StartX="121" StartY="17" EndX="136" EndY="31" Dir="-1" Count="4" Element="5" />
-			<Spawn Index="789" Distance="8" StartX="109" StartY="58" EndX="119" EndY="68" Dir="-1" Count="4" Element="5" />
 			<Spawn Index="789" Distance="8" StartX="142" StartY="59" EndX="150" EndY="73" Dir="-1" Count="4" Element="5" />
 			<Spawn Index="789" Distance="4" StartX="23" StartY="15" EndX="33" EndY="27" Dir="-1" Count="8" Element="3" />
 			<Spawn Index="789" Distance="4" StartX="15" StartY="49" EndX="27" EndY="61" Dir="-1" Count="8" Element="3" />
@@ -9434,6 +9340,555 @@
 			<Spawn Index="850" Distance="4" StartX="26" StartY="178" Dir="5" Element="5" />
 			<Spawn Index="850" Distance="4" StartX="20" StartY="96" Dir="3" Element="4" />
 			<Spawn Index="850" Distance="4" StartX="52" StartY="47" Dir="1" Element="2" />
+		</Spot>
+	</Map>
+	<Map Number="132" Name="Red Smoke Icarus">
+		<Spot Type="4" Description="Single Point Elemental Monsters">
+			<Spawn Index="859" Distance="3" StartX="111" StartY="115" Dir="2" Element="1" /> <!--(859) Red Alquamos [Lv.75]-->
+			<Spawn Index="859" Distance="3" StartX="105" StartY="118" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="100" StartY="115" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="94" StartY="118" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="89" StartY="115" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="77" StartY="73" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="75" StartY="85" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="77" StartY="108" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="51" StartY="64" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="43" StartY="64" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="41" StartY="55" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="36" StartY="56" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="43" StartY="36" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="43" StartY="31" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="94" StartY="45" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="100" StartY="49" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="90" StartY="54" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="83" StartY="57" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="68" StartY="8" Dir="2" Element="1" />
+			<Spawn Index="859" Distance="3" StartX="105" StartY="131" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="112" StartY="133" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="83" StartY="133" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="73" StartY="151" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="68" StartY="149" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="61" StartY="150" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="55" StartY="153" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="73" StartY="166" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="96" StartY="168" Dir="6" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="89" StartY="168" Dir="6" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="105" StartY="210" Dir="6" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="97" StartY="211" Dir="6" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="64" StartY="189" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="83" StartY="144" Dir="2" Element="2" />
+			<Spawn Index="859" Distance="3" StartX="128" StartY="105" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="129" StartY="99" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="128" StartY="93" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="128" StartY="87" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="129" StartY="72" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="132" StartY="64" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="145" StartY="68" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="148" StartY="53" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="149" StartY="47" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="127" StartY="53" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="126" StartY="46" Dir="4" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="155" StartY="91" Dir="8" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="156" StartY="84" Dir="8" Element="3" />
+			<Spawn Index="859" Distance="3" StartX="128" StartY="140" Dir="8" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="127" StartY="148" Dir="8" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="128" StartY="158" Dir="8" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="130" StartY="166" Dir="8" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="136" StartY="164" Dir="8" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="146" StartY="165" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="141" StartY="164" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="141" StartY="179" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="145" StartY="187" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="154" StartY="185" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="165" StartY="181" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="171" StartY="186" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="182" StartY="186" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="178" StartY="239" Dir="2" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="185" StartY="239" Dir="2" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="200" StartY="191" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="195" StartY="191" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="222" StartY="199" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="211" StartY="201" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="202" StartY="206" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="195" StartY="202" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="210" StartY="222" Dir="6" Element="4" />
+			<Spawn Index="859" Distance="3" StartX="204" StartY="222" Dir="6" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="97" StartY="83" Dir="-1" Element="1" /> <!--(860) Red Mega Crust [Lv.78]-->
+			<Spawn Index="860" Distance="3" StartX="97" StartY="91" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="91" StartY="95" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="83" StartY="95" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="77" StartY="87" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="76" StartY="99" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="79" StartY="115" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="70" StartY="113" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="70" StartY="64" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="66" StartY="76" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="65" StartY="85" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="59" StartY="87" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="99" StartY="16" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="95" StartY="22" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="105" StartY="22" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="111" StartY="21" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="117" StartY="21" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="100" StartY="42" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="95" StartY="58" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="72" StartY="7" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="63" StartY="7" Dir="-1" Element="1" />
+			<Spawn Index="860" Distance="3" StartX="63" StartY="228" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="73" StartY="223" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="82" StartY="234" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="85" StartY="239" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="90" StartY="216" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="89" StartY="212" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="84" StartY="204" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="83" StartY="187" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="87" StartY="179" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="85" StartY="163" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="77" StartY="156" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="83" StartY="149" Dir="8" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="79" StartY="135" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="90" StartY="132" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="96" StartY="133" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="69" StartY="187" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="78" StartY="187" Dir="2" Element="2" />
+			<Spawn Index="860" Distance="3" StartX="206" StartY="65" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="200" StartY="63" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="193" StartY="56" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="172" StartY="59" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="167" StartY="71" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="174" StartY="73" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="165" StartY="66" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="147" StartY="59" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="135" StartY="60" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="137" StartY="66" Dir="6" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="129" StartY="60" Dir="5" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="133" StartY="70" Dir="5" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="128" StartY="82" Dir="5" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="160" StartY="83" Dir="2" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="170" StartY="83" Dir="2" Element="3" />
+			<Spawn Index="860" Distance="3" StartX="140" StartY="123" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="147" StartY="125" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="152" StartY="123" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="159" StartY="126" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="190" StartY="117" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="180" StartY="118" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="184" StartY="146" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="192" StartY="138" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="202" StartY="143" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="214" StartY="135" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="225" StartY="137" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="171" StartY="146" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="170" StartY="141" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="170" StartY="135" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="170" StartY="128" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="161" StartY="124" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="171" StartY="125" Dir="6" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="182" StartY="134" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="180" StartY="127" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="188" StartY="163" Dir="8" Element="5" />
+			<Spawn Index="860" Distance="3" StartX="128" StartY="151" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="126" StartY="162" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="134" StartY="168" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="129" StartY="179" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="129" StartY="186" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="179" StartY="196" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="184" StartY="187" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="184" StartY="208" Dir="8" Element="4" />
+			<Spawn Index="860" Distance="3" StartX="183" StartY="215" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="89" StartY="37" Dir="4" Element="1" /> <!--(861) Red Queen Rainier [Lv.82]-->
+			<Spawn Index="861" Distance="3" StartX="86" StartY="47" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="98" StartY="56" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="83" StartY="60" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="90" StartY="58" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="95" StartY="50" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="96" StartY="78" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="93" StartY="77" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="49" StartY="85" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="46" StartY="88" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="57" StartY="116" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="86" StartY="110" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="74" StartY="116" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="75" StartY="109" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="84" StartY="115" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="81" StartY="111" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="61" StartY="16" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="64" StartY="44" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="56" StartY="49" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="58" StartY="44" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="63" StartY="49" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="61" StartY="63" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="73" StartY="68" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="76" StartY="63" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="125" StartY="20" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="122" StartY="23" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="122" StartY="19" Dir="4" Element="1" />
+			<Spawn Index="861" Distance="3" StartX="85" StartY="138" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="77" StartY="146" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="85" StartY="154" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="78" StartY="164" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="85" StartY="171" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="88" StartY="184" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="84" StartY="192" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="89" StartY="197" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="85" StartY="210" Dir="8" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="109" StartY="202" Dir="4" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="110" StartY="209" Dir="4" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="105" StartY="160" Dir="4" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="102" StartY="167" Dir="4" Element="2" />
+			<Spawn Index="861" Distance="3" StartX="159" StartY="63" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="149" StartY="73" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="143" StartY="62" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="151" StartY="66" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="139" StartY="73" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="125" StartY="39" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="122" StartY="41" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="150" StartY="38" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="146" StartY="40" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="224" StartY="62" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="223" StartY="67" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="215" StartY="68" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="210" StartY="68" Dir="6" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="199" StartY="82" Dir="2" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="207" StartY="80" Dir="2" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="207" StartY="73" Dir="8" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="182" StartY="39" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="182" StartY="47" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="183" StartY="27" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="194" StartY="38" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="193" StartY="43" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="193" StartY="47" Dir="4" Element="3" />
+			<Spawn Index="861" Distance="3" StartX="192" StartY="172" Dir="8" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="187" StartY="167" Dir="8" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="187" StartY="173" Dir="8" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="192" StartY="168" Dir="8" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="226" StartY="143" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="220" StartY="134" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="212" StartY="142" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="204" StartY="138" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="193" StartY="143" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="188" StartY="139" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="182" StartY="151" Dir="6" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="243" StartY="141" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="239" StartY="144" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="227" StartY="113" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="212" StartY="102" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="212" StartY="109" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="212" StartY="116" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="241" StartY="150" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="241" StartY="157" Dir="4" Element="5" />
+			<Spawn Index="861" Distance="3" StartX="156" StartY="162" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="152" StartY="166" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="151" StartY="164" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="122" StartY="189" Dir="2" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="122" StartY="191" Dir="2" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="126" StartY="189" Dir="2" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="133" StartY="161" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="130" StartY="170" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="138" StartY="172" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="140" StartY="183" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="143" StartY="190" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="154" StartY="181" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="148" StartY="188" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="160" StartY="186" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="186" StartY="213" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="189" StartY="223" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="189" StartY="232" Dir="8" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="202" StartY="236" Dir="6" Element="4" />
+			<Spawn Index="861" Distance="3" StartX="195" StartY="238" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="99" StartY="31" Dir="4" Element="1" /> <!--(862) Red Alpha Crust [Lv.92]-->
+			<Spawn Index="862" Distance="3" StartX="95" StartY="37" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="90" StartY="42" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="86" StartY="51" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="57" StartY="112" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="53" StartY="117" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="53" StartY="113" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="78" StartY="103" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="76" StartY="93" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="77" StartY="79" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="93" StartY="11" Dir="4" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="88" StartY="7" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="78" StartY="7" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="65" StartY="27" Dir="6" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="60" StartY="21" Dir="8" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="104" StartY="151" Dir="4" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="101" StartY="155" Dir="4" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="108" StartY="190" Dir="4" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="104" StartY="195" Dir="4" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="84" StartY="229" Dir="8" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="85" StartY="219" Dir="8" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="77" StartY="218" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="67" StartY="227" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="59" StartY="227" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="54" StartY="231" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="90" StartY="205" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="85" StartY="198" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="90" StartY="189" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="82" StartY="181" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="89" StartY="174" Dir="2" Element="2" />
+			<Spawn Index="862" Distance="3" StartX="121" StartY="37" Dir="4" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="125" StartY="42" Dir="4" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="146" StartY="37" Dir="4" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="149" StartY="41" Dir="4" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="199" StartY="53" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="192" StartY="62" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="181" StartY="57" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="174" StartY="66" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="165" StartY="60" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="158" StartY="70" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="154" StartY="57" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="175" StartY="78" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="151" StartY="102" Dir="8" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="156" StartY="96" Dir="8" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="196" StartY="81" Dir="2" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="223" StartY="55" Dir="4" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="196" StartY="35" Dir="6" Element="3" />
+			<Spawn Index="862" Distance="3" StartX="75" StartY="51" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="69" StartY="51" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="64" StartY="114" Dir="2" Element="1" />
+			<Spawn Index="862" Distance="3" StartX="171" StartY="151" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="166" StartY="146" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="166" StartY="152" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="201" StartY="118" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="201" StartY="126" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="194" StartY="126" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="195" StartY="120" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="228" StartY="131" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="218" StartY="141" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="213" StartY="131" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="206" StartY="142" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="198" StartY="138" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="188" StartY="150" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="182" StartY="140" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="176" StartY="123" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="226" StartY="149" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="225" StartY="158" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="188" StartY="156" Dir="8" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="239" StartY="160" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="233" StartY="160" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="229" StartY="159" Dir="6" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="211" StartY="158" Dir="2" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="215" StartY="160" Dir="2" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="220" StartY="161" Dir="2" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="215" StartY="123" Dir="4" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="223" StartY="131" Dir="4" Element="5" />
+			<Spawn Index="862" Distance="3" StartX="212" StartY="185" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="206" StartY="189" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="207" StartY="185" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="178" StartY="228" Dir="4" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="174" StartY="230" Dir="4" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="174" StartY="227" Dir="4" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="203" StartY="202" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="193" StartY="207" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="183" StartY="199" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="183" StartY="191" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="174" StartY="185" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="166" StartY="189" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="160" StartY="179" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="154" StartY="189" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="146" StartY="181" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="203" StartY="227" Dir="4" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="202" StartY="232" Dir="4" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="174" StartY="239" Dir="2" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="172" StartY="235" Dir="2" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="228" StartY="201" Dir="2" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="215" StartY="200" Dir="6" Element="4" />
+			<Spawn Index="862" Distance="3" StartX="187" StartY="204" Dir="6" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="79" StartY="19" Dir="6" Element="1" /> <!--(863) Red Phantom Knight [Lv.96]-->
+			<Spawn Index="863" Distance="3" StartX="79" StartY="25" Dir="6" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="74" StartY="21" Dir="6" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="44" StartY="84" Dir="2" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="43" StartY="90" Dir="2" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="49" StartY="89" Dir="2" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="96" StartY="73" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="91" StartY="74" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="99" StartY="24" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="93" StartY="31" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="86" StartY="42" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="81" StartY="51" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="43" StartY="43" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="41" StartY="46" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="38" StartY="50" Dir="4" Element="1" />
+			<Spawn Index="863" Distance="3" StartX="63" StartY="207" Dir="2" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="71" StartY="207" Dir="2" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="80" StartY="208" Dir="2" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="80" StartY="211" Dir="2" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="82" StartY="240" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="85" StartY="236" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="53" StartY="226" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="59" StartY="230" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="52" StartY="150" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="55" StartY="157" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="52" StartY="155" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="57" StartY="186" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="59" StartY="190" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="62" StartY="185" Dir="8" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="108" StartY="194" Dir="4" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="104" StartY="190" Dir="4" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="104" StartY="154" Dir="4" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="99" StartY="151" Dir="4" Element="2" />
+			<Spawn Index="863" Distance="3" StartX="167" StartY="22" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="173" StartY="22" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="182" StartY="22" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="182" StartY="32" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="189" StartY="53" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="177" StartY="54" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="183" StartY="52" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="224" StartY="52" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="218" StartY="55" Dir="4" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="200" StartY="34" Dir="6" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="197" StartY="38" Dir="6" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="191" StartY="77" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="192" StartY="81" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="195" StartY="77" Dir="2" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="155" StartY="102" Dir="8" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="153" StartY="98" Dir="8" Element="3" />
+			<Spawn Index="863" Distance="3" StartX="198" StartY="100" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="202" StartY="100" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="208" StartY="101" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="244" StartY="144" Dir="4" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="237" StartY="140" Dir="4" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="237" StartY="145" Dir="4" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="231" StartY="115" Dir="4" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="231" StartY="111" Dir="6" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="225" StartY="114" Dir="6" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="205" StartY="154" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="206" StartY="159" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="211" StartY="154" Dir="2" Element="5" />
+			<Spawn Index="863" Distance="3" StartX="158" StartY="208" Dir="2" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="163" StartY="209" Dir="2" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="169" StartY="208" Dir="2" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="228" StartY="205" Dir="8" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="224" StartY="202" Dir="8" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="219" StartY="223" Dir="8" Element="4" />
+			<Spawn Index="863" Distance="3" StartX="213" StartY="226" Dir="8" Element="4" />
+			<Spawn Index="864" Distance="3" StartX="56" StartY="205" Dir="2" Element="2" /> <!--(864) (Elite) Great Drakan [Lv.100]-->
+			<Spawn Index="864" Distance="3" StartX="57" StartY="210" Dir="2" Element="2" />
+			<Spawn Index="864" Distance="3" StartX="193" StartY="98" Dir="2" Element="5" />
+			<Spawn Index="864" Distance="3" StartX="193" StartY="103" Dir="2" Element="5" />
+			<Spawn Index="864" Distance="3" StartX="152" StartY="207" Dir="2" Element="4" />
+			<Spawn Index="864" Distance="3" StartX="153" StartY="211" Dir="2" Element="4" />
+			<Spawn Index="864" Distance="3" StartX="162" StartY="20" Dir="2" Element="3" />
+			<Spawn Index="864" Distance="3" StartX="163" StartY="24" Dir="2" Element="3" />
+			<Spawn Index="864" Distance="3" StartX="40" StartY="22" Dir="4" Element="1" />
+			<Spawn Index="864" Distance="3" StartX="45" StartY="23" Dir="4" Element="1" />
+			<Spawn Index="865" Distance="3" StartX="50" StartY="207" Dir="2" Element="2" /> <!--(865) (Elite) Phoenix of Darkness [Lv.108]-->
+			<Spawn Index="865" Distance="3" StartX="187" StartY="100" Dir="2" Element="5" />
+			<Spawn Index="865" Distance="3" StartX="146" StartY="209" Dir="2" Element="4" />
+			<Spawn Index="865" Distance="3" StartX="157" StartY="22" Dir="2" Element="3" />
+			<Spawn Index="865" Distance="3" StartX="41" StartY="16" Dir="4" Element="1" />
+			<Spawn Index="866" Distance="0" StartX="79" StartY="203" Dir="2" Element="2" /> <!--(866) Elite Zone Flag [Lv.1]-->
+			<Spawn Index="866" Distance="0" StartX="215" StartY="117" Dir="4" Element="5" />
+			<Spawn Index="866" Distance="0" StartX="178" StartY="205" Dir="2" Element="4" />
+			<Spawn Index="866" Distance="0" StartX="179" StartY="49" Dir="4" Element="3" />
+			<Spawn Index="866" Distance="0" StartX="55" StartY="66" Dir="2" Element="1" />
+		</Spot>
+	</Map>
+	<Map Number="133" Name="Temple of Arenil | Elite Flag's">
+		<Spot Type="0" Description="NPC/Traps">
+			<Spawn Index="838" Distance="0" StartX="47" StartY="202" Dir="2" Element="1" /> <!-- { (Elite) Zone Flag [Fire]  } -->
+			<Spawn Index="838" Distance="0" StartX="152" StartY="130" Dir="2" Element="2" /> <!-- { (Elite) Zone Flag [Water] } -->
+			<Spawn Index="838" Distance="0" StartX="211" StartY="26" Dir="2" Element="3" /> <!-- { (Elite) Zone Flag [Earth] } -->
+			<Spawn Index="838" Distance="0" StartX="170" StartY="216" Dir="2" Element="4" /> <!-- { (Elite) Zone Flag [Wind]  } -->					
+			<Spawn Index="838" Distance="0" StartX="60" StartY="35" Dir="2" Element="5" /> <!-- { (Elite) Zone Flag [Darkness] } -->
+		</Spot>
+		<Spot Type="4" Description="Single Point Elemental Monsters">
+			<!-- # Elite Monsters # -->
+			<Spawn Index="870" Distance="4" StartX="50" StartY="162" Dir="4" Element="1" /> <!--(Elite Fire)  (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="53" StartY="162" Dir="4" Element="1" /> <!--(Elite Fire)  (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="159" StartY="123" Dir="2" Element="2" /> <!--(Elite Water) (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="174" StartY="124" Dir="2" Element="2" /> <!--(Elite Water) (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="218" StartY="30" Dir="2" Element="3" /> <!--(Elite Earth) (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="216" StartY="11" Dir="2" Element="3" /> <!--(Elite Earth) (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="146" StartY="240" Dir="2" Element="4" /> <!--(Elite Wind)  (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="141" StartY="226" Dir="2" Element="4" /> <!--(Elite Wind)  (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="42" StartY="62" Dir="2" Element="5" /> <!--(Elite Darkness) (Elite) Temple Ogre -->
+			<Spawn Index="870" Distance="4" StartX="42" StartY="62" Dir="2" Element="5" /> <!--(Elite Darkness) (Elite) Temple Ogre -->
+			<!-- # Elite Monsters # -->
+			<Spawn Index="871" Distance="4" StartX="73" StartY="177" Dir="4" Element="1" /> <!--(Elite Fire)  (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="70" StartY="168" Dir="4" Element="1" /> <!--(Elite Fire)  (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="174" StartY="124" Dir="2" Element="2" /> <!--(Elite Water) (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="123" StartY="159" Dir="2" Element="2" /> <!--(Elite Water) (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="218" StartY="30" Dir="2" Element="3" /> <!--(Elite Earth) (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="204" StartY="14" Dir="2" Element="3" /> <!--(Elite Earth) (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="159" StartY="222" Dir="2" Element="4" /> <!--(Elite Wind)  (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="161" StartY="231" Dir="2" Element="4" /> <!--(Elite Wind)  (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="44" StartY="50" Dir="2" Element="5" /> <!--(Elite Darkness) (Elite) Temple Gremlin -->
+			<Spawn Index="871" Distance="4" StartX="44" StartY="50" Dir="2" Element="5" /> <!--(Elite Darkness) (Elite) Temple Gremlin -->	
+			<!-- # Elite Monsters # -->
+			<Spawn Index="872" Distance="4" StartX="77" StartY="154" Dir="4" Element="1" /> <!--(Elite Fire)  (Elite) Temple Gargoyle -->
+			<Spawn Index="872" Distance="4" StartX="187" StartY="113" Dir="2" Element="2" /> <!--(Elite Water) (Elite) Temple Gargoyle -->
+			<Spawn Index="872" Distance="4" StartX="218" StartY="38" Dir="2" Element="3" /> <!--(Elite Earth) (Elite) Temple Gargoyle -->
+			<Spawn Index="872" Distance="4" StartX="175" StartY="226" Dir="2" Element="4" /> <!--(Elite Wind)  (Elite) Temple Gargoyle -->
+			<Spawn Index="872" Distance="4" StartX="50" StartY="39" Dir="2" Element="5" /> <!--(Elite Darkness) (Elite) Temple Gargoyle -->
+		</Spot>
+		<Spot Type="3" Description="Multi-Spawn Elemental Monsters">
+		<!--{# » Fire element « #}-->
+			<Spawn Index="867" Distance="4" StartX="93" StartY="175" EndX="93" EndY="175" Dir="3" Count="5" Element="1" /> <!-- { Temple Ogre (Fire) } -->
+			<Spawn Index="867" Distance="4" StartX="89" StartY="229" EndX="89" EndY="229" Dir="3" Count="5" Element="1" /> <!-- { Temple Ogre (Fire) } -->
+			<Spawn Index="867" Distance="4" StartX="59" StartY="208" EndX="59" EndY="208" Dir="3" Count="5" Element="1" /> <!-- { Temple Ogre (Fire) } -->
+			<Spawn Index="867" Distance="4" StartX="56" StartY="229" EndX="56" EndY="229" Dir="3" Count="5" Element="1" /> <!-- { Temple Ogre (Fire) } -->
+			<Spawn Index="868" Distance="4" StartX="42" StartY="218" EndX="42" EndY="218" Dir="3" Count="5" Element="1" /> <!-- { Temple Gremlin (Fire) } -->
+			<Spawn Index="868" Distance="4" StartX="35" StartY="208" EndX="35" EndY="208" Dir="3" Count="5" Element="1" /> <!-- { Temple Gremlin (Fire) } -->
+			<Spawn Index="868" Distance="4" StartX="33" StartY="228" EndX="33" EndY="228" Dir="3" Count="8" Element="1" /> <!-- { Temple Gremlin (Fire) } -->
+			<Spawn Index="868" Distance="4" StartX="48" StartY="159" EndX="48" EndY="159" Dir="3" Count="8" Element="1" /> <!-- { Temple Gremlin (Fire) } -->
+			<Spawn Index="869" Distance="4" StartX="105" StartY="156" EndX="105" EndY="156" Dir="3" Count="8" Element="1" /> <!-- { Temple Gargoyle (Fire) } -->
+			<Spawn Index="869" Distance="4" StartX="67" StartY="182" EndX="67" EndY="182" Dir="3" Count="4" Element="1" /> <!-- { Temple Gargoyle (Fire) } -->
+		<!--{# » Water element « #}-->
+			<Spawn Index="867" Distance="4" StartX="125" StartY="120" EndX="125" EndY="120" Dir="3" Count="5" Element="2" /> <!-- { Temple Ogre (Water) } -->
+			<Spawn Index="867" Distance="4" StartX="70" StartY="122" EndX="70" EndY="122" Dir="3" Count="5" Element="2" /> <!-- { Temple Ogre (Water) } -->
+			<Spawn Index="867" Distance="4" StartX="91" StartY="118" EndX="91" EndY="118" Dir="3" Count="8" Element="2" /> <!-- { Temple Ogre (Water) } -->
+			<Spawn Index="867" Distance="4" StartX="54" StartY="125" EndX="54" EndY="125" Dir="3" Count="3" Element="2" /> <!-- { Temple Ogre (Water) } -->
+			<Spawn Index="868" Distance="4" StartX="53" StartY="143" EndX="53" EndY="143" Dir="3" Count="5" Element="2" /> <!-- { Temple Gremlin (Water) } -->
+			<Spawn Index="868" Distance="4" StartX="72" StartY="140" EndX="72" EndY="140" Dir="3" Count="5" Element="2" /> <!-- { Temple Gremlin (Water) } -->
+			<Spawn Index="868" Distance="4" StartX="146" StartY="118" EndX="146" EndY="118" Dir="3" Count="8" Element="2" /> <!-- { Temple Gremlin (Water) } -->
+			<Spawn Index="868" Distance="4" StartX="74" StartY="122" EndX="74" EndY="122" Dir="3" Count="3" Element="2" /> <!-- { Temple Gremlin (Water) } -->
+			<Spawn Index="869" Distance="4" StartX="180" StartY="106" EndX="180" EndY="106" Dir="3" Count="5" Element="2" /> <!-- { Temple Gargoyle (Water) } -->
+			<Spawn Index="869" Distance="4" StartX="195" StartY="113" EndX="195" EndY="113" Dir="3" Count="8" Element="2" /> <!-- { Temple Gargoyle (Water) } -->
+			<Spawn Index="869" Distance="4" StartX="213" StartY="134" EndX="213" EndY="134" Dir="3" Count="8" Element="2" /> <!-- { Temple Gargoyle (Water) } -->
+			<Spawn Index="869" Distance="4" StartX="167" StartY="154" EndX="167" EndY="154" Dir="3" Count="8" Element="2" /> <!-- { Temple Gargoyle (Water) } -->
+		<!--{# » Earth element « #}-->
+			<Spawn Index="867" Distance="4" StartX="162" StartY="12" EndX="162" EndY="12" Dir="3" Count="3" Element="3" /> <!-- { Temple Ogre (Earth) } -->
+			<Spawn Index="867" Distance="4" StartX="175" StartY="14" EndX="175" EndY="14" Dir="3" Count="5" Element="3" /> <!-- { Temple Ogre (Earth) } -->
+			<Spawn Index="867" Distance="4" StartX="161" StartY="33" EndX="161" EndY="33" Dir="3" Count="8" Element="3" /> <!-- { Temple Ogre (Earth) } -->
+			<Spawn Index="867" Distance="4" StartX="189" StartY="29" EndX="189" EndY="29" Dir="3" Count="8" Element="3" /> <!-- { Temple Ogre (Earth) } -->
+			<Spawn Index="868" Distance="4" StartX="181" StartY="51" EndX="181" EndY="51" Dir="3" Count="5" Element="3" /> <!-- { Temple Gremlin (Earth) } -->
+			<Spawn Index="868" Distance="4" StartX="194" StartY="44" EndX="194" EndY="44" Dir="3" Count="5" Element="3" /> <!-- { Temple Gremlin (Earth) } -->
+			<Spawn Index="868" Distance="4" StartX="161" StartY="71" EndX="161" EndY="71" Dir="3" Count="5" Element="3" /> <!-- { Temple Gremlin (Earth) } -->
+			<Spawn Index="868" Distance="4" StartX="182" StartY="74" EndX="182" EndY="74" Dir="3" Count="5" Element="3" /> <!-- { Temple Gremlin (Earth) } -->
+			<Spawn Index="869" Distance="4" StartX="203" StartY="90" EndX="203" EndY="90" Dir="3" Count="6" Element="3" /> <!-- { Temple Gargoyle (Earth) } -->
+			<Spawn Index="869" Distance="4" StartX="232" StartY="92" EndX="232" EndY="92" Dir="3" Count="8" Element="3" /> <!-- { Temple Gargoyle (Earth) } -->
+			<Spawn Index="869" Distance="4" StartX="219" StartY="53" EndX="219" EndY="53" Dir="3" Count="5" Element="3" /> <!-- { Temple Gargoyle (Earth) } -->
+			<Spawn Index="869" Distance="4" StartX="239" StartY="46" EndX="239" EndY="46" Dir="3" Count="8" Element="3" /> <!-- { Temple Gargoyle (Earth) } -->
+			<Spawn Index="869" Distance="4" StartX="200" StartY="14" EndX="200" EndY="14" Dir="3" Count="6" Element="3" /> <!-- { Temple Gargoyle (Earth) } -->
+		<!--{# » Wind element « #}-->
+			<Spawn Index="867" Distance="4" StartX="160" StartY="174" EndX="160" EndY="174" Dir="3" Count="5" Element="4" /> <!-- { Temple Ogre (Wind) } -->
+			<Spawn Index="867" Distance="4" StartX="194" StartY="172" EndX="194" EndY="172" Dir="3" Count="4" Element="4" /> <!-- { Temple Ogre (Wind) } -->
+			<Spawn Index="867" Distance="4" StartX="235" StartY="187" EndX="235" EndY="187" Dir="3" Count="8" Element="4" /> <!-- { Temple Ogre (Wind) } -->
+			<Spawn Index="867" Distance="4" StartX="204" StartY="187" EndX="204" EndY="187" Dir="3" Count="5" Element="4" /> <!-- { Temple Ogre (Wind) } -->
+			<Spawn Index="868" Distance="4" StartX="201" StartY="207" EndX="201" EndY="207" Dir="3" Count="5" Element="4" /> <!-- { Temple Gremlin (Wind) } -->
+			<Spawn Index="868" Distance="4" StartX="191" StartY="187" EndX="191" EndY="187" Dir="3" Count="5" Element="4" /> <!-- { Temple Gremlin (Wind) } -->
+			<Spawn Index="868" Distance="4" StartX="149" StartY="220" EndX="149" EndY="220" Dir="3" Count="6" Element="4" /> <!-- { Temple Gremlin (Wind) } -->
+			<Spawn Index="868" Distance="4" StartX="140" StartY="241" EndX="140" EndY="241" Dir="3" Count="8" Element="4" /> <!-- { Temple Gremlin (Wind) } -->
+			<Spawn Index="869" Distance="4" StartX="180" StartY="230" EndX="180" EndY="230" Dir="3" Count="6" Element="4" /> <!-- { Temple Gargoyle (Wind) } -->
+			<Spawn Index="869" Distance="4" StartX="196" StartY="231" EndX="196" EndY="231" Dir="3" Count="5" Element="4" /> <!-- { Temple Gargoyle (Wind) } -->
+			<Spawn Index="869" Distance="4" StartX="215" StartY="231" EndX="215" EndY="231" Dir="3" Count="8" Element="4" /> <!-- { Temple Gargoyle (Wind) } -->
+			<Spawn Index="869" Distance="4" StartX="220" StartY="230" EndX="229" EndY="214" Dir="4" Count="6" Element="4" /> <!-- { Temple Gargoyle (Wind) } -->	
+		<!--{# » Darkness element « #}-->
+			<Spawn Index="867" Distance="4" StartX="97" StartY="41" EndX="97" EndY="41" Dir="3" Count="5" Element="5" /> <!-- { Temple Ogre (Darkness) } -->
+			<Spawn Index="867" Distance="4" StartX="97" StartY="60" EndX="97" EndY="60" Dir="3" Count="4" Element="5" /> <!-- { Temple Ogre (Darkness) } -->
+			<Spawn Index="867" Distance="4" StartX="82" StartY="13" EndX="82" EndY="13" Dir="3" Count="4" Element="5" /> <!-- { Temple Ogre (Darkness) } -->
+			<Spawn Index="867" Distance="4" StartX="98" StartY="18" EndX="98" EndY="18 " Dir="3" Count="6" Element="5" /> <!-- { Temple Ogre (Darkness) } -->
+			<Spawn Index="867" Distance="4" StartX="85" StartY="89" EndX="85" EndY="89 " Dir="3" Count="4" Element="5" /> <!-- { Temple Ogre (Darkness) } -->
+			<Spawn Index="868" Distance="4" StartX="72" StartY="31" EndX="72" EndY="31" Dir="3" Count="5" Element="5" /> <!-- { Temple Gremlin (Darkness) } -->
+			<Spawn Index="868" Distance="4" StartX="42" StartY="36" EndX="42" EndY="36" Dir="3" Count="5" Element="5" /> <!-- { Temple Gremlin (Darkness) } -->
+			<Spawn Index="868" Distance="4" StartX="38" StartY="20" EndX="38" EndY="20" Dir="3" Count="5" Element="5" /> <!-- { Temple Gremlin (Darkness) } -->
+			<Spawn Index="868" Distance="4" StartX="65" StartY="16" EndX="65" EndY="16" Dir="3" Count="8" Element="5" /> <!-- { Temple Gremlin (Darkness) } -->
+			<Spawn Index="868" Distance="4" StartX="125" StartY="105" EndX="125" EndY="105" Dir="3" Count="5" Element="5" /> <!-- { Temple Gremlin (Darkness) } -->
+			<Spawn Index="869" Distance="4" StartX="39" StartY="80" EndX="39" EndY="80" Dir="3" Count="6" Element="5" /> <!-- { Temple Gargoyle (Darkness) } -->
+			<Spawn Index="869" Distance="4" StartX="41" StartY="98" EndX="41" EndY="98" Dir="3" Count="5" Element="5" /> <!-- { Temple Gargoyle (Darkness) } -->
+			<Spawn Index="869" Distance="4" StartX="56" StartY="77" EndX="56" EndY="77" Dir="3" Count="8" Element="5" /> <!-- { Temple Gargoyle (Darkness) } -->
+			<Spawn Index="869" Distance="4" StartX="58" StartY="56" EndX="58" EndY="56" Dir="4" Count="6" Element="5" /> <!-- { Temple Gargoyle (Darkness) } -->
+			<Spawn Index="869" Distance="4" StartX="115" StartY="83" EndX="115" EndY="83" Dir="4" Count="8" Element="5" /> <!-- { Temple Gargoyle (Darkness) } -->							 				 					 	 
 		</Spot>
 	</Map>
 </MonsterSpawn>

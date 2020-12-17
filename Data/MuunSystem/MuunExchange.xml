@@ -81,14 +81,16 @@
 		<Item Cat="16" Index="240" InventoryCheck="22" ItemCount="2" ItemBagIndex="3" /> <!-- Two Stones -->
 		<Item Cat="16" Index="240" InventoryCheck="22" ItemCount="2" ItemBagIndex="4" /> <!-- Two Stones -->
 		<Item Cat="16" Index="240" InventoryCheck="22" ItemCount="2" ItemBagIndex="5" /> <!-- Two Stones -->
+		<Item Cat="16" Index="240" InventoryCheck="22" ItemCount="3" ItemBagIndex="6" /> <!-- Three Stones -->
 	</RequiredItemsExchange>
 
 	<BagListSettings>
-		<Bag Index="0" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="246" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
-		<Bag Index="1" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="266" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
-		<Bag Index="2" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="296" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
+		<Bag Index="0" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="500" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
+		<Bag Index="1" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="496" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
+		<Bag Index="2" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="148" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
 		<Bag Index="3" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="326" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
 		<Bag Index="4" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="328" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
 		<Bag Index="5" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="330" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
-		</BagListSettings>
+		<Bag Index="6" ItemCat="16" ItemIndex="211" ItemMinLevel="0" ItemMaxLevel="0" MuunEvoItemCat="16" MuunEvoItemIndex="231" Skill="0" Luck="0" Option="0" Exc="-1" InventoryCheck="22" />
+	</BagListSettings>
 </MuunSystem>

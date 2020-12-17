@@ -29,7 +29,7 @@
 //	PartyUserMove: Defines whether Party Move system is allowed on the map, 0/1
 //	Enable3D: Activates 3D camera per map, requires GS options reload and game client restart to apply changes
 //	EnableMuHelper: Allows to control on which map MuHelper assistance is available, 0/1
-//	EnableZenDrop: Allows to control common zen drop (ItemDropRateControl.ini) on specified map, 0/1
+//
 // STRICTLY NO COMMENTS INSIDE TAGS 
 -->	
 
@@ -152,5 +152,7 @@
 		<Map Number="129" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Abyss Of Atlans 2 -->
 		<Map Number="130" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Abyss Of Atlans 3 -->
 		<Map Number="131" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Scorched Canyon -->
-		</Config>
+		<Map Number="132" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Red Smoke Icarus -->
+		<Map Number="133" ViewRange="15" PvPConfig="0" ItemDropRateBonus="0" ExpBonus="0.0" MasterExpBonus="0.0" MajesticExpBonus="0.0" VipLevel="0" PkLevelIncrease="1" RegenOnSamePlace="0" BlockEntry="0" PartyUserMove="1" Enable3D="1" EnableMuHelper="1" EnableZenDrop="1" /> <!-- Arenil Temple -->
+	</Config>
 </MapAttribute>
