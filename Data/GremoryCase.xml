@@ -28,6 +28,7 @@
 //		~ 17: Event Items
 //		~ 18: Labyrinth
 //		~ 19: Personal Store
+//		~ 100: GM Gift
 //
 //	Time: Time the reward is available to pick up from gremory case, seconds
 //	Name: Name of the event, used for logging and description purpose
@@ -56,5 +57,6 @@
 		<Use Type="17" Time="3600" Name="Event Items" />
 		<Use Type="18" Time="3600" Name="Labyrinth" />
 		<Use Type="19" Time="604800" Name="PStore" />
+		<Use Type="100" Time="86400" Name="GM Gift" />
 	</RewardExpiryTime>
 </GremoryCase>
