@@ -956,6 +956,8 @@ function GunCrusherIceBreakCalc(InDamage, Strength, Dexterity, Vitality, Energy,
 		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	end
 	
 	return OutDamage
@@ -986,7 +988,9 @@ end
 function GunCrusherBurstingFlareCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
 	local OutDamage = 0
 	
-	if (BarrageCount == 1) then
+	if (BarrageCount == 0) then -- Shockwave
+		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 1) then
 		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100

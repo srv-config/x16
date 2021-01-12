@@ -1288,6 +1288,8 @@ function GunCrusherIceBreak_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vit
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage
@@ -1301,6 +1303,8 @@ function GunCrusherIceBreak_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vit
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
+	elseif (BarrageCount == 3) then
+		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage
