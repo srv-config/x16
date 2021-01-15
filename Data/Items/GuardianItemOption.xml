@@ -51,7 +51,7 @@
 		<Option Index="4" Name="A 3%% chance of health recovery by %d" />
 	</OptionList>
 	
-	<OptionSettings>
+	<OptionSettings HPRecoveryOptRate="3">
 	<!-- Ghost Horse -->
 		<Guardian Number="1" OptionNumber="0" FormulaID="0" LowerBound="0" UpperBound="-1" />
 		<Guardian Number="1" OptionNumber="1" FormulaID="1" LowerBound="0" UpperBound="-1" />

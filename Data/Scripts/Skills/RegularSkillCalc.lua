@@ -484,10 +484,12 @@ function SummonerWeakness_Monster(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 221, Weakness - PvP
-function SummonerWeakness_PvP(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerWeakness_PvP(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 93 + 3
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -502,10 +504,12 @@ function SummonerInnovation_Monster(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 222, Innovation - PvP
-function SummonerInnovation_PvP(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerInnovation_PvP(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 110 + 12
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -843,8 +847,8 @@ end
 
 -- SkillID: 287, Haste
 function RuneWizardHasteCalc(Energy)
-	local SkillEffect1 = Energy / 30
-	local SkillEffect2 = Energy / 100
+	local SkillEffect1 = Energy / 100
+	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
 	
 	return SkillEffect1, SkillEffect2, SkillTime

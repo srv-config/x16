@@ -650,10 +650,12 @@ function SummonerWeakness_Monster_Level1(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 459, Weakness Strengthener - PvP - (Dimension Master)
-function SummonerWeakness_PvP_Level1(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerWeakness_PvP_Level1(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 93 + 3
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -668,10 +670,12 @@ function SummonerInnovation_Monster_Level1(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 460, Innovation Strengthener - PvP - (Dimension Master)
-function SummonerInnovation_PvP_Level1(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerInnovation_PvP_Level1(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 110 + 12
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -686,10 +690,12 @@ function SummonerWeakness_Monster_Level2(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 772, Weakness Mastery - PvP - (Dimension Master)
-function SummonerWeakness_PvP_Level2(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerWeakness_PvP_Level2(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 93 + 3
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -704,10 +710,12 @@ function SummonerInnovation_Monster_Level2(Energy, Curse, MonsterLevel)
 end
 
 -- SkillID: 773, Innovation Mastery - PvP - (Dimension Master)
-function SummonerInnovation_PvP_Level2(Energy, Curse, PlayerLevel, TargetLevel)
+function SummonerInnovation_PvP_Level2(Energy, Curse, PlayerLevel, PlayerMasterLevel, TargetLevel, TargetMasterLevel)
+	local PlayerTotalLevel = PlayerLevel + PlayerMasterLevel
+	local TargetTotalLevel = TargetLevel + TargetMasterLevel
 	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
 	local SkillEffect = Energy / 110 + 12
-	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	local SkillTime = Energy / 300 + (PlayerTotalLevel - TargetTotalLevel) / 150 + 5
 	
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
@@ -738,10 +746,9 @@ end
 -- SkillID: 470, Berserker Proficiency - (Dimension Master)
 function SummonerBerserker_Level2(Energy)
 	local SkillEffectUP = (Energy / 30)
-	local SkillEffectDOWN = (Energy / 60)
 	local SkillTime = -10
 	
-	return SkillEffectUP, SkillEffectDOWN, SkillTime
+	return SkillEffectUP, SkillTime
 end
 
 -- SkillID: 770, Darkness Strengthener - (Dimension Master)
@@ -755,9 +762,8 @@ end
 -- SkillID: 771, Darkness Proficiency - (Dimension Master)
 function SummonerDarkness_Level2(Energy)
 	local SkillEffectUP = (Energy / 30)
-	local SkillEffectDOWN = (Energy / 60)
 	
-	return SkillEffectUP, SkillEffectDOWN
+	return SkillEffectUP
 end
 
 -- SkillID: 554, Killing Blow Mastery - (Fist Master)
@@ -1035,8 +1041,8 @@ end
 
 -- SkillID: 765, Burst Enhancement - (Grand Rune Master)
 function RuneWizardHasteCalc_Level1(Energy)
-	local SkillEffect1 = Energy / 30
-	local SkillEffect2 = Energy / 100
+	local SkillEffect1 = Energy / 100
+	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
 	
 	return SkillEffect1, SkillEffect2, SkillTime
@@ -1053,8 +1059,8 @@ end
 
 -- SkillID: 769, Haste Mastery - (Grand Rune Master)
 function RuneWizardHasteCalc_Level2(Energy)
-	local SkillEffect1 = Energy / 30
-	local SkillEffect2 = Energy / 100
+	local SkillEffect1 = Energy / 100
+	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
 	
 	return SkillEffect1, SkillEffect2, SkillTime
