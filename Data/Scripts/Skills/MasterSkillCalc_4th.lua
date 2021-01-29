@@ -24,6 +24,19 @@ CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER										  = 9
 CLASS_GUNCRUSHER									  = 10
 
+-- SkillID: 1078, 1088, Evil Spirit Enhancement Skill
+function EvilSpiritCalc_4thEnchant(Class, InDamage, Strength, Dexterity, Vitality, Energy)
+ local OutDamage = 0
+ 
+ 	if (Class == CLASS_WIZARD) then
+		OutDamage = InDamage
+	elseif (Class == CLASS_GLADIATOR) then
+		OutDamage = InDamage
+	end
+ 
+ return OutDamage
+end
+
 function DeathStab_4thEnchant_Knight(InDamage, Energy)
 	local OutDamage = InDamage * (Energy / 10 + 200) / 100
 	

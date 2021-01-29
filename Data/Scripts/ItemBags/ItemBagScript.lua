@@ -450,7 +450,7 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 
 		if (ItemInfo.Option == -1) then -- Random Option
 			if (GetRandomValue(3) >= 1) then -- 66% chance to get option, if greater than or equal 1 then
-				if (Is28Option == 0) then
+				if (Is28Option() == 0) then
 					IsOption = GetRandomValue(5) -- +0 up to +16
 				else
 					IsOption = GetRandomValue(8) -- +0 up to +28
@@ -545,7 +545,7 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 	end
 	
 	-- New draw of option if server is configured to support option up to +16 only
-	if (Is28Option == 0 and IsOption > 4) then
+	if (Is28Option() == 0 and IsOption > 4) then
 		IsOption = GetRandomValue(5) -- option draw 0-4
 	end
 
@@ -639,7 +639,7 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 
 		if (ItemInfo.Option == -1) then -- Random Option
 			if (GetRandomValue(3) >= 1) then -- 66% chance to get option, if greater than or equal 1 then
-				if (Is28Option == 0) then
+				if (Is28Option() == 0) then
 					IsOption = GetRandomValue(5) -- +0 up to +16
 				else
 					IsOption = GetRandomValue(8) -- +0 up to +28
@@ -734,7 +734,7 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 	end
 
 	-- New draw of option if server is configured to support option up to +16 only
-	if (Is28Option == 0 and IsOption > 4) then
+	if (Is28Option() == 0 and IsOption > 4) then
 		IsOption = GetRandomValue(5) -- option draw 0-4
 	end
 
@@ -829,7 +829,7 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 
 		if (ItemInfo.Option == -1) then -- Random Option
 			if (GetRandomValue(3) >= 1) then -- 66% chance to get option, if greater than or equal 1 then
-				if (Is28Option == 0) then
+				if (Is28Option() == 0) then
 					IsOption = GetRandomValue(5) -- +0 up to +16
 				else
 					IsOption = GetRandomValue(8) -- +0 up to +28
@@ -924,7 +924,7 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 	end
 
 	-- New draw of option if server is configured to support option up to +16 only
-	if (Is28Option == 0 and IsOption > 4) then
+	if (Is28Option() == 0 and IsOption > 4) then
 		IsOption = GetRandomValue(5) -- option draw 0-4
 	end
 
@@ -1023,7 +1023,7 @@ function EventBagMakeItem()
 
 		if (ItemInfo.Option == -1) then -- Random Option
 			if (GetRandomValue(3) >= 1) then -- 66% chance to get option, if greater than or equal 1 then
-				if (Is28Option == 0) then
+				if (Is28Option() == 0) then
 					IsOption = GetRandomValue(5) -- +0 up to +16
 				else
 					IsOption = GetRandomValue(8) -- +0 up to +28
@@ -1118,7 +1118,7 @@ function EventBagMakeItem()
 	end
 	
 	-- New draw of option if server is configured to support option up to +16 only
-	if (Is28Option == 0 and IsOption > 4) then
+	if (Is28Option() == 0 and IsOption > 4) then
 		IsOption = GetRandomValue(5) -- option draw 0-4
 	end
 
@@ -1210,7 +1210,7 @@ function InventoryBagItemCreate(aIndex)
 
 		if (ItemInfo.Option == -1) then -- Random Option
 			if (GetRandomValue(3) >= 1) then -- 66% chance to get option, if greater than or equal 1 then
-				if (Is28Option == 0) then
+				if (Is28Option() == 0) then
 					IsOption = GetRandomValue(5) -- +0 up to +16
 				else
 					IsOption = GetRandomValue(8) -- +0 up to +28
@@ -1306,7 +1306,7 @@ function InventoryBagItemCreate(aIndex)
 	end
 	
 	-- New draw of option if server is configured to support option up to +16 only
-	if (Is28Option == 0 and IsOption > 4) then
+	if (Is28Option() == 0 and IsOption > 4) then
 		IsOption = GetRandomValue(5) -- option draw 0-4
 	end
 

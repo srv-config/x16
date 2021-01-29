@@ -24,6 +24,20 @@ CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER									  	  = 9
 CLASS_GUNCRUSHER									  = 10
 
+-- SkillID: 385, 487, Evil Spirit Strengthener
+function EvilSpirit_MasterLevel1_Calc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
+ local OutDamage = 0
+ 
+ 	if (Class == CLASS_WIZARD) then
+		OutDamage = InDamage
+	elseif (Class == CLASS_GLADIATOR) then
+		OutDamage = InDamage
+	elseif (Class == CLASS_RUNEWIZARD) then
+		OutDamage = InDamage
+	end
+ 
+ return OutDamage
+end
 
 -- SkillID: 392, Nova Strengthener - (Grand Master)
 function NovaSkillCalc_Master_Wizard(InDamage, Energy)
@@ -33,7 +47,7 @@ function NovaSkillCalc_Master_Wizard(InDamage, Energy)
 end
 
 -- SkillID: 403, Soul Barrier Strengthener - (Grand Master)
-function WizardMagicDefense_Level1(Index, TargetIndex, Dexterity, Energy)
+function WizardMagicDefense_Level1(Index, TargetIndex, TargetClass, Dexterity, Energy)
 	local SkillEffect = Dexterity / 50 + Energy / 200 + 10
 	local SkillTime = Energy / 40 + 60
 	
@@ -47,7 +61,7 @@ function WizardMagicDefense_Level1(Index, TargetIndex, Dexterity, Energy)
 end
 
 -- SkillID: 404, Soul Barrier Proficiency - (Grand Master)
-function WizardMagicDefense_Level2(Index, TargetIndex, Dexterity, Energy)
+function WizardMagicDefense_Level2(Index, TargetIndex, TargetClass, Dexterity, Energy)
 	local SkillEffect = Dexterity / 50 + Energy / 200 + 10
 	local SkillTime = Energy / 40 + 60
 	
@@ -61,7 +75,7 @@ function WizardMagicDefense_Level2(Index, TargetIndex, Dexterity, Energy)
 end
 
 -- SkillID: 406, Soul Barrier Mastery (Grand Master)
-function WizardMagicDefense_Level3(Index, TargetIndex, Dexterity, Energy)
+function WizardMagicDefense_Level3(Index, TargetIndex, TargetClass, Dexterity, Energy)
 	local SkillEffect = Dexterity / 50 + Energy / 200 + 10
 	local SkillTime = Energy / 40 + 60
 	
@@ -157,7 +171,7 @@ function BloodStormCalc_MasterLevel2_Knight(InDamage, Energy)
 end
 
 -- SkillID: 356, Swell Life Strengthener - (Blade Master)
-function KnightSkillAddLife_Level1(Vitality, Energy, PartyBonus)
+function KnightSkillAddLife_Level1(Index, TargetIndex, TargetClass, Vitality, Energy, PartyBonus)
 	local SkillEffect = Vitality / 100 + 12 + Energy / 20 + PartyBonus
 	local SkillTime = Energy / 10 + 60
 	
@@ -165,7 +179,7 @@ function KnightSkillAddLife_Level1(Vitality, Energy, PartyBonus)
 end
 
 -- SkillID: 360, Swell Life Proficiency - (Blade Master)
-function KnightSkillAddLife_Level2(Vitality, Energy, PartyBonus)
+function KnightSkillAddLife_Level2(Index, TargetIndex, TargetClass, Vitality, Energy, PartyBonus)
 	local SkillEffect = Vitality / 100 + 12 + Energy / 20 + PartyBonus
 	local SkillTime = Energy / 10 + 60
 	
@@ -173,7 +187,7 @@ function KnightSkillAddLife_Level2(Vitality, Energy, PartyBonus)
 end
 
 -- SkillID: 363, Swell Life Mastery - (Blade Master)
-function KnightSkillAddLife_Level3(Vitality, Energy, PartyBonus)
+function KnightSkillAddLife_Level3(Index, TargetIndex, TargetClass, Vitality, Energy, PartyBonus)
 	local SkillEffect = Vitality / 100 + 12 + Energy / 20 + PartyBonus
 	local SkillTime = Energy / 10 + 60
 	
@@ -188,31 +202,31 @@ function MultiShotCalc_Master_Elf(InDamage, Dexterity, Energy)
 end
 
 -- SkillID: 413, Heal Strengthener - (High Elf)
-function ElfHeal_Level1(Class, Index, TargetIndex, Energy)
+function ElfHeal_Level1(TargetClass, Index, TargetIndex, Energy)
 	local SkillEffect = 0
 	
 	if (Index ~= TargetIndex) then
-		if (Class == CLASS_WIZARD) then
+		if (TargetClass == CLASS_WIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_KNIGHT) then
+		elseif (TargetClass == CLASS_KNIGHT) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_ELF) then
+		elseif (TargetClass == CLASS_ELF) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GLADIATOR) then
+		elseif (TargetClass == CLASS_GLADIATOR) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_DARKLORD) then
+		elseif (TargetClass == CLASS_DARKLORD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_SUMMONER) then
+		elseif (TargetClass == CLASS_SUMMONER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_RAGEFIGHTER) then
+		elseif (TargetClass == CLASS_RAGEFIGHTER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GROWLANCER) then
+		elseif (TargetClass == CLASS_GROWLANCER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_RUNEWIZARD) then
+		elseif (TargetClass == CLASS_RUNEWIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_SLAYER) then
+		elseif (TargetClass == CLASS_SLAYER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GUNCRUSHER) then
+		elseif (TargetClass == CLASS_GUNCRUSHER) then
 			SkillEffect = Energy / 5 + 5			
 		end
 	elseif (Index == TargetIndex) then
@@ -532,7 +546,7 @@ function ForceWave_Master_Lord(InDamage, Energy)
 end
 
 -- SkillID: 511, Critical DMG Increase PowUp - (Lord Emperor)
-function DarkLordCriticalDamage_Level1(Command, Energy)
+function DarkLordCriticalDamage_Level1(Index, TargetIndex, TargetClass, Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
 	
@@ -547,7 +561,7 @@ function EarthShake_MasterLevel1_Lord(InDamage, Energy)
 end
 
 -- SkillID: 515, Critical DMG Increase PowUp (2) - (Lord Emperor)
-function DarkLordCriticalDamage_Level2(Command, Energy)
+function DarkLordCriticalDamage_Level2(Index, TargetIndex, TargetClass, Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
 	
@@ -555,7 +569,7 @@ function DarkLordCriticalDamage_Level2(Command, Energy)
 end
 
 -- SkillID: 517, Critical DMG Increase PowUp (3) - (Lord Emperor)
-function DarkLordCriticalDamage_Level3(Command, Energy)
+function DarkLordCriticalDamage_Level3(Index, TargetIndex, TargetClass, Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
 	
@@ -563,7 +577,7 @@ function DarkLordCriticalDamage_Level3(Command, Energy)
 end
 
 -- SkillID: 522, Critical Damage Increase Master - (Lord Emperor)
-function DarkLordCriticalDamage_Level4(Command, Energy)
+function DarkLordCriticalDamage_Level4(Index, TargetIndex, TargetClass, Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
 	
@@ -833,7 +847,7 @@ function BloodHowl_Level2(TargetHP)
 end
 
 -- SkillID: 573, Stamina Increase Strengthener - (Fist Master)
-function FighterIncLifeCalcEffect_Level1(Energy)
+function FighterIncLifeCalcEffect_Level1(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect = (Energy - 132) / 10.0 + 30.0;
 	local SkillTime = Energy / 5 + 60
 	
@@ -841,7 +855,7 @@ function FighterIncLifeCalcEffect_Level1(Energy)
 end
 
 -- SkillID: 569, Def SuccessRate Increase PowUp - (Fist Master)
-function FighterIncDefRateCalcEffect_Level1(Energy)
+function FighterIncDefRateCalcEffect_Level1(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect = (Energy - 80) / 10.0 + 10.0;
 	local SkillTime = Energy / 5 + 60
 	
@@ -853,7 +867,7 @@ function FighterIncDefRateCalcEffect_Level1(Energy)
 end
 
 -- SkillID: 572, DefSuccessRate Increase Mastery - (Fist Master)
-function FighterIncDefRateCalcEffect_Level2(Energy)
+function FighterIncDefRateCalcEffect_Level2(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect = (Energy - 80) / 10.0 + 10.0;
 	local SkillTime = Energy / 5 + 60
 	
@@ -1009,7 +1023,7 @@ function GrowLancerWrath_Level3(Strength, Dexterity, Energy)
 end
 
 -- SkillID: 693, Obsidian PowUp - (Mirage Lancer)
-function GrowLancerObsidian_Level1(Strength, Dexterity, Energy)
+function GrowLancerObsidian_Level1(Index, TargetIndex, TargetClass, Strength, Dexterity, Energy)
 	local SkillEffect = Strength / 20
 	local SkillTime = 120
 
@@ -1040,7 +1054,7 @@ function RuneWizardBurstCalc_Level1(Energy)
 end
 
 -- SkillID: 765, Burst Enhancement - (Grand Rune Master)
-function RuneWizardHasteCalc_Level1(Energy)
+function RuneWizardHasteCalc_Level1(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect1 = Energy / 100
 	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
@@ -1058,7 +1072,7 @@ function RuneWizardBurstCalc_Level2(Energy)
 end
 
 -- SkillID: 769, Haste Mastery - (Grand Rune Master)
-function RuneWizardHasteCalc_Level2(Energy)
+function RuneWizardHasteCalc_Level2(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect1 = Energy / 100
 	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30

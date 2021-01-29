@@ -200,7 +200,7 @@
 		<Option ID="10" Number="2" Operator="2"   Value="4"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Decreases Damage by %d%%" />
 		<Option ID="11" Number="3" Operator="2"   Value="5"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="15" ItemKindA_4="18" Rate="5000" Name="Reflect Damage increase by %d%%" />
 		<Option ID="12" Number="4" Operator="2"   Value="10" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="15" ItemKindA_4="18" Rate="5000" Name="Increases Defense Success Rate by %d%%" />
-		<Option ID="13" Number="5" Operator="2"   Value="30" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increases the amount of Zen acquired for hunting monsters by %d%%" />
+		<Option ID="13" Number="5" Operator="1"   Value="30" FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increases the amount of Zen acquired for hunting monsters by %d%%" />
 		<Option ID="14" Number="6" Operator="100" Value="2"  FormulaID="2"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Life by %d" />
 		<Option ID="15" Number="7" Operator="100" Value="3"  FormulaID="3"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Mana by %d" />
 		<Option ID="16" Number="8" Operator="100" Value="4"  FormulaID="4"  ItemKindA_1="15" ItemKindA_2="18"  ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Decreases Damage by %d" />
@@ -319,7 +319,7 @@
 		</Common>
 		<Wing>
 			<Kind A="6" B="24" Zero="8000" One="1500" Two="500" Three="0" Four="0" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />
-			<Kind A="6" B="25" Zero="9000" One="750" Two="250" Three="0" Four="0" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />
+			<Kind A="6" B="25" Zero="0" One="0" Two="0" Three="0" Four="10000" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />
 			<Kind A="6" B="26" Zero="8000" One="1500" Two="500" Three="0" Four="0" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />
 			<Kind A="6" B="27" Zero="9000" One="750" Two="250" Three="0" Four="0" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />
 			<Kind A="6" B="28" Zero="9900" One="75" Two="25" Three="0" Four="0" Five="0" Six="0" Seven="0" Eight="0" Nine="0" />

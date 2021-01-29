@@ -133,36 +133,36 @@
 		<Option Index="1"  MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="11" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
 		<Option Index="2"  MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="5"  BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack Power and Magical Damage" />
 		<Option Index="3"  MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="11" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
-		<Option Index="4"  MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="24" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
-		<Option Index="5"  MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="29" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
+		<Option Index="4"  MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="24" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
+		<Option Index="5"  MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="29" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
 	<!-- -->
 		<Option Index="6"  MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="22" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack" />
 		<Option Index="7"  MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="22" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
 		<Option Index="8"  MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="10" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack Power and Magical Damage" />
 		<Option Index="9"  MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="22" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
-		<Option Index="10" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="27" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
-		<Option Index="11" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="31" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
+		<Option Index="10" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="27" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
+		<Option Index="11" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="31" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
 	<!-- -->
 		<Option Index="12" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack" />
 		<Option Index="13" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
 		<Option Index="14" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="15" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack Power and Magical Damage" />
 		<Option Index="15" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
-		<Option Index="16" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="30" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
-		<Option Index="17" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
+		<Option Index="16" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="30" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
+		<Option Index="17" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
 	<!-- -->
 		<Option Index="18" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="44" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack" />
 		<Option Index="19" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="44" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
 		<Option Index="20" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="20" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack Power and Magical Damage" />
 		<Option Index="21" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="44" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
-		<Option Index="22" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
-		<Option Index="23" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="35" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
+		<Option Index="22" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="33" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense"	 />
+		<Option Index="23" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="35" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
 	<!-- -->
 		<Option Index="24" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="55" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack" />
 		<Option Index="25" MinItemType="0" MaxItemType="4"	BonusType="1" BonusValue="55" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
 		<Option Index="26" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="25" BonusRate="30" ElementType1="1" ElementType2="5" ElementType3="3" ElementType4="0" ElementType5="0" Name="Increases Attack Power and Magical Damage" />
 		<Option Index="27" MinItemType="5" MaxItemType="5"	BonusType="1" BonusValue="55" BonusRate="30" ElementType1="5" ElementType2="3" ElementType3="1" ElementType4="0" ElementType5="0" Name="Increase Skill Damage" />
-		<Option Index="28" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="36" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
-		<Option Index="29" MinItemType="6" MaxItemType="12"	BonusType="1" BonusValue="37" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
+		<Option Index="28" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="36" BonusRate="30" ElementType1="2" ElementType2="6" ElementType3="4" ElementType4="0" ElementType5="0" Name="Increases Defense" />
+		<Option Index="29" MinItemType="6" MaxItemType="20"	BonusType="1" BonusValue="37" BonusRate="30" ElementType1="6" ElementType2="4" ElementType3="2" ElementType4="0" ElementType5="0" Name="Increases MAX Life" />
 	</SocketBonusSettings>
 
 	<SpecialOptionSettings>

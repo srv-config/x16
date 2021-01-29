@@ -25,8 +25,23 @@ CLASS_RUNEWIZARD									  = 8
 CLASS_SLAYER									 	  = 9
 CLASS_GUNCRUSHER									  = 10
 
+-- SkillID: 9, Evil Spirit
+function EvilSpiritCalc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
+ local OutDamage = 0
+ 
+ 	if (Class == CLASS_WIZARD) then
+		OutDamage = InDamage
+	elseif (Class == CLASS_GLADIATOR) then
+		OutDamage = InDamage
+	elseif (Class == CLASS_RUNEWIZARD) then
+		OutDamage = InDamage
+	end
+ 
+ return OutDamage
+end
+
 -- SkillID: 16, Soul Barrier
-function WizardMagicDefense(Index, TargetIndex, Dexterity, Energy)
+function WizardMagicDefense(Index, TargetIndex, TargetClass, Dexterity, Energy)
 	local SkillEffect = Dexterity / 50 + Energy / 200 + 10
 	local SkillTime = Energy / 40 + 60
 	
@@ -96,7 +111,7 @@ function Knight_Gladiator_CalcSkillBonus(SkillID, Class, InDamage, Strength, Ene
 end
 
 -- SkillID: 48, Swell Life
-function KnightSkillAddLife(Vitality, Energy, PartyBonus)
+function KnightSkillAddLife(Index, TargetIndex, TargetClass, Vitality, Energy, PartyBonus)
 	local SkillEffect = Vitality / 100 + 12 + Energy / 20 + PartyBonus
 	local SkillTime = Energy / 10 + 60
 	
@@ -165,33 +180,33 @@ function Elf_CalcTripleShot(InDamage, Strength, Dexterity, Energy)
 end
 
 -- SkillID: 26, Heal
-function ElfHeal(Class, Index, TargetIndex, Energy)
+function ElfHeal(TargetClass, Index, TargetIndex, Energy)
 	local SkillEffect = 0
 	
-	-- LogAdd(string.format('Class %d Index %d Target %d Ene %d', Class, Index, TargetIndex, Energy))
+	-- LogAdd(string.format('TargetClass %d Index %d Target %d Ene %d', TargetClass, Index, TargetIndex, Energy))
 	
 	if (Index ~= TargetIndex) then
-		if (Class == CLASS_WIZARD) then
+		if (TargetClass == CLASS_WIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_KNIGHT) then
+		elseif (TargetClass == CLASS_KNIGHT) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_ELF) then
+		elseif (TargetClass == CLASS_ELF) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GLADIATOR) then
+		elseif (TargetClass == CLASS_GLADIATOR) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_DARKLORD) then
+		elseif (TargetClass == CLASS_DARKLORD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_SUMMONER) then
+		elseif (TargetClass == CLASS_SUMMONER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_RAGEFIGHTER) then
+		elseif (TargetClass == CLASS_RAGEFIGHTER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GROWLANCER) then
+		elseif (TargetClass == CLASS_GROWLANCER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_RUNEWIZARD) then
+		elseif (TargetClass == CLASS_RUNEWIZARD) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_SLAYER) then
+		elseif (TargetClass == CLASS_SLAYER) then
 			SkillEffect = Energy / 5 + 5
-		elseif (Class == CLASS_GUNCRUSHER) then
+		elseif (TargetClass == CLASS_GUNCRUSHER) then
 			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
@@ -359,7 +374,7 @@ function Lord_CalcSkillBonus(SkillID, InDamage, Strength, Energy, Command)
 end
 
 -- SkillID: 64, Increase Critical Damage
-function DarkLordCriticalDamage(Command, Energy)
+function DarkLordCriticalDamage(Index, TargetIndex, TargetClass, Command, Energy)
 	local SkillEffect = Command / 25 + Energy / 30
 	local SkillTime = Energy / 10 + 60
 	
@@ -414,7 +429,7 @@ function ChainLightningCalc(InDamage, TargetNumber)
 end
 
 -- SkillID: 217, Damage Reflection
-function SummonerDamageReflect(Energy)
+function SummonerDamageReflect(Index, TargetIndex, TargetClass, Energy)
 	local Reflect = 30 + (Energy / 42)
 	local Time = 30 + (Energy / 25)
 	
@@ -630,7 +645,7 @@ function FighterIgnoreEnemyDefCalcEffect(Energy)
 end
 
 -- SkillID: 267, Increase Health
-function FighterIncLifeCalcEffect(Energy)
+function FighterIncLifeCalcEffect(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect = (Energy - 132) / 10.0 + 30.0;
 	local SkillTime = Energy / 5 + 60
 	
@@ -638,7 +653,7 @@ function FighterIncLifeCalcEffect(Energy)
 end
 
 -- SkillID: 268, Increase Block
-function FighterIncDefRateCalcEffect(Energy)
+function FighterIncDefRateCalcEffect(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect = (Energy - 80) / 10.0 + 10.0;
 	local SkillTime = Energy / 5 + 60
 	
@@ -754,7 +769,7 @@ function GrowLancerWrath(Strength, Dexterity, Energy)
 end
 
 -- SkillID: 273, Obsidian
-function GrowLancerObsidian(Strength, Dexterity, Energy)
+function GrowLancerObsidian(Index, TargetIndex, TargetClass, Strength, Dexterity, Energy)
 	local SkillEffect = Strength / 20
 	local SkillTime = 120
 
@@ -846,7 +861,7 @@ function RuneWizardBurstCalc(Energy)
 end
 
 -- SkillID: 287, Haste
-function RuneWizardHasteCalc(Energy)
+function RuneWizardHasteCalc(Index, TargetIndex, TargetClass, Energy)
 	local SkillEffect1 = Energy / 100
 	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
