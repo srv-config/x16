@@ -14,6 +14,12 @@
 //	ResetAccumulatedTimeAfterKill: Resets accumulated time after killing Guild Master, 0/1
 //	ResetAccumulatedTimeAfterMove: Resets accumulated time after move, 0/1
 //	LordMixDailyLimit: Daily limit of Lord Mixes
+//	LordMixMinGuildPosition: Minimum guild position to use Lord Mix
+//		~ 0: Regular guild member
+//		~ 1: Battle Master
+//		~ 2: Guild Assistant
+//		~ 3: Guild Master
+//
 //	LiftAllyRequirement: Enables ability to enter the Castle Tower and Hunt Zone without Guild Alliance by Siege winning Guild, 0/1
 //	CrownSwitchMinGuildPosition: Minimum guild position to use Crown Switch:
 //	CrownMinGuildPos: Minimum guild position to use Crown:
@@ -42,15 +48,15 @@
 //
 // ### CastleSiegeEvent::CycleSettings::Cycle ### - configuration of stages at specified days of cycle
 //	Stage: Definition of event stage type:
-//		1 ~ Registration for Castle Siege
-//		2 ~ Idle
-//		3 ~ Register Mark Of The Lord
-//		4 ~ Idle
-//		5 ~ Castle Attack Guild Notification
-//		6 ~ Reading the state of Castle Siege
-//		7 ~ Start of Castle Siege event
-//		8 ~ End of Castle Siege event
-//		9 ~ End of Castle Siege cycle
+//		~ 1: Registration for Castle Siege
+//		~ 2: Idle
+//		~ 3: Register Mark Of The Lord
+//		~ 4: Idle
+//		~ 5: Castle Attack Guild Notification
+//		~ 6: Reading the state of Castle Siege
+//		~ 7: Start of Castle Siege event
+//		~ 8: End of Castle Siege event
+//		~ 9: End of Castle Siege cycle
 //	Day: Day of a Cycle to run specified State, 0 is used for registration period before event cycle start
 //	Hour: Hour to run specified state of the cycle, 0-23
 //	Minute: Minute to run specified state of the cycle, 0-60
@@ -129,7 +135,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS 
 -->
 
-<CastleSiegeEvent Enable="1" FriendlyFire="1" ResetAccumulatedTimeAfterKill="0" ResetAccumulatedTimeAfterMove="0" LordMixDailyLimit="1" LiftAllyRequirement="0" CrownSwitchMinGuildPosition="3" CrownMinGuildPos="0">
+<CastleSiegeEvent Enable="1" FriendlyFire="1" ResetAccumulatedTimeAfterKill="0" ResetAccumulatedTimeAfterMove="0" LordMixDailyLimit="1" LordMixMinGuildPosition="3" LiftAllyRequirement="0" CrownSwitchMinGuildPosition="3" CrownMinGuildPos="0">
 	<DamageReduction OppositeTeam="40" SelfTeam="20" />
 	<WeaponDamage AttackTeam="300" DefenseTeam="200" />
 

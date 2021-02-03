@@ -457,6 +457,23 @@ function SummonerBerserkerMagicDamage(Energy, Effect)
 	return MagicMin, MagicMax
 end
 
+-- SkillID: 288, Death Scythe
+function DeadScythe_Summoner(InDamage, TargetClass, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = InDamage * 0.8
+	elseif (BarrageCount == 2) then
+		OutDamage = InDamage * 1.0
+	elseif (BarrageCount == 3) then
+		OutDamage = InDamage * 1.1
+	elseif (BarrageCount == 4) then
+		OutDamage = InDamage * 1.2
+	end
+
+	return OutDamage
+end
+
 -- SkillID: 289, Darkness
 function SummonerDarkness(Energy)
 	local SkillEffectUP = (Energy / 30)

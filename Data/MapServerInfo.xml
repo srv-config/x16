@@ -17,10 +17,12 @@
 //	Initiation: 1 ~ allows to move to any map which is located outside specified server, 0 ~ limits moves among maps defined within ServerMapping for the server
 //	IP: Address of the Server, WAN (External) address type for usual configuration type, allowed values: IP (version 4) or DNS Names - (maximum 15 characters)
 //	Port: Port of the server, value must match configuration of the server in ServerList.xml and GameServer.ini of the server
-//	MinEntryReset: Minimum reset required to join the server, -1 if not applies
-//	MaxEntryReset: Maximum reset required to join the server, -1 if not applies
 //	MinEntryGrandReset: Minimum grand reset required to join the server, -1 if not applies
 //	MaxEntryGrandReset: Maximum grand reset required to join the server, -1 if not applies
+//	MinEntryReset: Minimum reset required to join the server, -1 if not applies
+//	MaxEntryReset: Maximum reset required to join the server, -1 if not applies
+//	MinEntryLevel: Minimum level required to join the server, -1 if not applies
+//	MaxEntryLevel: Maximum level required to join the server, -1 if not applies
 //	Name: Name of the Server, used for in-file description purpose helping easier recognition of server
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Server Code for Battle Core server is unmodifiable and must be set to 120). Group should stay configured at 6
@@ -39,12 +41,12 @@
 
 <MapServer>
 	<ServerList>
-		<Server Code="0"  Group="0" Initiation="1" IP="PUBLIC_IP" Port="56900" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="Regular" />
-		<Server Code="12" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56912" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="Market" />
-		<Server Code="13" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56913" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="Arca" />
-		<Server Code="14" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56914" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="Siege" />
-		<Server Code="15" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56915" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="Instance" />
-		<Server Code="480" Group="24" Initiation="0" IP="PUBLIC_IP" Port="56120" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" Name="BattleCore" />
+		<Server Code="0"  Group="0" Initiation="1" IP="PUBLIC_IP" Port="56900" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="Regular" />
+		<Server Code="12" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56912" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="Market" />
+		<Server Code="13" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56913" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="Arca" />
+		<Server Code="14" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56914" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="Siege" />
+		<Server Code="15" Group="0" Initiation="0" IP="PUBLIC_IP" Port="56915" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="Instance" />
+		<Server Code="480" Group="24" Initiation="0" IP="PUBLIC_IP" Port="56120" MinEntryGrandReset="-1" MaxEntryGrandReset="-1" MinEntryReset="-1" MaxEntryReset="-1" MinEntryLevel="-1" MaxEntryLevel="-1" Name="BattleCore" />
 	</ServerList>
 	
 	<ServerMapping>

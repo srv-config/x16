@@ -232,7 +232,26 @@ function LightningStorm_4thEnchant_RuneWizard(InDamage, Strength, Dexterity, Vit
 	return OutDamage
 end
 
--- SkillID: 1159, Bat Flock Enhancement - (Damage over time) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+-- SkillID: 1155, Death Scythe Enhancement
+function DeadScythe_4thEnchant_Summoner(InDamage, TargetClass, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = InDamage * 0.8
+	elseif (BarrageCount == 2) then
+		OutDamage = InDamage * 1.0
+	elseif (BarrageCount == 3) then
+		OutDamage = InDamage * 1.1
+	elseif (BarrageCount == 4) then
+		OutDamage = InDamage * 1.2
+	elseif (BarrageCount == 5) then
+		OutDamage = InDamage * 1.3
+	end
+
+	return OutDamage
+end
+
+-- SkillID: 1159, Bat Flock Enhancement - (Damage over time)
 function BatFlock_DotDamage_4thEnchant_Slayer(InDamage, Strength, Energy)
 	local Damage = InDamage
 	local DotDamage = (InDamage / 10)

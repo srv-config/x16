@@ -812,6 +812,7 @@
 		<Msg ID="786" Text="[Warning]: to use /post you need %d resets" />
 		<Msg ID="787" Text="You need to be at least level %d to repair items yourself." />
 		<Msg ID="788" Text="You need to be at least level %d to use Spirit of Blessing." />
+		<Msg ID="789" Text="Min Level Limit: %d, Max Level Limit: %d."/>
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
