@@ -813,6 +813,7 @@
 		<Msg ID="787" Text="You need to be at least level %d to repair items yourself." />
 		<Msg ID="788" Text="You need to be at least level %d to use Spirit of Blessing." />
 		<Msg ID="789" Text="Min Level Limit: %d, Max Level Limit: %d."/>
+		<Msg ID="790" Text="Creating character of selected class requires reaching minimum level requirement or purchase of character card."/>
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
@@ -939,5 +940,7 @@
 		<Msg ID="131" Text="Scorched Canyon" />
 		<Msg ID="132" Text="Red Smoke Icarus" />
 		<Msg ID="133" Text="Temple of Arenil" />
+		<Msg ID="5000" Text="Labyrinth of Dimension" /> <!-- 5000 ~ 5999 -->
+		<Msg ID="6000" Text="4th Quest Area" /> <!-- 6000 ~ 6999 -->
 	</Map>
 </Language>
