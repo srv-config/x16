@@ -29,6 +29,11 @@
 //	Hour: Hour to perform reset on, 0-23
 //	Min: Minute to perform reset on, 0-59
 //
+// ### ItemDropCountLimit::DropType::Type ###
+//	ID: Unique ID of drop type
+/	Enable: Allows to include or exclude drop system from Drop Count Limit, 0/1
+//	Name: Reference name of drop system
+//
 // ### ItemDropCountLimit::ServerGroup::Item ###
 //	Cat: Item category, see ItemList.xml
 //	Index: Item Index, see ItemList.xml
@@ -41,6 +46,15 @@
 	<ResetSchedule>
 		<Time DayOfMonth="-1" DayOfWeek="6" Hour="0" Min="0" />
 	</ResetSchedule>
+	
+	<!-- Require more drop systems controls? Fill a request (Due to technical reason Item Bags are not possible to include in this system) -->
+	<DropType>
+		<Type ID="1" Enable="1" Name="AllMonsterBag" />
+		<Type ID="2" Enable="1" Name="MonsterMap_(x)_Bag" />
+		<Type ID="3" Enable="1" Name="EventItemMonsterBag" />
+		<Type ID="4" Enable="1" Name="SetItemMonsterBag" />
+		<Type ID="5" Enable="0" Name="GM Item drop command" />
+	</DropType>
 	
 	<ServerGroup>
 		<Item Cat="0" Index="0" MaxCount="100" />
