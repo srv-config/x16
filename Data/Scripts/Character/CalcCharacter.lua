@@ -650,6 +650,70 @@ function GunCrusherElementalDamageCalc(Strength, Dexterity, Vitality, Energy, It
 	return MinDamage, MaxDamage
 end
 
+-- Character Elemental Attack Rate MvP - General
+function ElementalAttackRateCalc_MvP(Class, NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy, Command)
+	local AttackSuccessRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
+	
+	if(Class == CLASS_WIZARD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_KNIGHT) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_ELF) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GLADIATOR) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_DARKLORD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_SUMMONER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_RAGEFIGHTER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GROWLANCER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_RUNEWIZARD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_SLAYER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GUNCRUSHER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	end
+	
+	return AttackSuccessRate
+end
+
+-- Character Elemental Attack Rate PvP - General
+function ElementalAttackRateCalc_PvP(Class, NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy, Command)
+	local AttackSuccessRate = 0
+	local TotalLevel = NormalLevel + MasterLevel
+	
+	if(Class == CLASS_WIZARD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_KNIGHT) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_ELF) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GLADIATOR) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_DARKLORD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_SUMMONER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_RAGEFIGHTER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GROWLANCER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_RUNEWIZARD) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_SLAYER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_GUNCRUSHER) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	end
+	
+	return AttackSuccessRate
+end
+
 -- Character Elemental Defense - General
 function ElementalDefenseCalc(Class, Dexterity)
 	local Defense = 0
