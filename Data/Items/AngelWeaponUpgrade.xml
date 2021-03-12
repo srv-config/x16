@@ -36,6 +36,7 @@
 		<Item NeedCat="2"  NeedIndex="34"  ResultCat="2"  ResultIndex="35" /> <!-- Absolute Mace of Archangel ~> Blessed Divine Arch Mace -->
 		<Item NeedCat="3"  NeedIndex="26"  ResultCat="3"  ResultIndex="27" /> <!-- Divine Lance of Archangel ~> Blessed Divine Lance -->
 		<Item NeedCat="4"  NeedIndex="18"  ResultCat="4"  ResultIndex="30" /> <!-- Divine Crossbow of Archangel ~> Blessed Divine Arch Crossbow -->
+		<Item NeedCat="4"  NeedIndex="46"  ResultCat="4"  ResultIndex="47" /> <!-- Archangel's Absolute Magic Gun ~> Absolute Magical Gun of the Blessed Archangel -->
 		<Item NeedCat="5"  NeedIndex="10"  ResultCat="5"  ResultIndex="49" /> <!-- Divine Staff of Archangel ~>  Blessed Divine Arch Staff -->
 		<Item NeedCat="5"  NeedIndex="36"  ResultCat="5"  ResultIndex="50" /> <!-- Divine Stick of the Archangel ~> Blessed Divine Arch Stick -->
 	</Upgrade>
