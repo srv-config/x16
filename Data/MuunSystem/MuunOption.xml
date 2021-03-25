@@ -112,6 +112,6 @@
 	<Option Index="69" Type="12" Value0="15" Value1="15" Value2="15" Value3="15" Value4="15" Value5="15" ConditionType="4" ConditionValue1="127" ConditionValue2="-1" Name="Increases Skill Damage +%d (non-PVP)" Description="Equip Muun" />
 	<Option Index="70" Type="12" Value0="8" Value1="2" Value2="4" Value3="6" Value4="0" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Increases Skill Damage +%d (non-PVP)" Description="Monday, Tuesday, Wednesday, Thursday" />
 	<Option Index="71" Type="9" Value0="14" Value1="2" Value2="6" Value3="10" Value4="0" Value5="0" ConditionType="4" ConditionValue1="60" ConditionValue2="-1" Name="Attack Damage +%d (non-PvP)" Description="Monday, Tuesday, Wednesday, Thursday" />
-	<Option Index="72" Type="21" Value0="10" Value1="10" Value2="10" Value3="10" Value4="10" Value5="10" ConditionType="4" ConditionValue1="127" ConditionValue2="-1" Name="Defense Increase +%d (non-PvP)" Description="Equip Muun" />
+	<Option Index="72" Type="21" Value0="10" Value1="10" Value2="10" Value3="10" Value4="10" Value5="10" ConditionType="4" ConditionValue1="127" ConditionValue2="-1" Name="Elemental Defense Increase +%d (non-PvP)" Description="Equip Muun" />
 	<Option Index="73" Type="53" Value0="40" Value1="25" Value2="27" Value3="29" Value4="31" Value5="0" ConditionType="4" ConditionValue1="127" ConditionValue2="-1" Name="Attack Skill (Level %d) (non-PVP)" Description="Equip Muun" />
 </MuunSystem>
