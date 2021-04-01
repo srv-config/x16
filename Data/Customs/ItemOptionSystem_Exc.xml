@@ -75,11 +75,67 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<ItemOptionSystem Enabled="0">
+<ItemOptionSystem Enabled="0" Password="12345678">
 	<Items>
 		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="0" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="1" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="2" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="3" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
 		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="4" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="5" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
+		<Item Cat="5" Index="10" MinLevel="15" OptionIndex="6" OptionValue="5" OptionProbability="100" Ancient="-1" Excellent="1" />
 		<Item Cat="4" Index="40" MinLevel="5" OptionIndex="4" OptionValue="10000" OptionProbability="100" Ancient="-1" Excellent="0" />
 		<Item Cat="13" Index="37" MinLevel="0" OptionIndex="7" OptionValue="1000" OptionProbability="0" Ancient="-1" Excellent="0" /> 
 	</Items>
+	<OptionText>
+		<Text OptionId="0" ColorID="6" Title="Max HP is reduced by %d%% (Chance %d%%)" />
+		<Text OptionId="1" ColorID="7" Title="Attack speed is reduced by %d%% (Chance %d%%)" />
+		<Text OptionId="2" ColorID="8" Title="Freeze the enemy for %d seconds (Chance %d%%)" />
+		<Text OptionId="3" ColorID="9" Title="Stun enemy for %d seconds (Chance %d%%)" />
+		<Text OptionId="4" ColorID="10" Title="Auto Combo (Chance %d%%)" />
+		<Text OptionId="5" ColorID="11" Title="Double DMG chance +%d" />
+		<Text OptionId="6" ColorID="6" Title="Increased attack power +%d%%" />
+		<Text OptionId="7" ColorID="6" Title="Max HP +%d" />
+		<Text OptionId="8" ColorID="6" Title="Increased Defense +%d" />
+		<Text OptionId="9" ColorID="6" Title="DMG Reduction +%d%%" />
+		<Text OptionId="10" ColorID="6" Title="Max AG Increase +%d" />
+		<Text OptionId="11" ColorID="6" Title="One-shot Monster (Chance %d/10000)" />
+		<Text OptionId="12" ColorID="6" Title="One-shot PVP (Chance %d/10000)" />
+		<Text OptionId="13" ColorID="6" Title="Reflect DMG +%d%%" />
+		<Text OptionId="14" ColorID="6" Title="Poison Target for %d seconds (Chance %d%%)" />
+		<Text OptionId="15" ColorID="6" Title="Recover Full HP when attacked (Chance %d%%)" />
+		<Text OptionId="16" ColorID="6" Title="(PVP) Become Invisible for %d seconds when attacked (Chance %d%%)" />
+		<Text OptionId="17" ColorID="6" Title="(PVP) Instant kill the attacker while being attacked (Chance %d%%)" />
+		<Text OptionId="18" ColorID="6" Title="(PVP) When Attacked Target lose %d%% Current HP (chance %d%%)" />
+		<Text OptionId="19" ColorID="6" Title="(PVP) Rebound Full DMG when Attacked (Chance %d/10000)" />
+		<Text OptionId="20" ColorID="6" Title="Excellent DMG Resistance +%d" />
+		<Text OptionId="21" ColorID="6" Title="Critical DMG Resistance +%d" />
+		<Text OptionId="22" ColorID="6" Title="Double DMG Resistance +%d" />
+		<Text OptionId="23" ColorID="6" Title="True DMG Resistance +%d" />
+		<Text OptionId="24" ColorID="6" Title="Combo DMG Increase +%d%%" />
+		<Text OptionId="25" ColorID="6" Title="Absorb PVP DMG +%d%%" />
+		<Text OptionId="26" ColorID="6" Title="Incrase Excellent DMG Rate +%d%%" />
+		<Text OptionId="27" ColorID="6" Title="Incrase Critical DMG Rate +%d%%" />
+		<Text OptionId="28" ColorID="6" Title="True DMG Chance +%d%%" />
+		<Text OptionId="29" ColorID="6" Title="Triple DMG Chance +%d%%" />	
+		<Text OptionId="30" ColorID="6" Title="Triple DMG Resistance +%d%%" />
+		<Text OptionId="31" ColorID="6" Title="Become invincible for %d seconds when attacked (Chance %d%%)" />
+		<Text OptionId="32" ColorID="6" Title="Blind enemy for %d seconds (Chance %d%%)" />
+		<Text OptionId="33" ColorID="6" Title="Incrase all stats +%d" />
+		<Text OptionId="34" ColorID="6" Title="Ignore SD +%d%%" />
+		<Text OptionId="35" ColorID="6" Title="Increase Skill DMG +%d%%" />
+		<Text OptionId="36" ColorID="6" Title="Empty" />
+		<Text OptionId="37" ColorID="6" Title="Incrase Attack Success Rate +%d" />
+		<Text OptionId="38" ColorID="6" Title="Increase SD Resistance +%d%%" />
+		<Text OptionId="39" ColorID="6" Title="Stun Resistance +%d%%" />	
+		<Text OptionId="40" ColorID="6" Title="Incomming Combo DMG Reduce +%d%%" />
+		<Text OptionId="41" ColorID="6" Title="Triple DMG Incrase +%d%%" />
+		<Text OptionId="42" ColorID="6" Title="Elemental DMG Increase +%d%%" />
+		<Text OptionId="43" ColorID="6" Title="Elemental DEF Increase +%d%%" />
+		<Text OptionId="44" ColorID="6" Title="Empty" />
+		<Text OptionId="45" ColorID="6" Title="Empty" />
+		<Text OptionId="46" ColorID="6" Title="Stun 4th Tree for %d seconds (Chance %d%%) " />	
+		<Text OptionId="47" ColorID="6" Title="Empty" />
+		<Text OptionId="48" ColorID="6" Title="Become invincible" />		
+	</OptionText>
 </ItemOptionSystem>
