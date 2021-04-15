@@ -23,6 +23,7 @@
 //
 // ### RegenSpawnZone::Map::Zone ###
 //	Id: Unique ID of respawn zone, 0-9
+//	TargetMapNumber: Target Map number for spawn, -1 to use current map
 //	PosX: The X coordinate, 1-255
 //	PosY: The Y coordinate, 1-255
 //	Rate: Chance rate to use selected zone
@@ -35,7 +36,7 @@
 
 <RegenSpawnZone>
 	<Map Number="40" DieLocationRate="500" DieLocationMsg="1">
-		<Zone Id="0" PosX="233" PosY="17" Rate="2000" />
-		<Zone Id="1" PosX="233" PosY="13" Rate="1000" />
+		<Zone Id="0" TargetMapNumber="-1" PosX="233" PosY="17" Rate="2000" />
+		<Zone Id="1" TargetMapNumber="-1" PosX="233" PosY="13" Rate="1000" />
 	</Map>
 </RegenSpawnZone>

@@ -10,6 +10,9 @@
 //
 // ### MonsterGroupRegenSystem ###
 //	SpawnNotice: Enables or disabled the spawn notice configurable in GroupSettings section, 0/1
+//	MonsterKillRewardType: monsters kill reward loot type
+//		~ 0: Last Hit
+//		~ 1: Most Damage
 //
 // ### MonsterGroupRegenSystem::GroupSettings::Group ###
 //	Index: Group number definition, unique in the section
@@ -59,7 +62,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<MonsterGroupRegenSystem SpawnNotice="1">
+<MonsterGroupRegenSystem SpawnNotice="1" MonsterKillRewardType="1">
 	<GroupSettings>
 		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" DespawnNotice="Medusa and her assistants are gone" PreNotice="Medusa will spawn in %d Minutes" />
 	</GroupSettings>
