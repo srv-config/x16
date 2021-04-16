@@ -464,6 +464,7 @@
 		<Formula ID="7" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 		<Formula ID="8" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 		<Formula ID="9" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
+		<Formula ID="10" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 	</Wing4thDamage>
 	<Wing4thDefense>
 		<Formula ID="0" Data="(140+(%d^1.5*15))" /> <!-- WingsLevel -->
