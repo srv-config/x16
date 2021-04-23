@@ -20,7 +20,8 @@
 //	CoinValue: Amount of coins to charge with
 //	HitInterval: Interval of doing attack, milliseconds
 //	ChargeInterval: Interval to charge for Off-Levelling, seconds
-//	Immortal: Making Character immoral during Off-Levelling, 0/1
+//	ImmortalToPlayers: Making character immoral to players during Off-Levelling, 0/1
+//	ImmortalToMonsters: Making Character immoral to monsters during Off-Levelling, 0/1
 //	MaxDuration: Maximum amount of time the Offline Levelling will be active after activation (regular players), hours, 0 for no limit
 //	MaxVipDuration: Maximum amount of time the Offline Levelling will be active after activation (VIP Players), hours, 0 for no limit
 //	AutoRepairItems: Allows to activate automated repair of equipment (repair will consume Zen as for regular repair), 0/1
@@ -61,7 +62,7 @@
 -->	
 
 <OffLevellingSystem Enable="0">
-	<General VipType="0" CoinType="0" CoinValue="100" HitInterval="1000" ChargeInterval="3600" Immortal="1" MaxDuration="24" MaxVipDuration="48" AutoRepairItems="1" DisconnectAfterDeath="1" ReBuffInterval="10" HealInterval="2" HealHPBelow="0.99" DisableMovement="0" DisableInfoAbovePlayer="0" />
+	<General VipType="0" CoinType="0" CoinValue="100" HitInterval="1000" ChargeInterval="3600" ImmortalToPlayers="1" ImmortalToMonsters="1" MaxDuration="24" MaxVipDuration="48" AutoRepairItems="1" DisconnectAfterDeath="1" ReBuffInterval="10" HealInterval="2" HealHPBelow="0.99" DisableMovement="0" DisableInfoAbovePlayer="0" />
 	<Timing StartHour="0" StartMinute="0" EndHour="23" EndMinute="59" />
 		
 	<PickItems Enable="1" PickUpZen="1" PickUpAllExc="1" PickUpAllSocket="1" PickUpAllAncient="1">

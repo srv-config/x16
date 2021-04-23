@@ -87,6 +87,13 @@
 //~~ Advanced config notes: The values -1, -2 and -3 are stored under Exc1 variable in ItemBagScript.lua, the options count (X) for -3 value is stored under Exc2 variable
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	SetItem: 0 ~ no ancient, 1 ~ ancient (random Tier of specified item) - must be added as ancient, otherwise option will be ignored
+//	SocketInfo: Optional argument defining socket options on specific slot (at present works only with Guardian items, more to be added with future updates)
+//		Guardian Items:
+//			-1: No option
+//			-2;X: Random count of random options (based on rates from GuardianItemOption.xml), the 'X' takes value 0 or 1, determining whether to generate random elite option or not
+//			-3;X;Y: Specified count of random options, the 'X' defines count of options, max 4, the 'Y' takes value 0 or 1, determining whether to generate random elite option or not
+//			X;X;X;X;Y: Defines specific options, the 'X' is guardian regular option index from GuardianItemOption.xml::OptionList section, maximum 4 options can be defined, -1 if not applies, the Y is elite option index from GuardianItemOption.xml::EliteOptionList, must be defined as 5th argument, -1 if not applies
+//
 //	SocketCount:
 //		0: no Socket slots
 //		1: up to one slot

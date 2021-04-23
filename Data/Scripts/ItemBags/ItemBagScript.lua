@@ -428,7 +428,12 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 	local Exc6 = ItemInfo.Ex6
 	local Exc7 = ItemInfo.Ex7
 	local Exc8 = ItemInfo.Ex8
-	local Exc9 = ItemInfo.Ex9	
+	local Exc9 = ItemInfo.Ex9
+	local Socket1 = ItemInfo.SocketInfo1
+	local Socket2 = ItemInfo.SocketInfo2
+	local Socket3 = ItemInfo.SocketInfo3
+	local Socket4 = ItemInfo.SocketInfo4
+	local Socket5 = ItemInfo.SocketInfo5
 
 		if (ItemInfo.Skill == 1) then -- Skill Always
 			IsSkill = 1
@@ -524,6 +529,11 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 	end
 
 	-- Protection against elemental setting value to unsupported items
@@ -576,6 +586,11 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		Duration = 0
@@ -584,7 +599,7 @@ function CommonBagItemDrop(aIndex, MapNumber, X, Y)
 		MuunEvoItemID = 0;
 	end
 	
-	CreateItem(aIndex, MapNumber, X, Y, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, aIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9)
+	CreateItem(aIndex, MapNumber, X, Y, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, aIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5)
 	return 1
 end
 
@@ -618,6 +633,11 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 	local Exc7 = ItemInfo.Ex7
 	local Exc8 = ItemInfo.Ex8
 	local Exc9 = ItemInfo.Ex9
+	local Socket1 = ItemInfo.SocketInfo1
+	local Socket2 = ItemInfo.SocketInfo2
+	local Socket3 = ItemInfo.SocketInfo3
+	local Socket4 = ItemInfo.SocketInfo4
+	local Socket5 = ItemInfo.SocketInfo5
 
 		if (ItemInfo.Skill == 1) then -- Skill Always
 			IsSkill = 1
@@ -708,6 +728,11 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		IsElemental = 0
@@ -766,6 +791,11 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		Duration = 0
@@ -774,7 +804,7 @@ function MonsterBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerI
 		MuunEvoItemID = 0;
 	end
 
-	CreateItem(MonsterIndex, MapNumber, MonsterX, MonsterY, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, PlayerIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9)
+	CreateItem(MonsterIndex, MapNumber, MonsterX, MonsterY, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, PlayerIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5)
 	return 1
 end
 
@@ -808,6 +838,11 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 	local Exc7 = ItemInfo.Ex7
 	local Exc8 = ItemInfo.Ex8
 	local Exc9 = ItemInfo.Ex9
+	local Socket1 = ItemInfo.SocketInfo1
+	local Socket2 = ItemInfo.SocketInfo2
+	local Socket3 = ItemInfo.SocketInfo3
+	local Socket4 = ItemInfo.SocketInfo4
+	local Socket5 = ItemInfo.SocketInfo5
 
 		if (ItemInfo.Skill == 1) then -- Skill Always
 			IsSkill = 1
@@ -898,6 +933,11 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		IsElemental = 0
@@ -956,6 +996,11 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		Duration = 0
@@ -965,9 +1010,9 @@ function EventBagItemDrop(MonsterIndex, MapNumber, MonsterX, MonsterY, PlayerInd
 	end
 
 	if IsGremoryCase == 1 then
-		InsertItem_GremoryCase(PlayerIndex, GremoryCaseType, GremoryCaseGiveType, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, IsAncient, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, iGCReceiptDuration, Duration)
+		InsertItem_GremoryCase(PlayerIndex, GremoryCaseType, GremoryCaseGiveType, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, IsAncient, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5, iGCReceiptDuration, Duration)
 	else	
-		CreateItem(MonsterIndex, MapNumber, MonsterX, MonsterY, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, PlayerIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9)
+		CreateItem(MonsterIndex, MapNumber, MonsterX, MonsterY, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, PlayerIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5)
 	end
 	return 1
 end
@@ -1002,6 +1047,11 @@ function EventBagMakeItem()
 	local Exc7 = ItemInfo.Ex7
 	local Exc8 = ItemInfo.Ex8
 	local Exc9 = ItemInfo.Ex9
+	local Socket1 = ItemInfo.SocketInfo1
+	local Socket2 = ItemInfo.SocketInfo2
+	local Socket3 = ItemInfo.SocketInfo3
+	local Socket4 = ItemInfo.SocketInfo4
+	local Socket5 = ItemInfo.SocketInfo5
 	
 		if (ItemInfo.Skill == 1) then -- Skill Always
 			IsSkill = 1
@@ -1092,6 +1142,11 @@ function EventBagMakeItem()
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		IsElemental = 0
@@ -1149,6 +1204,11 @@ function EventBagMakeItem()
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		Duration = 0
@@ -1157,7 +1217,7 @@ function EventBagMakeItem()
 		MuunEvoItemID = 0;
 	end
 	
-	return ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, IsAncient, IsElemental, IsSocket, MuunEvoItemID, Duration, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9
+	return ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, IsAncient, IsElemental, IsSocket, MuunEvoItemID, Duration, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5
 end
 
 -- ### /5/ Create Item (using Inventory Bag Structure) - BAG_INVENTORY ### --
@@ -1189,6 +1249,11 @@ function InventoryBagItemCreate(aIndex)
 	local Exc7 = ItemInfo.Ex7
 	local Exc8 = ItemInfo.Ex8
 	local Exc9 = ItemInfo.Ex9
+	local Socket1 = ItemInfo.SocketInfo1
+	local Socket2 = ItemInfo.SocketInfo2
+	local Socket3 = ItemInfo.SocketInfo3
+	local Socket4 = ItemInfo.SocketInfo4
+	local Socket5 = ItemInfo.SocketInfo5
 	
 		if (ItemInfo.Skill == 1) then -- Skill Always
 			IsSkill = 1
@@ -1280,6 +1345,11 @@ function InventoryBagItemCreate(aIndex)
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		IsElemental = 0
@@ -1338,6 +1408,11 @@ function InventoryBagItemCreate(aIndex)
 		Exc7 = -1;
 		Exc8 = -1;
 		Exc9 = -1;
+		Socket1 = -1;
+		Socket2 = -1;
+		Socket3 = -1;
+		Socket4 = -1;
+		Socket5 = -1;
 		IsAncient = 0
 		IsSocket = 0
 		Duration = 0	  
@@ -1346,6 +1421,6 @@ function InventoryBagItemCreate(aIndex)
 		MuunEvoItemID = 0;
 	end
 	
-	CreateItem(aIndex, 214, 0, 0, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, aIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9)
+	CreateItem(aIndex, 214, 0, 0, ItemID, ItemLevel, ItemDur, IsSkill, IsLuck, IsOption, aIndex, IsAncient, Duration, IsSocket, IsElemental, MuunEvoItemID, Exc1, Exc2, Exc3, Exc4, Exc5, Exc6, Exc7, Exc8, Exc9, Socket1, Socket2, Socket3, Socket4, Socket5)
 	return 1		 
 end

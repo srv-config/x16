@@ -14,6 +14,8 @@
 //		~ 0: Zen
 //		~ 1: WCoin
 //		~ 2: Goblin Point
+//		~ 3: Ruud
+//
 //	MaxTime: Maximum tie to stay in OffTrade, minutes or -1 to unlimited
 //
 // ### OffTrade::Map ###
