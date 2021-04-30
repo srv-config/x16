@@ -111,7 +111,9 @@
 //	KindA: Attribute automatically assigned on a basis on ItemList.xml configuration, no necessary to be defined in bag
 //	Duration: Allows to drop expiable item, seconds (not every item is suitable for period items system, please test before putting on live server)
 //
-// Bag Structure Supports multiple DropAllow sections. Each DropAllow section may have multiple Drop sub-sections
+// Bag Structure supports multiple DropAllow sections. Each DropAllow section may have multiple Drop sub-sections.
+// Qualified (player meets requirements of) DropAllow section is selected on basis of its weight. Weight (priority) of DropAllow section is equal to sum of all Rates of Drop sections and divided by number of Drop sections contained inside DropAllow section.
+// If there are multiple DropAllow sections of same weight then DropAllow section is selected randomly from pool of all qualified DropAllow sections of same weight.
 //
 // STRICTLY NO COMMENTS INSIDE TAGS 
 -->
