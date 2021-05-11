@@ -528,7 +528,7 @@
 		<Msg ID="499" Text="You cannot warp to Battle Zone" />
 		<Msg ID="500" Text="You have entered to Battle Zone" />
 		<Msg ID="501" Text="You are not a murderer, no need the blessing" />
-		<Msg ID="502" Text="Monster Kill Coin Awarded (%s): %d" />
+		<Msg ID="502" Text="[Monster Kill]: " />
 		<Msg ID="503" Text="You need 120 level" />
 		<Msg ID="504" Text="Lucky Item Smelt success" />
 		<Msg ID="505" Text="Lucky Item Smelt failed" />
@@ -729,7 +729,7 @@
 		<Msg ID="700" Text="You are already max quest." />
 		<Msg ID="701" Text="Not Enough Coin, need %d %s" />
 		<Msg ID="702" Text="Invalid class name" />
-		<Msg ID="703" Text="Charged %d %s"/>
+		<Msg ID="703" Text="Charged %d %s" />
 		<Msg ID="704" Text="[Transfer Syntax] &#60;Name&#61; &#60;Coin Type %s/%s&#61; &#60;Amount above 0&#61;" />
 		<Msg ID="705" Text="Transfered %d %s" /> 
 		<Msg ID="706" Text="Received %d %s From %s" /> 
@@ -756,7 +756,7 @@
 		<Msg ID="729" Text="%s was successful in hunting golden EvoMon." />
 		<Msg ID="730" Text="Please reset fourth enhancement tree first." />
 		<Msg ID="731" Text="Min Reset Limit: %d, Max Reset Limit: %d."/>
-		<Msg ID="732" Text="You received %d GP for killing %s" />
+		<Msg ID="732" Text="" /> <!-- EMPTY -->
 		<Msg ID="733" Text="Close the Pentagram Mix Window and exit." />
 		<Msg ID="734" Text="Channel-Change is not available at present, try again later." />
 		<Msg ID="735" Text="Channel-Change is available for VIP players only." />
@@ -814,6 +814,12 @@
 		<Msg ID="788" Text="You need to be at least level %d to use Spirit of Blessing." />
 		<Msg ID="789" Text="Min Level Limit: %d, Max Level Limit: %d."/>
 		<Msg ID="790" Text="Creating character of selected class requires reaching minimum level requirement or purchase of character card."/>
+		<Msg ID="791" Text="Dueling is not available in this server." />
+		<Msg ID="792" Text="Added %d %s" />
+		<Msg ID="793" Text="[LevelUp]: " />
+		<Msg ID="794" Text="[Reset]: " />
+		<Msg ID="795" Text="[Personal Store]: " />
+		<Msg ID="795" Text="[Quest]: " />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />

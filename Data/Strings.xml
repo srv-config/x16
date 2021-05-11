@@ -3,6 +3,9 @@
 <TransferCMD>
 	<String Id="1" Tag="WCoin" />
 	<String Id="2" Tag="Goblin Point" />
+	<String Id="3" Tag="Zen" />
+	<String Id="4" Tag="Ruud" />
+	<String Id="5" Tag="Gens Contribute Point(s)" />
 </TransferCMD>
 
 <ChangeClassCMD>
