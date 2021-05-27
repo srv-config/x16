@@ -61,10 +61,12 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### ExpSystem::DynamicExpRangeList ###
+//	MinGrandReset: Start range of grand resets count to apply the rule, optional or -1 if not applies
+//	MaxGrandReset: End range of grand resets count to apply the rule, optional or -1 if not applies
 //	MinReset: Start range of resets count to apply the rule
 //	MaxReset: End range of resets count to apply the rule
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ If MAX used as value then max reset attribute is set to MaxReset value from Common.ini
+//~~ If MAX used as value then max grand/reset attribute is set to MaxReset value from Common.ini
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	MinLevel: Start range of level to apply the rule
 //	MaxLevel: End range of level to apply the rule

@@ -60,7 +60,7 @@
 		<Msg ID="31" Text="You cannot get the item" />
 		<Msg ID="32" Text="You are now accepting all requests from other players." />
 		<Msg ID="33" Text="You are now rejecting all requests from other players." />
-		<Msg ID="34" Text="I will not sell to criminals like you!!!" />
+		<Msg ID="34" Text="I will not deal with criminals like you!!!" />
 		<Msg ID="35" Text="More business with me? " />
 		<Msg ID="36" Text="Look for it elsewhere!" />
 		<Msg ID="37" Text="You're short of zen." />
@@ -820,6 +820,11 @@
 		<Msg ID="794" Text="[Reset]: " />
 		<Msg ID="795" Text="[Personal Store]: " />
 		<Msg ID="795" Text="[Quest]: " />
+		<Msg ID="796" Text="You need to be level %d or higher to move with me." />
+		<Msg ID="797" Text="I can take you to %s for %d %s and %s+%d (%d pcs.), click me again to go" />
+		<Msg ID="798" Text="I can take you to %s for %d %s, click me again to go" />
+		<Msg ID="799" Text="I can take you to %s for %s+%d (%d pcs.), click me again to go" />
+		<Msg ID="800" Text="You need %s+%d (%d pcs.) to convince me to deal with you." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
