@@ -819,12 +819,12 @@
 		<Msg ID="793" Text="[LevelUp]: " />
 		<Msg ID="794" Text="[Reset]: " />
 		<Msg ID="795" Text="[Personal Store]: " />
-		<Msg ID="795" Text="[Quest]: " />
-		<Msg ID="796" Text="You need to be level %d or higher to move with me." />
-		<Msg ID="797" Text="I can take you to %s for %d %s and %s+%d (%d pcs.), click me again to go" />
-		<Msg ID="798" Text="I can take you to %s for %d %s, click me again to go" />
-		<Msg ID="799" Text="I can take you to %s for %s+%d (%d pcs.), click me again to go" />
-		<Msg ID="800" Text="You need %s+%d (%d pcs.) to convince me to deal with you." />
+		<Msg ID="796" Text="[Quest]: " />
+		<Msg ID="797" Text="You need to be level %d or higher to move with me." />
+		<Msg ID="798" Text="I can take you to %s for %d %s and %s+%d (%d pcs.), click me again to go" />
+		<Msg ID="799" Text="I can take you to %s for %d %s, click me again to go" />
+		<Msg ID="800" Text="I can take you to %s for %s+%d (%d pcs.), click me again to go" />
+		<Msg ID="801" Text="You need %s+%d (%d pcs.) to convince me to deal with you." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
