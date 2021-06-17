@@ -3,13 +3,10 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2021 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
-//
-// ### PentagramSystem ###
-//	BlessingOfSpiritUseMinLevel: Minimum required level of Pentagram item to apply safe removal with use of Spirit of BlessingOfSpiritUseMinLevel
 //
 // ### PentagramSystem::Errtel ###
 //	ID: Incremental and Unique Index
@@ -17,10 +14,15 @@
 //	Level: Level of Errtel being mounted in the Pentagram
 //	Rate: Chance for Errtel Extraction from the Pentagram (n/10000)
 //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Errtels assembled in Pentagrams of DropLevel (ItemList.xml) lower than 300 are taken out at 100% rate.
+//~~ For Pentagrams of Droplevel greater or equal 300 an option will appear, whether to use below rates or Blessing of Spirit
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<PentagramSystem BlessingOfSpiritUseMinLevel="300">
+<PentagramSystem>
 	<Errtel ID="0"  Rank="1" Level="0"  Rate="8000" />
 	<Errtel ID="1"  Rank="1" Level="1"  Rate="8000" />
 	<Errtel ID="2"  Rank="1" Level="2"  Rate="8000" />
