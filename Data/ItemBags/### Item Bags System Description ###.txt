@@ -13,6 +13,7 @@
 //	Name: Name of an Item or Monster
 //	ItemRate: Chance to get an item from the bag, n/10000
 //	SetItemRate: Drop rate of random set item selected from entire pool of available ancients, n/10000, can be 0
+//	MasterySetItemInclude: If set to 1 the set item drop based on SetItemRate will include mastery set items, otherwise set to 0
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ The SetItemRate is not available for all EVENT_BAG types. Define Set Items via Drop sections manually instead
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

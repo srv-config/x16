@@ -12,7 +12,7 @@
 -->
 
 <ItemBag>
-<BagConfig Name="Mix_LuckyCoin10" ItemRate="10000" SetItemRate="0" MoneyDrop="90000" IsPentagramForBeginnersDrop="0" BagUseEffect="-1" BagUseRate="10000" />
+<BagConfig Name="Mix_LuckyCoin10" ItemRate="10000" SetItemRate="0" MasterySetItemInclude="0" MoneyDrop="90000" IsPentagramForBeginnersDrop="0" BagUseEffect="-1" BagUseRate="10000" />
 <SummonBook Enable="0" DropRate="0" ItemCat="0" ItemIndex="0" />
 <AddCoin Enable="0" CoinType="0" CoinValue="0" />
 <Ruud GainRate="0" MinValue="1" MaxValue="10" />
