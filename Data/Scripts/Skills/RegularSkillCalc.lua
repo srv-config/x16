@@ -959,11 +959,8 @@ end
 
 -- SkillID: 1502, Strong Belief
 function KnightStrongBelief(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
-	local DefenseUp = 20
-	local DmgDownPercent = 8 -- 1-100
 	local Duration = (NormalLevel + MasterLevel) / 4 + 20
-
-	return DefenseUp, DmgDownPercent, Duration
+	return Duration
 end
 
 -- SkillID: 1503, Solid Protection

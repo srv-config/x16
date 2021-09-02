@@ -39,19 +39,25 @@ function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
 end
 
 -- Character Damage - Fist Fighting - (Dark Knight, Blade Knight, Blade Master)
-function KnightDamageCalc(Strength, Dexterity, Vitality, Energy)
+function KnightDamageCalc(Strength, Dexterity, Vitality, Energy, IsStrongBeliefActive)
 	local AttackDamageMinLeft = 0
 	local AttackDamageMaxLeft = 0
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
-	AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
-	AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
-	AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+	if (IsStrongBeliefActive == true) then
+		AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
+		AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
+		AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
+		AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+	else
+		AttackDamageMinLeft = Strength / 9 -- Minimum Left Hand Damage
+		AttackDamageMinRight = Strength / 9 -- Minimum Right Hand Damage
+		AttackDamageMaxLeft = Strength / 6 -- Maximum Left Hand Damage
+		AttackDamageMaxRight = Strength / 6 -- Maximum Right Hand Damage
+	end
 	
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
-
 end
 
 -- Character Damage without bow - Fist Fighting - (Fairy Elf, Muse Elf, Hight Elf)
@@ -265,8 +271,8 @@ function SummonerMagicDamageCalc(Energy)
 	
 	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
 	MagicDamageMax = Energy / 4 + 0.015 -- Minimum Magic Damage
-	CurseDamageMin = Energy / 9 -- Minimum Curse Damage
-	CurseDamageMax = Energy / 4 + 0.015 -- Minimum Curse Damage
+	CurseDamageMin = Energy / 18 -- Minimum Curse Damage
+	CurseDamageMax = Energy / 10 + 0.015 -- Minimum Curse Damage
 	
 	return MagicDamageMin, MagicDamageMax, CurseDamageMin, CurseDamageMax
 end
@@ -435,13 +441,17 @@ function CalcDefenseSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy
 end
 
 -- Character Defense - General
-function CalcDefense(Class, Dexterity)
+function CalcDefense(Class, Dexterity, IsSpecialBuff)
 	local Defense = 0
 	
 	if(Class == CLASS_WIZARD) then
 		Defense = Dexterity / 4
 	elseif(Class == CLASS_KNIGHT) then
-		Defense = Dexterity / 3
+		if (IsSpecialBuff == true) then -- Strong Belief
+			Defense = Dexterity / 2
+		else
+			Defense = Dexterity / 3
+		end
 	elseif(Class == CLASS_ELF) then
 		Defense = Dexterity / 10
 	elseif(Class == CLASS_GLADIATOR) then

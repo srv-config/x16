@@ -1044,19 +1044,10 @@ function RageFighterPhoenixShot_Level2(InDamage, Dexterity, Vitality)
 	return OutDamage
 end
 
--- SkillID: 765, Burst Enhancement - (Grand Rune Master)
+-- SkillID: 765, Burst Strengthener - (Grand Rune Master)
 function RuneWizardBurstCalc_Level1(Energy)
 	local SkillEffect1 = Energy / 30
 	local SkillEffect2 = Energy / 100
-	local SkillTime = Energy / 20 + 30
-	
-	return SkillEffect1, SkillEffect2, SkillTime
-end
-
--- SkillID: 765, Burst Enhancement - (Grand Rune Master)
-function RuneWizardHasteCalc_Level1(Index, TargetIndex, TargetClass, Energy)
-	local SkillEffect1 = Energy / 100
-	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
 	
 	return SkillEffect1, SkillEffect2, SkillTime
@@ -1066,6 +1057,15 @@ end
 function RuneWizardBurstCalc_Level2(Energy)
 	local SkillEffect1 = Energy / 30
 	local SkillEffect2 = Energy / 100
+	local SkillTime = Energy / 20 + 30
+	
+	return SkillEffect1, SkillEffect2, SkillTime
+end
+
+-- SkillID: 768, Haste Strengthener - (Grand Rune Master)
+function RuneWizardHasteCalc_Level1(Index, TargetIndex, TargetClass, Energy)
+	local SkillEffect1 = Energy / 100
+	local SkillEffect2 = Energy / 30
 	local SkillTime = Energy / 20 + 30
 	
 	return SkillEffect1, SkillEffect2, SkillTime
@@ -1261,12 +1261,9 @@ function StrikeOfDestructionCalc_MasterLevel2_Knight(InDamage, Strength, Dexteri
 end
 
 -- SkillID: 810, Strong Belief Strengthener
-function KnightStrongBelief_MasterLevel1(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy, SkillTreeValue)
-	local DefenseUp = 20 + SkillTreeValue
-	local DmgDownPercent = 10 -- 1-100
+function KnightStrongBelief_MasterLevel1(NormalLevel, MasterLevel, Strength, Dexterity, Vitality, Energy)
 	local Duration = (NormalLevel + MasterLevel) / 4 + 20
-
-	return DefenseUp, DmgDownPercent, Duration
+	return Duration
 end
 
 -- SkillID: 811, Tornado Cutting Strengthener

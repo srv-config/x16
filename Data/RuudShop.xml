@@ -94,7 +94,7 @@
 		<Item Cat="14" Index="390" Level="0" Durability="5" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="2500" /> <!-- Elemental Nixie's Fragment x5 -->
 		<Item Cat="14" Index="450" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Soul Moru -->
 		<Item Cat="14" Index="449" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Cold Marriage -->
-		<Item Cat="14" Index="495" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blue Eye Anvil -->
+		<Item Cat="14" Index="495" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blue Eye Anvil -->
 		<Item Cat="14" Index="502" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Silver Heart's Anvil -->
 		<Item Cat="14" Index="501" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Manticore Soul -->
 		<Item Cat="14" Index="458" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="25000" /> <!-- Ancestral Frame -->
