@@ -126,7 +126,7 @@ function StrikeOfDestructionCalc(InDamage, Energy)
 end
 
 -- SkillID: 723, Fireblow - (Blade Knight)
-function KnightFireBlowCalcDamage(InDamage, Energy)
+function KnightFireBlowCalcDamage(InDamage, Strength, Dexterity, Vitality, Energy)
 	local OutDamage = (InDamage * ( 200 + ( Energy / 10 ) ) ) / 100;
 
 	return OutDamage

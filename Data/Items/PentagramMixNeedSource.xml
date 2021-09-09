@@ -35,7 +35,7 @@
 //~~ For ItemCount use 0 value if materials are set to -1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// ### PentagramSystem::LevelUpgradeSettings::Errtel ### - Errtel Level Upgrade
+// ### PentagramSystem::RegularErrtelLevelUp::Errtel ### - Errtel Level Upgrade
 //	ExpectedLevel: Level the Errtel should be upgraded to
 //	InitialLevel: Level of actual item that is going to be upgraded
 //	Count: Count of Errtel input items
@@ -48,14 +48,14 @@
 //~~ For ItemCount use 0 value if materials are set to -1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// ### PentagramSystem::RankUpgradeSettings ### - Errtel Rank Upgrade
+// ### PentagramSystem::ErrtelsRankUpgrade ### - Errtel Rank Upgrade
 //	MaxErrtelRankUp: Maximum level of Errtel Rank Up Mix, 1-5
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//~~ Lowering the value below 5 requires modification of ElementalMixList.txt (Lang.mpr) and RankUpgradeSettings section of this file.
+//~~ Lowering the value below 5 requires modification of ElementalMixList.txt (Lang.mpr) and ErrtelsRankUpgrade section of this file.
 //~~ Unecessary rank upgrades should be removed or commented out.
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// ### PentagramSystem::RankUpgradeSettings::Errtel ### - Errtel Rank Upgrade
+// ### PentagramSystem::ErrtelsRankUpgrade::Errtel ### - Errtel Rank Upgrade
 //	ExpectedRank: Rank the Errtel should be upgraded to
 //	InitialRank: Rank of actual item that is going to be upgraded
 //	Count: Count of Errtel input items
@@ -68,7 +68,7 @@
 //~~ For ItemCount use 0 value if materials are set to -1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// ### PentagramSystem::RankUpgradeSocketRate::Errtel ### - Errtel Rank Upgrade
+// ### PentagramSystem::ErrtelsRankUpgradeSocketRate::Errtel ### - Errtel Rank Upgrade
 //	Rank: Rank of input Errtel
 //	Socket2Rate: Chance rate of Errtel assembly in Pentagram Item, second slot
 //	Socket3Rate: Chance rate of Errtel assembly in Pentagram Item, third slot
@@ -129,9 +129,9 @@
 
 <PentagramSystem>
 	<CombinationMaterials> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 0) -->
-		<Combination Index="1" SuccessRate="5000" ItemCat1="12" ItemIndex1="145" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Errtel Creation -->
-		<Combination Index="2" SuccessRate="10000" ItemCat1="14" ItemIndex1="309" ItemCount1="1" ItemCat2="14" ItemIndex2="310" ItemCount2="1" ItemCat3="14" ItemIndex3="311" ItemCount3="1" ItemCat4="14" ItemIndex4="312" ItemCount4="1" ReqMoney="100000000" /> <!-- Slot of Radiance Assembly -->
-		<Combination Index="3" SuccessRate="10000" ItemCat1="101" ItemIndex1="1" ItemCount="1" ItemCat2="14" ItemIndex2="317" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" /> <!-- Element Change -->
+		<Combination Index="1" SuccessRate="5000" ItemCat1="12" ItemIndex1="145" ItemCount1="1" ItemCat2="14" ItemIndex2="13" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000" /> <!-- Errtel Creation -->
+		<Combination Index="2" SuccessRate="10000" ItemCat1="14" ItemIndex1="309" ItemCount1="1" ItemCat2="14" ItemIndex2="310" ItemCount2="1" ItemCat3="14" ItemIndex3="311" ItemCount3="1" ItemCat4="14" ItemIndex4="312" ItemCount4="1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000000" /> <!-- Slot of Radiance Assembly -->
+		<Combination Index="3" SuccessRate="10000" ItemCat1="101" ItemIndex1="1" ItemCount="1" ItemCat2="14" ItemIndex2="317" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000" /> <!-- Element Change -->
 	</CombinationMaterials>
  
 	<CombinationResult> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 1) -->
@@ -140,74 +140,74 @@
 		<Result Index="3" SuccessRate1="10000" ItemCat1="101" ItemIndex1="1" ItemCount1="1" SuccessRate2="0" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" SuccessRate3="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" SuccessRate4="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" SuccessRate5="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" /> <!-- Element Change -->
 	</CombinationResult>
 
-	<LevelUpgradeSettings> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 2) -->
-		<Errtel ExpectedLevel="1" InitialLevel="0" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" />
-		<Errtel ExpectedLevel="2" InitialLevel="1" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="150000" />
-		<Errtel ExpectedLevel="3" InitialLevel="2" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="200000" />
-		<Errtel ExpectedLevel="4" InitialLevel="3" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="250000" />
-		<Errtel ExpectedLevel="5" InitialLevel="4" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="300000" />
-		<Errtel ExpectedLevel="6" InitialLevel="5" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="350000" />
-		<Errtel ExpectedLevel="7" InitialLevel="6" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="400000" />
-		<Errtel ExpectedLevel="8" InitialLevel="7" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="450000" />
-		<Errtel ExpectedLevel="9" InitialLevel="8" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="6" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="500000" />
-		<Errtel ExpectedLevel="10" InitialLevel="9" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="7" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="600000" />
-	</LevelUpgradeSettings>
+	<RegularErrtelLevelUp> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 2) -->
+		<Errtel ExpectedLevel="1" InitialLevel="0" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000" />
+		<Errtel ExpectedLevel="2" InitialLevel="1" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="150000" />
+		<Errtel ExpectedLevel="3" InitialLevel="2" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="200000" />
+		<Errtel ExpectedLevel="4" InitialLevel="3" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="250000" />
+		<Errtel ExpectedLevel="5" InitialLevel="4" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="300000" />
+		<Errtel ExpectedLevel="6" InitialLevel="5" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="350000" />
+		<Errtel ExpectedLevel="7" InitialLevel="6" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="400000" />
+		<Errtel ExpectedLevel="8" InitialLevel="7" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="450000" />
+		<Errtel ExpectedLevel="9" InitialLevel="8" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="6" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="500000" />
+		<Errtel ExpectedLevel="10" InitialLevel="9" Count="1" ItemCat1="12" ItemIndex1="288" ItemCount1="7" ItemCat2="-1" ItemIndex2="-1" ItemCount2="0" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="600000" />
+	</RegularErrtelLevelUp>
  
-	<RankUpgradeSettings MaxErrtelRankUp="5"> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 3) -->
-		<Errtel ExpectedRank="2" InitialRank="1" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="1" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" />   
-		<Errtel ExpectedRank="3" InitialRank="2" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="3" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="100000" />   
-		<Errtel ExpectedRank="4" InitialRank="3" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="6" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="150000" />   
-		<Errtel ExpectedRank="5" InitialRank="4" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="9" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="200000" /> 
-	</RankUpgradeSettings>
+	<ErrtelsRankUpgrade MaxErrtelRankUp="5"> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 3) -->
+		<Errtel ExpectedRank="2" InitialRank="1" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="1" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000" />   
+		<Errtel ExpectedRank="3" InitialRank="2" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="3" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="100000" />   
+		<Errtel ExpectedRank="4" InitialRank="3" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="6" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="150000" />   
+		<Errtel ExpectedRank="5" InitialRank="4" Count="1" ItemCat1="12" ItemIndex1="151" ItemCount1="9" ItemCat2="12" ItemIndex2="30" ItemCount2="1" ItemCat3="100" ItemIndex3="1" ItemCount3="1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="200000" /> 
+	</ErrtelsRankUpgrade>
  
-	<RankUpgradeSocketRate>
+	<ErrtelsRankUpgradeSocketRate>
 		<Errtel Rank="2" Socket2Rate="10000" Socket3Rate="0" Socket4Rate="0" Socket5Rate="0" SuccessRateLv7="10000" SuccessRateLv8="10000" SuccessRateLv9="10000" SuccessRateLv10="10000" />       
 		<Errtel Rank="3" Socket2Rate="0" Socket3Rate="10000" Socket4Rate="0" Socket5Rate="0" SuccessRateLv7="10000" SuccessRateLv8="10000" SuccessRateLv9="10000" SuccessRateLv10="10000" />      
 		<Errtel Rank="4" Socket2Rate="0" Socket3Rate="0" Socket4Rate="10000" Socket5Rate="0" SuccessRateLv7="10000" SuccessRateLv8="10000" SuccessRateLv9="10000" SuccessRateLv10="10000" />       
 		<Errtel Rank="5" Socket2Rate="0" Socket3Rate="0" Socket4Rate="0" Socket5Rate="10000" SuccessRateLv7="10000" SuccessRateLv8="10000" SuccessRateLv9="10000" SuccessRateLv10="10000" />       
-	</RankUpgradeSocketRate>
+	</ErrtelsRankUpgradeSocketRate>
  
 	<LevelUpgradeSpecialMode>
 		<Upgrade OpenRate="0" OneOpAddRateLv5="2500" TwoOpAddRateLv10="2500" ThreeOpSkip2Levels="2500" FourOpSkip3Levels="2500" />
 	</LevelUpgradeSpecialMode>
  
 	<WingAddOption> <!-- Modifications require changes to PentagramMixNeedSource.bmd (group 6) -->
-		<Mix ReqLevel="0" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="103" ItemIndex2="0" ItemCount2="1" ItemCat3="13" ItemIndex3="468" ItemCount3="9" ItemCat4="12" ItemIndex4="406" ItemCount4="3" ReqMoney="1000000" />
+		<Mix ReqLevel="0" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="103" ItemIndex2="0" ItemCount2="1" ItemCat3="13" ItemIndex3="468" ItemCount3="9" ItemCat4="12" ItemIndex4="406" ItemCount4="3" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="1000000" />
 	</WingAddOption>
  
 	<WingOptionLevelUp> <!-- Modifications require changes to WingAttribute.txt, section 3 (Lang.mpr) and PentagramMixNeedSource.bmd (group 7) -->
-		<Mix ReqLevel="0" SuccessRate="900000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="1000000" />
-		<Mix ReqLevel="1" SuccessRate="840000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="1500000" />
-		<Mix ReqLevel="2" SuccessRate="780000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="2000000" />
-		<Mix ReqLevel="3" SuccessRate="720000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="2" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="2500000" />
-		<Mix ReqLevel="4" SuccessRate="660000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="3" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="3000000" />
-		<Mix ReqLevel="5" SuccessRate="600000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="3" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="3500000" />
-		<Mix ReqLevel="6" SuccessRate="540000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="4" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="4000000" />
-		<Mix ReqLevel="7" SuccessRate="480000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="5" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="4500000" />
-		<Mix ReqLevel="8" SuccessRate="420000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="6" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="5000000" />
-		<Mix ReqLevel="9" SuccessRate="360000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="7" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="5500000" />
-		<Mix ReqLevel="10" SuccessRate="300000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="8" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="6000000" />
-		<Mix ReqLevel="11" SuccessRate="240000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="9" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="6500000" />
-		<Mix ReqLevel="12" SuccessRate="180000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="10" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="7000000" />
-		<Mix ReqLevel="13" SuccessRate="120000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="11" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="7500000" />
-		<Mix ReqLevel="14" SuccessRate="60000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="12" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ReqMoney="8000000" />
+		<Mix ReqLevel="0" SuccessRate="900000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="1000000" />
+		<Mix ReqLevel="1" SuccessRate="840000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="1500000" />
+		<Mix ReqLevel="2" SuccessRate="780000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="2000000" />
+		<Mix ReqLevel="3" SuccessRate="720000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="2" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="2500000" />
+		<Mix ReqLevel="4" SuccessRate="660000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="3" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="3000000" />
+		<Mix ReqLevel="5" SuccessRate="600000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="3" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="3500000" />
+		<Mix ReqLevel="6" SuccessRate="540000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="4" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="4000000" />
+		<Mix ReqLevel="7" SuccessRate="480000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="5" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="4500000" />
+		<Mix ReqLevel="8" SuccessRate="420000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="6" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="5000000" />
+		<Mix ReqLevel="9" SuccessRate="360000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="7" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="5500000" />
+		<Mix ReqLevel="10" SuccessRate="300000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="8" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="6000000" />
+		<Mix ReqLevel="11" SuccessRate="240000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="9" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="6500000" />
+		<Mix ReqLevel="12" SuccessRate="180000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="10" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="7000000" />
+		<Mix ReqLevel="13" SuccessRate="120000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="11" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="7500000" />
+		<Mix ReqLevel="14" SuccessRate="60000" ItemCat1="102" ItemIndex1="0" ItemCount1="1" ItemCat2="12" ItemIndex2="288" ItemCount2="12" ItemCat3="-1" ItemIndex3="-1" ItemCount3="0" ItemCat4="-1" ItemIndex4="-1" ItemCount4="0" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="8000000" />
 	</WingOptionLevelUp>
  
 	<EarringLevelUp> <!-- Modifications require changes to EarringAttribute.txt, section 3 (Lang.mpr) and PentagramMixNeedSource.bmd (group 7) -->
-		<Mix ReqLevel="0" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1000000" />
-		<Mix ReqLevel="1" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="1500000" />
-		<Mix ReqLevel="2" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="2000000" />
-		<Mix ReqLevel="3" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="2500000" />
-		<Mix ReqLevel="4" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="3000000" />
-		<Mix ReqLevel="5" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="3500000" />
-		<Mix ReqLevel="6" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="4000000" />
-		<Mix ReqLevel="7" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="4500000" />
-		<Mix ReqLevel="8" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="5000000" />
-		<Mix ReqLevel="9" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="5500000" />
-		<Mix ReqLevel="10" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="6000000" />
-		<Mix ReqLevel="11" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="6500000" />
-		<Mix ReqLevel="12" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="7000000" />
-		<Mix ReqLevel="13" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="7500000" />
-		<Mix ReqLevel="14" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ReqMoney="8000000" />
+		<Mix ReqLevel="0" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="1" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="1000000" />
+		<Mix ReqLevel="1" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="1500000" />
+		<Mix ReqLevel="2" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="2000000" />
+		<Mix ReqLevel="3" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="2" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="2500000" />
+		<Mix ReqLevel="4" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="3000000" />
+		<Mix ReqLevel="5" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="3" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="3500000" />
+		<Mix ReqLevel="6" SuccessRate="600000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="4000000" />
+		<Mix ReqLevel="7" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="4500000" />
+		<Mix ReqLevel="8" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="4" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="5000000" />
+		<Mix ReqLevel="9" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="5500000" />
+		<Mix ReqLevel="10" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="6000000" />
+		<Mix ReqLevel="11" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="6500000" />
+		<Mix ReqLevel="12" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="7000000" />
+		<Mix ReqLevel="13" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="7500000" />
+		<Mix ReqLevel="14" SuccessRate="800000" ItemCat1="13" ItemIndex1="510" ItemCount1="5" ItemCat2="-1" ItemIndex2="-1" ItemCount2="-1" ItemCat3="-1" ItemIndex3="-1" ItemCount3="-1" ItemCat4="-1" ItemIndex4="-1" ItemCount4="-1" ItemCat5="-1" ItemIndex5="-1" ItemCount5="0" ReqMoney="8000000" />
 	</EarringLevelUp>
 </PentagramSystem>
