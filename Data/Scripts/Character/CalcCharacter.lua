@@ -447,7 +447,7 @@ function CalcDefense(Class, Dexterity, IsSpecialBuff)
 	if(Class == CLASS_WIZARD) then
 		Defense = Dexterity / 4
 	elseif(Class == CLASS_KNIGHT) then
-		if (IsSpecialBuff == true) then -- Strong Belief
+		if (IsSpecialBuff == 1) then -- Strong Belief
 			Defense = Dexterity / 2
 		else
 			Defense = Dexterity / 3
