@@ -725,7 +725,7 @@ function ElementalAttackRateCalc_PvP(Class, NormalLevel, MasterLevel, Strength, 
 end
 
 -- Character Elemental Defense - General
-function ElementalDefenseCalc(Class, Dexterity)
+function ElementalDefenseCalc(Class, Dexterity, Energy)
 	local Defense = 0
 	
 	if(Class == CLASS_WIZARD) then
@@ -745,7 +745,7 @@ function ElementalDefenseCalc(Class, Dexterity)
 	elseif(Class == CLASS_GROWLANCER) then
 		Defense = Dexterity / 7
 	elseif(Class == CLASS_RUNEWIZARD) then
-		Defense = Dexterity / 3
+		Defense = (Dexterity / 10) + (Energy / 5)
 	elseif(Class == CLASS_SLAYER) then
 		Defense = Dexterity / 3
 	elseif(Class == CLASS_GUNCRUSHER) then
