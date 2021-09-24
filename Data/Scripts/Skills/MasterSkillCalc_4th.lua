@@ -75,15 +75,20 @@ end
 function FireSlash_4thEnchant_Gladiator(InDamage, Strength, Energy, BarrageCount)
     local OutDamage = InDamage * 2
     
-    if (BarrageCount == 0) then
+    if (BarrageCount == 1) then
         OutDamage = OutDamage * 0.15
-    elseif (BarrageCount == 1) then
-        OutDamage = OutDamage * 0.18
     elseif (BarrageCount == 2) then
-        OutDamage = OutDamage * 0.22
+        OutDamage = OutDamage * 0.18
     elseif (BarrageCount == 3) then
+        OutDamage = OutDamage * 0.22
+    elseif (BarrageCount == 4) then
         OutDamage = OutDamage * 0.25
+	elseif (BarrageCount == 5) then
+        OutDamage = OutDamage * 0.27
+	elseif (BarrageCount == 6) then
+        OutDamage = OutDamage * 0.29
     end
+	
 	return OutDamage
 end
 
@@ -337,13 +342,13 @@ end
 -- SkillID: 1213, Busting Flare Enhancement Skill
 function BurstingFlare_4thEnchant_GunCrusher(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
 	local OutDamage = 0
-	
-	if (BarrageCount == 0) then -- Shockwave
-		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
-	elseif (BarrageCount == 1) then
+
+	if (BarrageCount == 1) then
 		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 3) then -- Shockwave
+		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	end
 	
 	return OutDamage

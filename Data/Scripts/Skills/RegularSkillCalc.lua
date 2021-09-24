@@ -95,9 +95,8 @@ function WizardSoulSeekerCalcDamage(InDamage, Energy)
  return OutDamage
 end
 
--- SkillID: 19, 20, 21, 22, 23, 41, 43, 44, 49, 55, 57, Falling Slash, Lunge, Uppercut,
--- Cyclone, Slash, Twisting Slash, Death Stab, Crescent Moon Slash, Fire Breath,
--- Fire Slash, Spiral Slash
+-- SkillID: 19, 20, 21, 22, 23, 41, 43, 44, 49, 57, Falling Slash, Lunge, Uppercut,
+-- Cyclone, Slash, Twisting Slash, Death Stab, Crescent Moon Slash, Fire Breath, Spiral Slash
 function Knight_Gladiator_CalcSkillBonus(SkillID, Class, InDamage, Strength, Energy)	
 	local OutDamage = 0
 	
@@ -326,13 +325,13 @@ end
 function GladiatorFireSlash(InDamage, Strength, Energy, BarrageCount)
     local OutDamage = 0
     
-    if (BarrageCount == 0) then
+    if (BarrageCount == 1) then
         OutDamage = (InDamage * 0.15) * ( 200 + ( Energy / 10 ) ) / 100;
-    elseif (BarrageCount == 1) then
-        OutDamage = (InDamage * 0.18) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 2) then
-        OutDamage = (InDamage * 0.22) * ( 200 + ( Energy / 10 ) ) / 100;
+        OutDamage = (InDamage * 0.18) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 3) then
+        OutDamage = (InDamage * 0.22) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 4) then
         OutDamage = (InDamage * 0.25) * ( 200 + ( Energy / 10 ) ) / 100;
     end
     return OutDamage
@@ -368,7 +367,7 @@ end
 
 -- SkillID: 60 ,61, 62, 65, 74, 78, Force, Fire Burst, Earthshake, Electric Spike, Fire Blast, Fire Scream
 function Lord_CalcSkillBonus(SkillID, InDamage, Strength, Energy, Command)
-	local OutDamage = ( InDamage * ( ( Energy / 20 + 200 ) ) ) / 100;
+	local OutDamage = ( InDamage * ( ( Energy / 20 + 200 ) ) ) / 100
 	
 	return OutDamage
 end
@@ -950,8 +949,6 @@ function SwordBlow_Knight(InDamage, Strength, Dexterity, Vitality, Energy, Barra
 		OutDamage = (InDamage * 0.8) * (Energy / 10 + 200) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.0) * (Energy / 10 + 200) / 100
-	elseif (BarrageCount == 3) then
-		OutDamage = (InDamage * 1.2) * (Energy / 10 + 200) / 100
 	end
 
 	return OutDamage
@@ -1020,13 +1017,13 @@ end
 -- SkillID: 2005, Bursting Flare
 function GunCrusherBurstingFlareCalc(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
 	local OutDamage = 0
-	
-	if (BarrageCount == 0) then -- Shockwave
-		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
-	elseif (BarrageCount == 1) then
+
+	if (BarrageCount == 1) then
 		OutDamage = (InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
+	elseif (BarrageCount == 3) then -- Shockwave
+		OutDamage = (InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) / 100
 	end
 	
 	return OutDamage

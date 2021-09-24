@@ -470,17 +470,18 @@ end
 
 -- SkillID: 490, Fire Slash Strengthener - (Duel Master)
 function FireSlash_MasterLevel1_Gladiator(InDamage, Strength, Energy, BarrageCount)
-    local OutDamage = InDamage * 2
+    local OutDamage = 0
     
-    if (BarrageCount == 0) then
-        OutDamage = OutDamage * 0.15
-    elseif (BarrageCount == 1) then
-        OutDamage = OutDamage * 0.18
+    if (BarrageCount == 1) then
+        OutDamage = (InDamage * 0.15) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 2) then
-        OutDamage = OutDamage * 0.22
+        OutDamage = (InDamage * 0.18) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 3) then
-        OutDamage = OutDamage * 0.25
+        OutDamage = (InDamage * 0.22) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 4) then
+        OutDamage = (InDamage * 0.25) * ( 200 + ( Energy / 10 ) ) / 100;
     end
+	
     return OutDamage
 end
 
@@ -494,17 +495,18 @@ end
 
 -- SkillID: 493, Fire Slash Mastery - (Duel Master)
 function FireSlash_MasterLevel2_Gladiator(InDamage, Strength, Energy, BarrageCount)
-    local OutDamage = InDamage * 2
+    local OutDamage = 0
     
-    if (BarrageCount == 0) then
-        OutDamage = OutDamage * 0.15
-    elseif (BarrageCount == 1) then
-        OutDamage = OutDamage * 0.18
+    if (BarrageCount == 1) then
+        OutDamage = (InDamage * 0.15) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 2) then
-        OutDamage = OutDamage * 0.22
+        OutDamage = (InDamage * 0.18) * ( 200 + ( Energy / 10 ) ) / 100;
     elseif (BarrageCount == 3) then
-        OutDamage = OutDamage * 0.25
+        OutDamage = (InDamage * 0.22) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 4) then
+        OutDamage = (InDamage * 0.25) * ( 200 + ( Energy / 10 ) ) / 100;
     end
+	
     return OutDamage
 end
 
@@ -1335,8 +1337,6 @@ function GunCrusherDeathFire_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vi
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
-	elseif (BarrageCount == 3) then
-		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage
@@ -1350,8 +1350,6 @@ function GunCrusherDeathFire_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vi
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
-	elseif (BarrageCount == 3) then
-		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage
@@ -1365,8 +1363,6 @@ function GunCrusherDeathIce_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vit
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
-	elseif (BarrageCount == 3) then
-		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage
@@ -1380,8 +1376,6 @@ function GunCrusherDeathIce_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vit
 		OutDamage = ((InDamage * 0.8) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	elseif (BarrageCount == 2) then
 		OutDamage = ((InDamage * 1.0) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
-	elseif (BarrageCount == 3) then
-		OutDamage = ((InDamage * 1.2) * ((Energy / 8) + (Dexterity / 28) + 120) + SkillTreeValue) / 100
 	end
 	
 	return OutDamage

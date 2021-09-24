@@ -45,7 +45,7 @@ function KnightDamageCalc(Strength, Dexterity, Vitality, Energy, IsStrongBeliefA
 	local AttackDamageMinRight = 0
 	local AttackDamageMaxRight = 0
 	
-	if (IsStrongBeliefActive == true) then
+	if (IsStrongBeliefActive == 1) then
 		AttackDamageMinLeft = Strength / 6 -- Minimum Left Hand Damage
 		AttackDamageMinRight = Strength / 6 -- Minimum Right Hand Damage
 		AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
@@ -327,7 +327,7 @@ function GunCrusherMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
-	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
+	MagicDamageMin = Energy / 8 -- Minimum Magic Damage
 	MagicDamageMax = Energy / 4 -- Maximum Magic Damage
 	
 	return MagicDamageMin, MagicDamageMax
@@ -469,7 +469,7 @@ function CalcDefense(Class, Dexterity, IsSpecialBuff)
 	elseif(Class == CLASS_SLAYER) then
 		Defense = Dexterity / 5
 	elseif(Class == CLASS_GUNCRUSHER) then
-		Defense = Dexterity / 3
+		Defense = Dexterity / 4
 	end
 	
 	return Defense
