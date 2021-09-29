@@ -27,11 +27,11 @@
 //
 // ### StatSpecialize::Class::Option ###
 //	StatType: Type of statistic to apply rule to
-//		~ 0: Strength
-//		~ 1: Agility
-//		~ 2: Vitality
-//		~ 3: Energy
-//		~ 4: Command
+//		~ 1: Strength
+//		~ 2: Agility
+//		~ 3: Vitality
+//		~ 4: Energy
+//		~ 5: Command
 //
 //	Index: Option ID to apply
 //		~ 1: STAT_OPTION_INC_ATTACK_POWER
@@ -68,49 +68,50 @@
 
 <StatSpecialize MaxStatValue="45.0">
 	<Class ID="1"> <!-- Dark Wizard -->
-		<Option StatType="3" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="2" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="3" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="2" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="3" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="2"> <!-- Dark Knight -->
-		<Option StatType="0" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="1" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="3"> <!-- Fairy Elf -->
-		<Option StatType="1" Index="1" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="6" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="7" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="1" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="6" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="7" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="4"> <!-- Magic Gladiator -->
-		<Option StatType="0" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="2" Index="9" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2500" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="1" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="9" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2500" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="5"> <!-- Dark Lord -->
-		<Option StatType="0" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="1" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="6"> <!-- Summoner -->
-		<Option StatType="3" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="3" Index="10" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="10" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="7"> <!-- Rage Fighter -->
-		<Option StatType="0" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="1" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="8"> <!-- Grow Lancer -->
-		<Option StatType="0" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="1" Index="1" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="4" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="9"> <!-- Rune Wizard -->
-		<Option StatType="3" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="2" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="3" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="2" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="3" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="10"> <!-- Slayer	 -->
-		<Option StatType="1" Index="1" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="1" Index="6" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="1" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="6" StatLimit_1="1800" StatVal_1="10" StatLimit_2="2100" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 	<Class ID="11"> <!-- Gun Crusher -->
-		<Option StatType="3" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
-		<Option StatType="3" Index="10" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="2" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="2" Index="3" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
+		<Option StatType="4" Index="9" StatLimit_1="1500" StatVal_1="10" StatLimit_2="2000" StatVal_2="30" StatLimit_3="3000" StatVal_3="45" StatLimit_4="-1" StatVal_4="-1" StatLimit_5="-1" StatVal_5="-1" />
 	</Class>
 </StatSpecialize>

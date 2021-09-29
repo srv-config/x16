@@ -755,6 +755,37 @@ function ElementalDefenseCalc(Class, Dexterity, Energy)
 	return Defense
 end
 
+-- Character Elemental Defense Success Rate - General
+function ElementalDefenseRateCalc(Class, Strength, Dexterity, Energy, Vitality, Command)
+	local DefenseRate = 0
+	
+	if(Class == CLASS_WIZARD) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_KNIGHT) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_ELF) then
+		DefenseRate = Dexterity / 4
+	elseif(Class == CLASS_GLADIATOR) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_DARKLORD) then
+		DefenseRate = Dexterity / 7
+	elseif(Class == CLASS_SUMMONER) then
+		DefenseRate = Dexterity / 4
+	elseif(Class == CLASS_RAGEFIGHTER) then
+		DefenseRate = Dexterity / 10
+	elseif(Class == CLASS_GROWLANCER) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_RUNEWIZARD) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_SLAYER) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_GUNCRUSHER) then
+		DefenseRate = Dexterity / 3
+	end
+	
+	return DefenseRate
+end
+
 -- Only for Dark Knight, Magic Gladiator, Slayer
 function CalcTwoSameWeaponBonus(AtkMinLeft, AtkMaxLeft, AtkMinRight, AtkMaxRight, Class)
 	local OutDamageMinLeft = 0
