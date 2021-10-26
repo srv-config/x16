@@ -263,17 +263,24 @@ function LordMagicDamageCalc(Energy)
 end
 
 -- Character Magic Damage - (Summoner, Bloody Summoner, Dimension Master)
-function SummonerMagicDamageCalc(Energy)
+function SummonerMagicDamageCalc(Energy, IsSpecialBuff)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	local CurseDamageMin = 0
 	local CurseDamageMax = 0
-	
-	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
-	MagicDamageMax = Energy / 4 + 0.015 -- Minimum Magic Damage
-	CurseDamageMin = Energy / 18 -- Minimum Curse Damage
-	CurseDamageMax = Energy / 10 + 0.015 -- Minimum Curse Damage
-	
+
+	if (IsSpecialBuff == 1) then -- Darkness
+		MagicDamageMin = Energy / 18
+		MagicDamageMax = Energy / 10
+		CurseDamageMin = Energy / 9
+		CurseDamageMax = Energy / 4
+	else
+		MagicDamageMin = Energy / 9
+		MagicDamageMax = Energy / 4
+		CurseDamageMin = Energy / 18
+		CurseDamageMax = Energy / 10
+	end
+
 	return MagicDamageMin, MagicDamageMax, CurseDamageMin, CurseDamageMax
 end
 
